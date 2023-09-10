@@ -1,0 +1,151 @@
+% ****** Start of file apssamp.tex ******
+%
+%   This file is part of the APS files in the REVTeX 4.2 distribution.
+%   Version 4.2a of REVTeX, December 2014
+%
+%   Copyright (c) 2014 The American Physical Society.
+%
+%   See the REVTeX 4 README file for restrictions and more information.
+%
+% TeX'ing this file requires that you have AMS-LaTeX 2.0 installed
+% as well as the rest of the prerequisites for REVTeX 4.2
+%
+% See the REVTeX 4 README file
+% It also requires running BibTeX. The commands are as follows:
+%
+%  1)  latex apssamp.tex
+%  2)  bibtex apssamp
+%  3)  latex apssamp.tex
+%  4)  latex apssamp.tex
+%
+\documentclass[%
+ reprint,
+%superscriptaddress,
+%groupedaddress,
+%unsortedaddress,
+%runinaddress,
+%frontmatterverbose, 
+%preprint,
+%preprintnumbers,
+%nofootinbib,
+%nobibnotes,
+%bibnotes,
+ amsmath,amssymb,
+ aps,
+%pra,
+%prb,
+%rmp,
+%prstab,
+%prstper,
+%floatfix,
+]{revtex4-2}
+\usepackage{kotex}
+\usepackage{graphicx}% Include figure files
+\usepackage{dcolumn}% Align table columns on decimal point
+\usepackage{bm}% bold math
+%\usepackage{hyperref}% add hypertext capabilities
+%\usepackage[mathlines]{lineno}% Enable numbering of text and display math
+%\linenumbers\relax % Commence numbering lines
+
+%\usepackage[showframe,%Uncomment any one of the following lines to test 
+%%scale=0.7, marginratio={1:1, 2:3}, ignoreall,% default settings
+%%text={7in,10in},centering,
+%%margin=1.5in,
+%%total={6.5in,8.75in}, top=1.2in, left=0.9in, includefoot,
+%%height=10in,a5paper,hmargin={3cm,0.8in},
+%]{geometry}
+
+\begin{document}
+
+
+\title{화학전지 예비보고서}
+
+\author{서울대학교 전기정보공학부 2018-12432 박정현}
+ \email{alexist@snu.ac.kr}
+\date{\today}% It is always \today, today,
+             %  but any date may be explicitly specified
+
+\begin{abstract}
+본 실험에서는 물질의 특성에 따른 전기전도도를 확인하고, 여러가지의 금속에 대한 전기화학적 서열을 확인한다. 또한 다니엘 전지를 제작한 후 농도에 따른 기전력을 측정해 네른스트 식을 검증하고 이해한다. 화학전지를 이용해 염의 용해도곱 상수를 직접 계산하여 화학전지와 용해도곱상수에 대한 이해도를 높인다. 
+\end{abstract}
+
+%\keywords{Suggested keywords}%Use showkeys class option if keyword
+                              %display desired
+\maketitle
+
+%\tableofcontents
+
+\section{\label{sec:level1}Introudction}
+\section{\label{sec:level2}전기전도도}
+전류는 전하의 흐름이다. 이때 전하는 전기장에 의해 가속되고 충돌하며 통계적으로 보았을 때 평균적으로 특정 속도를 가지고 흐르게 된다. 두 위치 사이의 전위차는 전기장의 세기에 비례하므로 전류는 아래와 같은 식을 가지게 된다.[3]
+\begin{align}
+J =\sigma E
+\end{align}
+이 때 비례상수 $\sigma$를 전기전도도로 정의한다. 이 때 전류가 흐르기 위해서는 전하가 존재해야 하며 이러한 전하는 이동가능한 이온, 혹은 금속 자체의 전자 등에 의해 발생할 수 있다. 예를 들어 설탕의 경우 $C_{6}H_{12}O_{6}$의 분자식을 가지고 이온으로 분리되지 않으므로 전기전도도는 0에 매우 가깝다. 또한 설탕 수용액이 되는 경우에도 이온으로 분리되지 않으므로 증류수의 경우 대부분의 이온은 아래의 식에 의해 발생하게 된다.
+\begin{align}
+2H_{2}O(l) \leftrightarrow H_{3}O^{+}(aq) + OH^{-}(aq)
+\end{align}
+이 때 물의 이온화 상수는 $[H3O+][OH-] = 1.0\times10^{-14}$이고 중성의 증류수는 $H_{3}O^{+}$와 $OH^{-}$의 농도가 같으므로 $H_{3}O^{+}$의 농도는 $1.0\times 10^{-7}M$이다. 따라서 증류수, 혹은 설탕을 녹인 수용액 모두 전기는 거의 흐르지 않는다. 순수한 소금$(NaCl(s))$의 경우에는 이온 결정에서 이온이 움직이지 못하므로 전류가 흐르지 않는다. 하지만 수용액이 되는 경우 $NaCl(s) \rightarrow Na^{+}(aq) + Cl^{-}(aq)$가 되어 이이 분리되므로 전기가 흐르게된다. 귤의 경우 여러 이온들이 수용액 상태로 존재하므로 전류가 흐르게 된다.\\
+
+이 때 Na의 경우 전기음성도가 0.93, Cl의 경우 3.16, C의 경우 2.55, H의 경우 2.20, O의 3.44으로 $NaCl$의 경우 전기음성도 차이가 커 이온 결합을 하게 되지만 $C_{6}H_{12}O_{6}$의 경우 전기음성도 차이가 작아 공유결합을 하게 된다. 이러한 화학 특성으로 인해 소금은 수용액 상에서 이온 상태로 용해되고 설탕은 분자 그대로 용해되 전기전도도 차이가 발생하게 된다.[2]
+
+
+\section{\label{sec:level2}표준 환원 전위}
+화학전지는 금속의 환원력의 차이에 따라 화학적 에너지를 전기에너지로 변환하는 장치이다. 환원 반응은 전자를 받아들이는 과정이며 이 때 깁스에너지는 아래와 같이 나타난다. 단 해당 경우는 전해질의 농도가 1M, 압력이 1기압, 그리고 온도가 25C인 경우에 해당함을 주의해야 한다.[2]
+\begin{align}
+\Delta G^{o} = -nFE^{o}
+\end{align}
+여기서 n은 전자의 이동개수, F는 패러데이 상수로 $96485C/mol$에 해당하는 상수이다. $E^{o}$는 표준 환원 전위로 수소$(2H^{+} + 2e^{-} \leftrightarrow H_{2})$를 기준으로 환원 전위를 나타낸 값이다. 깁스에너지는 음수인 경우에 자발적으로 발생하므로 표준 환원 전위가 높을수록 스스로가 환원되려는 성질이 강해짐을 해당식을 통해 알 수 있다. $Zn(s), Pb(s), Cu(s)$ 각각의 표준 환원 전위는 $-0.763V, -0.126V, +0.337V$ 으로 Cu, Pb, Zn 순으로 환원력이 강해 [1] $Zn(NO_{3})_{2}(aq), Pb(NO_{3})_{2}(aq), Cu(NO_{3})_{2}(aq)$와 반응 시키는 경우 아래와 같이 $(Pb, Cu(NO_{3})_{2}),(Zn, Pb(NO_{3})_{2}),(Zn, Cu(NO_{3})_{2})$ 쌍의 경우에만 화학반응이 일어나고 그 외에는 화학반응이 발생하지 않는다. 각각의 알짜화학반응식은 아래와 같다.
+\begin{align}
+Pb(s)+Cu^{2+}(aq)\leftrightarrow Cu(s) + Pb^{2+}(aq)\\
+Zn(s)+Cu^{2+}(aq)\leftrightarrow Cu(s) + Zn^{2+}(aq)\\
+Zn(s)+Pb^{2+}(aq)\leftrightarrow Pb(s) + Zn^{2+}(aq)
+\end{align}
+
+\section{\label{sec:level2}화학전지}
+금속의 환원력이 다름을 통해 전지를 만들어 낼 수 있으며 가장 간단한 예가 볼타 전지이다. 볼타 전지는 동일한 수용액에 다른 금속판을 넣어 사용한다. 하지만 이 경우에는 환원전위가 높은 금속에서 수소 기체가 달라붙는 분극 현상이 발생한다. 이를 해결하기 위해 동일한 수용액에 한번에 넣는 것이 아닌 각각의 금속판을 다른 수용액에 넣고 염다리를 두 수용액을 연결할 수 있다. 이러한 전지가 다니엘 화학전지이며 예는 아래와 같다.
+\begin{align}
+Zn(s) | Zn^{2+} &|| Cu^{2+}|Cu(s)\\
+Cu^{2+}(aq) + Zn(s) &\leftrightarrow Cu(s) + Zn^{2+}(aq)
+\end{align}
+이 때 반응비는 수용액 상태의 물질만을 포함하여 아래와 같이 나타나게 된다.
+\begin{align}
+Q = [Zn^{2+}]/[Cu^{2+}]
+\end{align}
+깁스에너지는 아래와같이 나타나므로 위의 식은 아래와 같이 네른스트 식으로 변형된다.
+\begin{align}
+\Delta G &= - nFE\\
+&= \Delta G^{o} + RT lnQ\\
+E &= E^{o} – RT/nF lnQ\\
+&= E^{o}-0.05916/n logQ
+\end{align}
+구리가 아닌 납의 경우 화학전지와 반응비, 알짜 화학반응식은 아래와 같아진다.
+\begin{align}
+Zn(s) | Zn^{2+} &|| Pb^{2+}|Pb(s)\\
+Pb^{2+}(aq) + Zn(s) &\leftrightarrow Pb(s) + Zn^{2+}(aq)\\
+Q &= [Zn^{2+}]/[Pb^{2+}]
+\end{align}
+
+\section{\label{sec:level2}용해도곱}
+$KCl(s)$는 수용액에서 완전히 용해된다. 따라서 $50mL$ 의 수용액에 $[K^{+}] 0.03M$을 만들기 위해서는 $m= 0.03M \times 0.05L * (39.10 + 35.45) g / mol = 111.8g$의 $KCl(s)$가 필요하다. $AgCl(s)$의 용해도 곱$ K_{sp} = [Ag^{+}][Cl^{-}]$은 통상적으로 [2]으로 매우 작은 값을 가진다. 따라서 $AgCl(s) \leftrightarrow Ag^{+}(aq) + Cl^{-}(aq)$에서 대부분은 $AgCl(s)$으로 반응이 치우치게 된다. $KCl(s)$ 와 $AgNO_{3}(aq)$ 반응 직후에는 외부로부터의 $Ag^{+}$의 유입은 없다고 가정하므로 $Ag^{+}$의 농도 변화는 $KCl(s)$와 반응한 양과 동일하다.
+\section{\label{sec:level1}Experimental}
+\section{\label{sec:level2}전기전도도 확인}
+건전지, 전선, LED, 설탕, 소금, 귤을 준비한다. 건전지에 LED를 연결하여 잘 작동하는지 확인한다.이후에 증류수$(H_{2}O(l))$, 설탕$(C_{6}H_{12}O_{6}(s))$, 설탕 수용액$(C_{6}H_{12}O_{6}(aq))$, 소금$(NaCl(s))$, 소금 수용액$(NaCl(aq))$ 각각에 건전지와 LED를 연결하여 LED가 작동하는지 확인하여 전기전도성의 유무를 확인한다.
+\section{\label{sec:level2}전기화학적 서열 확인}
+$0.5cm \times 0.5cm $ $ Cu, Zn, Pb $판, $1.0M Zn(NO_{3})_{2}$ 용액, $1.0M Pb(NO_{3})_{2}$ 용액, $1.0M Cu(NO_{3})_{2}$ 용액 각각을 $10mL$씩 준비한다. 이 때 $Cu, Zn, Pb $판의 경우 사포로 문질러 표면의 산화된 면을 제거하여 화학반응이 잘 일어날 수 있도록 한다. 각각의 판을 각각의 수용액이 화학반응의 유무를 확인하여 금속들의 전기화학적 서열을 확인한다.
+\section{\label{sec:level2}화학 전지 실험}
+$1cm \times 7cm$ 의 $Cu, Zn, Pb $판, 염다리, 비커, 전압계, 전선, 사포, $Zn(NO_{3})_{2} 1.0M, 0.1M, Cu(NO_{3})_{2} 1.0M, 0.1, 0.01, 0.001M$, $Pb(NO_{3})_{2} 1.0M 80mL$을 각각 준비한다. 각각의 금속판을 금속산화물을 제거하기 위해 잘 문질러준뒤 $1.0M Zn(NO_{3})_{2}, 1.0M, Cu(NO_{3})_{2}$ 각각에 $Zn, Cu$를 $5cm$가량 넣은 뒤 전압계와 전선을 연결해 전위차를 측정한다. 같은 방법으로 $1.0M Zn(NO_{3})_{2}, 1.0M Pb(NO_{3})_{2}$용액에 Zn, Pb를 $5cm$정도 넣은뒤 전압계와 전선을 연결해 전위차를 측정한다. 이후에는 $Cu(NO_{3})_{2}$를 10배씩 묽혀 $0.1, 0.01, 0.001M$의 수용액을 만들고 $0.1M Zn(NO_{3})_{2}$의 수용액에 각각 Cu, Zn 금속판을 넣어 같은 방법으로 전위차를 측정한다. 
+\section{\label{sec:level2}$AgCl$의 용해도곱 실험}
+아연판, 은도선, 비커, 염다리, 전압계, 전선, $0.010M AgNO_{3}(aq), 0.02M Zn(NO_{3})_{2}(aq), KCl(s)$을 준비한다. $0.010M AgNO_{3}(aq), 0.02M Zn(NO_{3})_{2}(aq) 50mL$를 비커에 준비한뒤 각각에 은도선, 아연판을 담구고 염다리로 연결한다. 각각의 금속에 전선과 전압계를 연결해 전압차를 측정한 뒤, 네른스트 식을 이용해 농도비를 계산한다. 최종 $[K^{+}]=0.03M$이 되도록 $111.8g$의$ KCl(s)$를 $AgNO_{3}(aq)$에 넣고 잘 섞어준 뒤 반응이 끝난 후 전압차를 측정한 후 네른스트 식을 이용해 $[Ag^{+}]$ 농도를 계산하여 반응한 $[Cl^{-}]$의 양을 계산한 뒤 용해도곱 상수 $K_{sp} = [Ag^{+}][Cl^{-}]$을 계산한다.
+\section{\label{sec:level1}Reference}
+[1] 김희준, \textit{일반화학 실험}(자유아카데미, 2016)\\
+
+[2] D.W. Oxtoby, H.P. Gillis, and L. Butler, \textit{Principles of Modern Chemistry} (Brooks/Cole, Australia, 2020). \\
+
+[3] 1 D.J. GRIFFITHS, \textit{Introduction to Electrodynamics} (CAMBRIDGE UNIV PRESS, S.l., 2023). 
+
+
+
+\end{document}
+%
+% ****** End of file apssamp.tex ******
