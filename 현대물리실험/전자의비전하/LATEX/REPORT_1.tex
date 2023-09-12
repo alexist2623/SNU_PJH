@@ -1,0 +1,115 @@
+% ****** Start of file apssamp.tex ******
+%
+%   This file is part of the APS files in the REVTeX 4.2 distribution.
+%   Version 4.2a of REVTeX, December 2014
+%
+%   Copyright (c) 2014 The American Physical Society.
+%
+%   See the REVTeX 4 README file for restrictions and more information.
+%
+% TeX'ing this file requires that you have AMS-LaTeX 2.0 installed
+% as well as the rest of the prerequisites for REVTeX 4.2
+%
+% See the REVTeX 4 README file
+% It also requires running BibTeX. The commands are as follows:
+%
+%  1)  latex apssamp.tex
+%  2)  bibtex apssamp
+%  3)  latex apssamp.tex
+%  4)  latex apssamp.tex
+%
+\documentclass[%
+ reprint,
+%superscriptaddress,
+%groupedaddress,
+%unsortedaddress,
+%runinaddress,
+%frontmatterverbose, 
+%preprint,
+%preprintnumbers,
+%nofootinbib,
+%nobibnotes,
+%bibnotes,
+ amsmath,amssymb,
+ aps,
+%pra,
+%prb,
+%rmp,
+%prstab,
+%prstper,
+%floatfix,
+]{revtex4-2}
+\usepackage{kotex}
+\usepackage{graphicx}% Include figure files
+\usepackage{dcolumn}% Align table columns on decimal point
+\usepackage{bm}% bold math
+%\usepackage{hyperref}% add hypertext capabilities
+%\usepackage[mathlines]{lineno}% Enable numbering of text and display math
+%\linenumbers\relax % Commence numbering lines
+
+%\usepackage[showframe,%Uncomment any one of the following lines to test 
+%%scale=0.7, marginratio={1:1, 2:3}, ignoreall,% default settings
+%%text={7in,10in},centering,
+%%margin=1.5in,
+%%total={6.5in,8.75in}, top=1.2in, left=0.9in, includefoot,
+%%height=10in,a5paper,hmargin={3cm,0.8in},
+%]{geometry}
+
+\def\rcurs{{\mbox{$\resizebox{.16in}{.08in}{\includegraphics{ScriptR}}$}}}
+\def\brcurs{{\mbox{$\resizebox{.16in}{.08in}{\includegraphics{BoldR}}$}}}
+\def\hrcurs{{\mbox{$\hat \brcurs$}}}
+
+\begin{document}
+
+
+\title{비전하 실험 보고서}
+
+\author{서울대학교 전기정보공학부 2018-12432 박정현}
+ \email{alexist@snu.ac.kr}
+\date{\today}% It is always \today, today,
+             %  but any date may be explicitly specified
+
+\begin{abstract}
+본 실험에서는 물질의 특성에 따른 전기전도도를 확인하고, 여러가지의 금속에 대한 전기화학적 서열을 확인한다. 또한 다니엘 전지를 제작한 후 농도에 따른 기전력을 측정해 네른스트 식을 검증하고 이해한다. 화학전지를 이용해 염의 용해도곱 상수를 직접 계산하여 화학전지와 용해도곱상수에 대한 이해도를 높인다. 
+\end{abstract}
+
+%\keywords{Suggested keywords}%Use showkeys class option if keyword
+                              %display desired
+\maketitle
+
+%\tableofcontents
+
+\section{\label{sec:level1}Introudction}
+\section{\label{sec:level2}Thermonic Emission}
+금속에 충분한 열이 가해져 온도가 높아지면 전자가 방출되게 된다. 이러한 현상을 thermonic emission이라고 하며 이 때 방출되는 전류는 금속의 conduction band로부터 금속의 일함수를 넘어 자유전자가 되어 나타나는 전류이다. 이러한 전류는 페르미 분포를 따르는 전자중 충분한 에너지를 가지고 있는 전자가 넘어가는 전류와 터널링 현상을 통해 넘어가는 전류 두 종류가 있으며 아래와 같이 나타난다.[1] 여기서 $A$는 Richard 상수이며 $T$는 온도, 그리고 $\varphi$는 일함수에 해당한다. 충분히 높은 전압에서 가열된 금속의 온도가 높아짐에 따라 방출되는 전류 값이 증가함을 알 수 있다.
+
+\begin{align}
+	J &= AT^{2}\exp\left(-\frac{-\varphi}{kT}\right)
+\end{align}
+
+\section{\label{sec:level2}Helmholtz Coil}
+반지름 $R$을 가지는 코일이 중심으로부터 $x$의 거리에 만드는 자기장은 아래와 같다.
+\begin{align}
+	B_{z} &= \frac{\mu_{0}}{2}\frac{R^{2}I}{\left(x^{2} + R^{2}\right)^{\frac{3}{2}}}
+\end{align}
+쿨롱 게이지에서 원형코일을 포함한 $xy$평면에서의 vector potential $\vec{A}$는 아래와 같다. 단, $\rho = r/R$이며 $r$은 중심으로부터 벗어난 거리이다.
+
+\begin{align}
+	\vec{A}(\vec{r}) &= \frac{\mu_{0}}{4\pi}\int \frac{\vec{J}(\vec{r'})}{\rcurs}d^{3}\vec{r'}\\
+	&=\frac{\mu_{0}}{4\pi R}\int \frac{\vec{J}(\vec{r'})}{\sqrt{1+\rho^{2} -2\rho \cos \theta}}d^{3}\vec{r'}\\
+	&= \frac{\mu_{0}} {4\pi R}\sum\int \vec{J}(\vec{r'}) \rho^{l} P_{l}(\cos \theta) d^{3}\vec{r'}\\
+	&= \hat{\varphi}\frac{\mu_{0}I}{8\pi^{2} R}\sum\int_{0}^{2\pi} \rho^{l} P_{l}(\cos \theta) \cos \theta d\theta\\
+	&= \hat{\varphi}\frac{\mu_{0}I}{8\pi^{2} R}\sum\int_{0}^{2\pi} \rho^{l} \frac{d}{d\theta}P_{l}(\cos \theta) \sin \theta d\theta\\
+	&= \hat{\varphi}\frac{\mu_{0}I}{8\pi^{2} R}\sum\int_{0}^{2\pi} \rho^{l} P^{1}_{l}(\cos \theta) \sin \theta d\theta\\
+	&= \hat{\varphi}\frac{\mu_{0}I}{8\pi^{2} R}\sum\int_{-1}^{1} \rho^{l} P^{1}_{l}(z)dz
+\end{align}
+
+\section{\label{sec:level1}Reference}
+[1] Semiconductor SZE
+
+
+
+
+\end{document}
+%
+% ****** End of file apssamp.tex ******
