@@ -103,11 +103,11 @@ $Cu$ & - & X & X\\ \hline
 $Pb$ & O & - & X\\ \hline
 $Zn$ & O & O & - \\  \hline \hline 
 \end{tabular}
-\caption{\label{tab:chemreaction}측정된 전기전도도}
+\caption{\label{tab:chemreaction}측정된 화학 반응여부}
 \end{table}
 
 \subsection{\label{sec:level2}화학전지 실험}
-다니엘 전지에서 각 전지의 종류에 따른 측정된 전압은 아래와 같다.
+다니엘 전지에서 각 전지의 종류에 따른 측정된 전압은 Tab.\ref{tab:chemvol}와 같다. 단, 여기서 $0.001M Cu$ 와 $0.1M Zn$ 의 경우 $1.029V$에서 $0.995V$으로 값이 변화하는데 이는 시간에 따라 전압이 감소한 것을 기록한 것이다.
 \begin{table}[]
 \begin{tabular}{c|c|c|c} \hline \hline
  Cathode & Anode & Measured Voltage[V] & Ideal Votalge[V] \\ \hline
@@ -121,13 +121,36 @@ $0.1M Cu$ & $0.01M Cu$ & 0.013 & 0.030\\ \hline
 $0.01M Cu$ & $0.001M Cu$ & 0.013 & 0.030 \\ \hline
 $0.1M Cu$ & $0.001M Cu$ & 0.045 & 0.059 \\ \hline \hline 
 \end{tabular}
-\caption{\label{tab:chemreaction}측정된 전기전도도}
+\caption{\label{tab:chemvol}측정된 전압}
 \end{table}
-구리의 비저항은 $\rho = 1.68 \times 10^{-8} \Omega m$로 알려져 있다.[1] 실험에서 사용된 구리판의 두께를 $1mm$로 가정했을 때
+
+\section{\label{sec:level1}Results}
+\subsection{\label{sec:level2}전기전도성}
+증류수의 경우 순수한 $H_{2}O$로 구성되어 있다. 따라서 $[H^{+}][OH^{-}] = 10^{-14} M^{2}$임을 이용해 중성 전하를 띠고 있는 물은 $[H^{+}] = 10^{-7}M$이므로 전류가 거의 흐르지 않을 것을 예측할 수 있으며 실제로도 전류가 흐르지 않음을 확인하였다. $NaCl(s)$의 경우 고체 상태에서는 금속의 자유전자와 같이 자유롭게 이동이 가능한 전하가 존재하지 않으므로 실험 결과와 같이 전류가 흐르지 않는다. 하지만 수용액 상태가 되는 경우 $Na^{+}(aq)$와 $Cl^{-}(aq)$로 분리되어 자유롭게 이동이 가능한 전하가 만들어지므로 측정된 실험 결과와 같이 전류가 흐르게 된다. 
+
+설탕의 경우 분자식을 $C_{12}H_{22}O_{11}$으로 가정했을 때 고체 상태일 경우 자유롭게 이동가능한 전하가 존재하지 않아 실험 결과와 같이 전류가 흐르지 않는다. 수용액이 되는 경우에도 대부분 중성 상태의 분자들이 수화되어 자유롭게 이동가능해지며 이 때 탄소, 수소, 산소 사이에 존재하는 전자친화도 차이로 인해 미세한 극성이 생기고 약간의 전하를 띤 분자들이 자유롭게 이동하므로 실험 결과와 같이 미미한 전류가 흐르게 된다. C의 경우 2.55, H의 경우 2.20, O의 3.44이며 가장 큰차이를 가지는 수소와 산소 사이의 이온화 정도를 계산하면 $1-\exp\left(-\frac{1}{4}|3.44-2.20|^{2}\right) = 0.31$로 약 $30\%$의 이온성을 띠고 있어 앞서 논의한 부분과 실험 결과와 일치한다.
+
+\subsection{\label{sec:level2}전기화학적 서열}
+$Cu, Pb, Zn$ 각각의 표준 환원 전위는 아래와 같이 알려져 있다.[1] 아래 표에서 알 수 있듯 전기 화학적 서열은 $Cu > Pb > Zn$이며 실험 결과 또한 $(Pb,Cu(NO_{3})_{2}), (Zn, Pb(NO_{3})_{2}), (Zn,Cu(NO_{3})_{2})$의 쌍만 반응한 것을 통해 이론적인 예측과 일치함을 알 수 있다. 각각의 화학반응은 아래와 같다.
+\begin{table}[]
+\begin{tabular}{c|c|c|c} \hline \hline
+ 금속 & $Cu$ & $Pb$ & $Zn$ \\ \hline
+표준 환원 전위$[V]$ & $ -0.763$ & $-0.126$ & $+0.337$ \\  \hline \hline 
+\end{tabular}
+\caption{\label{tab:STDV}표준 환원 전위}
+\end{table}
+
+\begin{align}
+Pb(s)+Cu(NO_{3})_{2}(aq)\leftrightarrow Cu(s) + Pb(NO_{3})_{2}(aq)\\
+Zn(s)+Cu(NO_{3})_{2}(aq)\leftrightarrow Cu(s) + Zn(NO_{3})_{2}(aq)\\
+Zn(s)+Pb(NO_{3})_{2}(aq)\leftrightarrow Pb(s) + Zn(NO_{3})_{2}(aq)
+\end{align}
+
+\subsection{\label{sec:level2}화학전지 실험}
 
 
 \section{\label{sec:level1}Reference}
-[1] 할리데이
+[1] 김희준 화학실험
 
 \end{document}
 %

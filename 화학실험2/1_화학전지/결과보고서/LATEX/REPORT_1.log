@@ -1,13 +1,13 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.4.9)  13 SEP 2023 15:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.8.25)  15 SEP 2023 18:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **REPORT_1.tex
 (./REPORT_1.tex
-LaTeX2e <2022-11-01> patch level 1
-L3 programming layer <2023-03-30>
-(c:/texlive/2023/texmf-dist/tex/latex/revtex/revtex4-2.cls
-Document Class: revtex4-2 2020/10/03 4.2e (https://journals.aps.org/revtex/ for
+LaTeX2e <2023-06-01> patch level 1
+L3 programming layer <2023-08-11>
+(e:/texlive/2023/texmf-dist/tex/latex/revtex/revtex4-2.cls
+Document Class: revtex4-2 2022/06/05 4.2f (https://journals.aps.org/revtex/ for
  documentation)
  Copyright (c) 2019 American Physical Society.
  mailto:revtex@aps.org
@@ -15,31 +15,33 @@ Document Class: revtex4-2 2020/10/03 4.2e (https://journals.aps.org/revtex/ for
 http://www.ctan.org/tex-archive/macros/latex/base/lppl.txt
  Arthur Ogawa <arthur_ogawa at sbcglobal dot net>
  Based on work by David Carlisle <david at dcarlisle.demon.co.uk>
- Version (4.2d,4.2e): Modified by Mark Doyle and Phelype Oleinik
+ Version (4.2d--4.2f): Modified by Mark Doyle and Phelype Oleinik
  .
-ltxutil[2020/10/03 4.2e utilities package (portions licensed from W. E. Baxter 
+ltxutil[2022/06/05 4.2f utilities package (portions licensed from W. E. Baxter 
 web at superscript.com)]
 LaTeX Info: Redefining \@centercr on input line 356.
+Class revtex4-2 Info: Repairing broken LaTeX eqnarray on input line 417.
+\eqncolsep=\skip48
 Class revtex4-2 Info: Repairing hyperref-unfriendly LaTeX definition of \mpfoot
-note on input line 481.
-Class revtex4-2 Info: Repairing broken LateX \@sect on input line 803.
+note on input line 492.
+Class revtex4-2 Info: Repairing broken LateX \@sect on input line 814.
 \intertabularlinepenalty=\count185
 \@tbpen=\count186
 \@arstrutbox@hline=\box51
-Class revtex4-2 Info: Repairing broken LaTeX \@xbitor on input line 1834.
-Class revtex4-2 Info: Making \typeout \long on input line 2099.
-ltxfront[2020/10/03 4.2e frontmatter package (AO,DPC,MD)]
+Class revtex4-2 Info: Repairing broken LaTeX \@xbitor on input line 1845.
+Class revtex4-2 Info: Making \typeout \long on input line 2110.
+ltxfront[2022/06/05 4.2f frontmatter package (AO,DPC,MD)]
 \c@affil=\count187
 \c@collab=\count188
 \absbox=\box52
-ltxgrid[2020/10/03 4.2e page grid package (portions licensed from W. E. Baxter 
+ltxgrid[2022/06/05 4.2f page grid package (portions licensed from W. E. Baxter 
 web at superscript.com)]
 \c@linecount=\count189
-\output@latex=\toks16
+\output@latex=\toks17
 \box@size@1=\box53
 \box@size@2=\box54
 \@protection@box=\box55
-\@topmark@saved=\toks17
+\@topmark@saved=\toks18
 \footins@saved=\box56
 \footins@recovered=\box57
 \column@recovered=\box58
@@ -47,15 +49,15 @@ web at superscript.com)]
 \footsofar=\box60
 \pagegrid@col=\count190
 Class revtex4-2 Info: Overriding \@vspace, \@vspacer, \@no@pgbk, \@newline, and
- \\  on input line 5665.
+ \\  on input line 5676.
 \c@part=\count191
 \c@section=\count192
 \c@subsection=\count193
 \c@subsubsection=\count194
 \c@paragraph=\count195
 \c@subparagraph=\count196
-\abovecaptionskip=\skip48
-\belowcaptionskip=\skip49
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
 \c@figure=\count197
 \fbox@1=\box61
 \c@table=\count198
@@ -65,57 +67,57 @@ Class revtex4-2 Info: Overriding \@vspace, \@vspacer, \@no@pgbk, \@newline, and
 \@bibdataout=\write3
 \widetext@top=\box64
 \widetext@bot=\box65
-Class revtex4-2 Info: Selecting society aps on input line 7658.
-(c:/texlive/2023/texmf-dist/tex/latex/revtex/aps4-2.rtx
-File: aps4-2 2020/10/03 4.2e (https://journals.aps.org/revtex/ for documentatio
+Class revtex4-2 Info: Selecting society aps on input line 7669.
+(e:/texlive/2023/texmf-dist/tex/latex/revtex/aps4-2.rtx
+File: aps4-2 2022/06/05 4.2f (https://journals.aps.org/revtex/ for documentatio
 n)
 Class revtex4-2 Info: RevTeX society APS selected on input line 40.
 )
 
 Class revtex4-2 Warning: No journal specified, using default pra.
 
-Class revtex4-2 Info: APS journal PRA selected on input line 7661.
-(c:/texlive/2023/texmf-dist/tex/latex/revtex/aps10pt4-2.rtx
-File: aps10pt4-2 2020/10/03 4.2e (https://journals.aps.org/revtex/ for document
+Class revtex4-2 Info: APS journal PRA selected on input line 7672.
+(e:/texlive/2023/texmf-dist/tex/latex/revtex/aps10pt4-2.rtx
+File: aps10pt4-2 2022/06/05 4.2f (https://journals.aps.org/revtex/ for document
 ation)
 Class revtex4-2 Info: RevTeX pointsize 10pt selected on input line 39.
 )
-(c:/texlive/2023/texmf-dist/tex/latex/textcase/textcase.sty
-Package: textcase 2022/07/10 v1.03 Text only upper/lower case changing (DPC)
+(e:/texlive/2023/texmf-dist/tex/latex/textcase/textcase.sty
+Package: textcase 2023/07/27 v1.04 Text only upper/lower case changing (DPC)
 Package textcase Info: Defining Legacy names on input line 20.
 )
-(c:/texlive/2023/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(e:/texlive/2023/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-(c:/texlive/2023/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+(e:/texlive/2023/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
-\@emptytoks=\toks18
+\@emptytoks=\toks19
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-(c:/texlive/2023/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2022/04/08 v2.17n AMS math features
-\@mathmargin=\skip50
+(e:/texlive/2023/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2023/05/13 v2.17o AMS math features
+\@mathmargin=\skip51
 
 For additional information on amsmath, use the `?' option.
-(c:/texlive/2023/texmf-dist/tex/latex/amsmath/amstext.sty
+(e:/texlive/2023/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2021/08/26 v2.01 AMS text
 
-(c:/texlive/2023/texmf-dist/tex/latex/amsmath/amsgen.sty
+(e:/texlive/2023/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks19
+\@emptytoks=\toks20
 \ex@=\dimen140
 )
 LaTeX Info: Redefining \text on input line 28.
 )
-(c:/texlive/2023/texmf-dist/tex/latex/amsmath/amsbsy.sty
+(e:/texlive/2023/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen141
 )
-(c:/texlive/2023/texmf-dist/tex/latex/amsmath/amsopn.sty
+(e:/texlive/2023/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
 \inf@bad=\count266
@@ -148,64 +150,64 @@ LaTeX Info: Redefining \Relbar on input line 971.
 \dotsspace@=\muskip16
 \c@parentequation=\count273
 \dspbrk@lvl=\count274
-\tag@help=\toks20
+\tag@help=\toks21
 \row@=\count275
 \column@=\count276
 \maxfields@=\count277
-\andhelp@=\toks21
+\andhelp@=\toks22
 \eqnshift@=\dimen143
 \alignsep@=\dimen144
 \tagshift@=\dimen145
 \tagwidth@=\dimen146
 \totwidth@=\dimen147
 \lineht@=\dimen148
-\@envbody=\toks22
-\multlinegap=\skip51
-\multlinetaggap=\skip52
-\mathdisplay@stack=\toks23
+\@envbody=\toks23
+\multlinegap=\skip52
+\multlinetaggap=\skip53
+\mathdisplay@stack=\toks24
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
 )
-(c:/texlive/2023/texmf-dist/tex/latex/url/url.sty
+(e:/texlive/2023/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-(c:/texlive/2023/texmf-dist/tex/latex/natbib/natbib.sty
+(e:/texlive/2023/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
-\bibhang=\skip53
-\bibsep=\skip54
+\bibhang=\skip54
+\bibsep=\skip55
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count278
 )
-Class revtex4-2 Info: Repairing natbib's \BibitemShut on input line 7665.
+Class revtex4-2 Info: Repairing natbib's \BibitemShut on input line 7676.
 
-(c:/texlive/2023/texmf-dist/tex/latex/revtex/revsymb4-2.sty
-Package: revsymb4-2 2020/10/03 4.2e (https://journals.aps.org/revtex/ for docum
+(e:/texlive/2023/texmf-dist/tex/latex/revtex/revsymb4-2.sty
+Package: revsymb4-2 2022/06/05 4.2f (https://journals.aps.org/revtex/ for docum
 entation)
 LaTeX Info: Redefining \frak on input line 104.
 LaTeX Info: Redefining \Bbb on input line 120.
 LaTeX Info: Redefining \REV@mathfrak on input line 128.
 ))
-(c:/texlive/2023/texmf-dist/tex/latex/cjk-ko/kotex.sty
+(e:/texlive/2023/texmf-dist/tex/latex/cjk-ko/kotex.sty
 Package: kotex 2015/04/19 v1.6 Korean TeX (ko.TeX)
 
-(c:/texlive/2023/texmf-dist/tex/latex/kotex-utf/kotex.cfg)
-(c:/texlive/2023/texmf-dist/tex/latex/kotex-utf/kotexutf.sty
+(e:/texlive/2023/texmf-dist/tex/latex/kotex-utf/kotex.cfg)
+(e:/texlive/2023/texmf-dist/tex/latex/kotex-utf/kotexutf.sty
 Package: kotexutf 2022/06/22 v3.0.0 typesetting UTF-8 Korean documents
 
-(c:/texlive/2023/texmf-dist/tex/latex/base/inputenc.sty
+(e:/texlive/2023/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2021/02/14 v1.3d Input encoding file
-\inpenc@prehook=\toks24
-\inpenc@posthook=\toks25
+\inpenc@prehook=\toks25
+\inpenc@posthook=\toks26
 )
-(c:/texlive/2023/texmf-dist/tex/plain/kotex-plain/kotexutf-core.tex
+(e:/texlive/2023/texmf-dist/tex/plain/kotex-plain/kotexutf-core.tex
 \unih@ngulpoint=\count279
 \dhucs@emph@raise=\dimen149
 )
 Now handling font encoding LUC ...
 ... processing UTF-8 mapping file for font encoding LUC
 
-(c:/texlive/2023/texmf-dist/tex/latex/kotex-utf/lucenc.dfu
+(e:/texlive/2023/texmf-dist/tex/latex/kotex-utf/lucenc.dfu
 File: lucenc.dfu 2007/09/05 UTF-8 support for dhucs
    defining Unicode char U+00B7 (decimal 183)
    defining Unicode char U+2018 (decimal 8216)
@@ -254,49 +256,49 @@ File: lucenc.dfu 2007/09/05 UTF-8 support for dhucs
    defining Unicode char U+FF65 (decimal 65381)
 )
 \@josa=\count280
-\josatoks=\toks26
+\josatoks=\toks27
 
-(c:/texlive/2023/texmf-dist/tex/latex/cjk-ko/kolabels-utf.sty
+(e:/texlive/2023/texmf-dist/tex/latex/cjk-ko/kolabels-utf.sty
 Package: kolabels-utf 2015/03/20 v1.5 UTF-8 Hangul item labels
 )))
-(c:/texlive/2023/texmf-dist/tex/latex/graphics/graphicx.sty
+(e:/texlive/2023/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
 
-(c:/texlive/2023/texmf-dist/tex/latex/graphics/keyval.sty
+(e:/texlive/2023/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
-\KV@toks@=\toks27
+\KV@toks@=\toks28
 )
-(c:/texlive/2023/texmf-dist/tex/latex/graphics/graphics.sty
+(e:/texlive/2023/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
 
-(c:/texlive/2023/texmf-dist/tex/latex/graphics/trig.sty
+(e:/texlive/2023/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
 )
-(c:/texlive/2023/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+(e:/texlive/2023/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 107.
 
-(c:/texlive/2023/texmf-dist/tex/latex/graphics-def/pdftex.def
+(e:/texlive/2023/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen150
 \Gin@req@width=\dimen151
 )
-(c:/texlive/2023/texmf-dist/tex/latex/tools/dcolumn.sty
+(e:/texlive/2023/texmf-dist/tex/latex/tools/dcolumn.sty
 Package: dcolumn 2014/10/28 v1.06 decimal alignment package (DPC)
 
-(c:/texlive/2023/texmf-dist/tex/latex/tools/array.sty
+(e:/texlive/2023/texmf-dist/tex/latex/tools/array.sty
 Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
 \col@sep=\dimen152
 \ar@mcellbox=\box68
 \extrarowheight=\dimen153
-\NC@list=\toks28
-\extratabsurround=\skip55
-\backup@length=\skip56
+\NC@list=\toks29
+\extratabsurround=\skip56
+\backup@length=\skip57
 \ar@cellbox=\box69
 ))
-(c:/texlive/2023/texmf-dist/tex/latex/tools/bm.sty
+(e:/texlive/2023/texmf-dist/tex/latex/tools/bm.sty
 Package: bm 2022/01/05 v1.2f Bold Symbol Support (DPC/FMi)
 \symboldoperators=\mathgroup6
 \symboldletters=\mathgroup7
@@ -313,8 +315,8 @@ Class revtex4-2 Info: cite was not loaded (OK!) on input line 62.
 Class revtex4-2 Info: mcite was not loaded (OK!) on input line 62.
 Class revtex4-2 Info: multicol was not loaded (OK!) on input line 62.
 
-(c:/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2023-03-30 L3 backend support: PDF output (pdfTeX)
+(e:/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count281
 \l__pdf_internal_box=\box70
 )
@@ -329,7 +331,13 @@ LaTeX Warning: Label `sec:level2' multiply defined.
 LaTeX Warning: Label `sec:level1' multiply defined.
 
 
-LaTeX Warning: Label `tab:chemreaction' multiply defined.
+LaTeX Warning: Label `sec:level2' multiply defined.
+
+
+LaTeX Warning: Label `sec:level2' multiply defined.
+
+
+LaTeX Warning: Label `sec:level1' multiply defined.
 
 )
 \openout1 = `REPORT_1.aux'.
@@ -351,30 +359,30 @@ LaTeX Font Info:    ... okay on input line 62.
 LaTeX Font Info:    Checking defaults for LUC/nanummj/m/n on input line 62.
 LaTeX Font Info:    Trying to load font information for LUC+nanummj on input li
 ne 62.
- (c:/texlive/2023/texmf-dist/tex/latex/nanumtype1/lucnanummj.fd
+ (e:/texlive/2023/texmf-dist/tex/latex/nanumtype1/lucnanummj.fd
 File: lucnanummj.fd 2013/02/12 v0.1 Nanum Myeongjo font definitions
 )
 LaTeX Font Info:    ... okay on input line 62.
 
-(c:/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+(e:/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count282
 \scratchdimen=\dimen154
 \scratchbox=\box71
 \nofMPsegments=\count283
 \nofMParguments=\count284
-\everyMPshowfont=\toks29
+\everyMPshowfont=\toks30
 \MPscratchCnt=\count285
 \MPscratchDim=\dimen155
 \MPnumerator=\count286
 \makeMPintoPDFobject=\count287
-\everyMPtoPDFconversion=\toks30
-) (c:/texlive/2023/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+\everyMPtoPDFconversion=\toks31
+) (e:/texlive/2023/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
 
-(c:/texlive/2023/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+(e:/texlive/2023/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
@@ -383,13 +391,13 @@ e
 LaTeX Font Info:    Trying to load font information for U+msa on input line 73.
 
 
-(c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
+(e:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 73.
 
 
-(c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
+(e:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 
@@ -412,74 +420,117 @@ Overfull \hbox (7.90851pt too wide) in paragraph at lines 112--124
  []$[]$ 
  []
 
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 135.
+
+
+Underfull \hbox (badness 1629) in paragraph at lines 134--142
+[]$\OML/cmm/m/it/10 Cu; Pb; Zn$ \LUC/nanummj/m/n/10/ac ^^A^^A\LUC/nanummj/m/n/1
+0/c7 X \LUC/nanummj/m/n/10/d4 \\LUC/nanummj/m/n/10/c9 ^^@ \LUC/nanummj/m/n/10/d
+6 X\LUC/nanummj/m/n/10/c6 Ð \LUC/nanummj/m/n/10/c8 ^^D\LUC/nanummj/m/n/10/c7 ^^
+D\LUC/nanummj/m/n/10/b2 ” \LUC/nanummj/m/n/10/c5 D\LUC/nanummj/m/n/10/b7 ˜\LUC/
+nanummj/m/n/10/c6 @ \LUC/nanummj/m/n/10/ac ^^Y\LUC/nanummj/m/n/10/c7 t
+ []
+
+
+Underfull \hbox (badness 1796) in paragraph at lines 134--142
+\LUC/nanummj/m/n/10/c5 L\LUC/nanummj/m/n/10/b8 $\LUC/nanummj/m/n/10/c8 8 \LUC/n
+anummj/m/n/10/c7 ˆ\LUC/nanummj/m/n/10/b2 ä\OT1/cmr/m/n/10 .[1] \LUC/nanummj/m/n
+/10/c5 D\LUC/nanummj/m/n/10/b7 ˜ \LUC/nanummj/m/n/10/d4 \\LUC/nanummj/m/n/10/c5
+ Ð\LUC/nanummj/m/n/10/c1 ^^\ \LUC/nanummj/m/n/10/c5 L \LUC/nanummj/m/n/10/c2 ^^
+X \LUC/nanummj/m/n/10/c7 ˆ\LUC/nanummj/m/n/10/b4 ï \LUC/nanummj/m/n/10/c8 ^^D\L
+UC/nanummj/m/n/10/ae 0 \LUC/nanummj/m/n/10/d6 T\LUC/nanummj/m/n/10/d5 Y
+ []
+
+
+Underfull \hbox (badness 1635) in paragraph at lines 134--142
+\LUC/nanummj/m/n/10/c8 ^^A \LUC/nanummj/m/n/10/c1 ^^\\LUC/nanummj/m/n/10/c5 ô\L
+UC/nanummj/m/n/10/c7 @ $\OML/cmm/m/it/10 Cu > Pb > Zn$\LUC/nanummj/m/n/10/c7 t\
+LUC/nanummj/m/n/10/ba p \LUC/nanummj/m/n/10/c2 ä\LUC/nanummj/m/n/10/d5 Ø \LUC/n
+anummj/m/n/10/ac °ü \LUC/nanummj/m/n/10/b6 ^^P\LUC/nanummj/m/n/10/d5 \
+ []
+
+[1{e:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 No file REPORT_1.bbl.
-[1{c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
-(./REPORT_1.aux)
+[2] (./REPORT_1.aux)
+ ***********
+LaTeX2e <2023-06-01> patch level 1
+L3 programming layer <2023-08-11>
+ ***********
+
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5366 strings out of 476017
- 77750 string characters out of 5793767
- 1865660 words of memory out of 5000000
- 25703 multiletter control sequences out of 15000+600000
- 545869 words of font info for 150 fonts, out of 8000000 for 9000
+ 5350 strings out of 475188
+ 75975 string characters out of 5767814
+ 1942248 words of memory out of 5000000
+ 26518 multiletter control sequences out of 15000+600000
+ 595346 words of font info for 167 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 71i,10n,76p,741b,330s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb><c:/texl
-ive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><c:/texlive/2023/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2023/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2023/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmr8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmr9.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-sy6.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c
-:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb><c:/texlive/
-2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjbac.pfb><c:/texlive/2023/t
-exmf-dist/fonts/type1/public/nanumtype1/nanummjbae.pfb><c:/texlive/2023/texmf-d
-ist/fonts/type1/public/nanumtype1/nanummjbb3.pfb><c:/texlive/2023/texmf-dist/fo
-nts/type1/public/nanumtype1/nanummjbbc.pfb><c:/texlive/2023/texmf-dist/fonts/ty
-pe1/public/nanumtype1/nanummjbc1.pfb><c:/texlive/2023/texmf-dist/fonts/type1/pu
-blic/nanumtype1/nanummjbc2.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/n
-anumtype1/nanummjbc5.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/nanumty
-pe1/nanummjbc8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/na
-nummjbc9.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjb
-d5.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjbd6.pfb
-><c:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmac.pfb><c:/t
-exlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmad.pfb><c:/texlive
-/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmae.pfb><c:/texlive/2023/
-texmf-dist/fonts/type1/public/nanumtype1/nanummjmb0.pfb><c:/texlive/2023/texmf-
-dist/fonts/type1/public/nanumtype1/nanummjmb1.pfb><c:/texlive/2023/texmf-dist/f
-onts/type1/public/nanumtype1/nanummjmb2.pfb><c:/texlive/2023/texmf-dist/fonts/t
-ype1/public/nanumtype1/nanummjmb3.pfb><c:/texlive/2023/texmf-dist/fonts/type1/p
-ublic/nanumtype1/nanummjmb4.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/
-nanumtype1/nanummjmb5.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/nanumt
-ype1/nanummjmb7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/n
-anummjmb8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummj
-mb9.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmba.pf
-b><c:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbb.pfb><c:/
-texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbc.pfb><c:/texliv
-e/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbd.pfb><c:/texlive/2023
-/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbe.pfb><c:/texlive/2023/texmf
--dist/fonts/type1/public/nanumtype1/nanummjmc0.pfb><c:/texlive/2023/texmf-dist/
-fonts/type1/public/nanumtype1/nanummjmc1.pfb><c:/texlive/2023/texmf-dist/fonts/
-type1/public/nanumtype1/nanummjmc2.pfb><c:/texlive/2023/texmf-dist/fonts/type1/
-public/nanumtype1/nanummjmc5.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public
-/nanumtype1/nanummjmc6.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/nanum
-type1/nanummjmc7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/
-nanummjmc8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanumm
-jmc9.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmcc.p
-fb><c:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmcd.pfb><c:
-/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmce.pfb><c:/texli
-ve/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmcf.pfb><c:/texlive/202
-3/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd0.pfb><c:/texlive/2023/texm
-f-dist/fonts/type1/public/nanumtype1/nanummjmd5.pfb><c:/texlive/2023/texmf-dist
-/fonts/type1/public/nanumtype1/nanummjmd6.pfb><c:/texlive/2023/texmf-dist/fonts
-/type1/public/nanumtype1/nanummjmd7.pfb>
-Output written on REPORT_1.pdf (2 pages, 1890557 bytes).
+ 71i,10n,79p,914b,353s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<e:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb><e:/texl
+ive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><e:/texlive/2023/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><e:/texlive/2023/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmmi9.pfb><e:/texlive/2023/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmr10.pfb><e:/texlive/2023/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmr6.pfb><e:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmr7.pfb><e:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb>
+<e:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><e:/texlive
+/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><e:/texlive/2023/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><e:/texlive/2023/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmsy7.pfb><e:/texlive/2023/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmsy9.pfb><e:/texlive/2023/texmf-dist/fonts/type1/public/nan
+umtype1/nanummjbac.pfb><e:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype
+1/nanummjbae.pfb><e:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanu
+mmjbb3.pfb><e:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjbbc
+.pfb><e:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjbc1.pfb><
+e:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjbc2.pfb><e:/tex
+live/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjbc5.pfb><e:/texlive/2
+023/texmf-dist/fonts/type1/public/nanumtype1/nanummjbc8.pfb><e:/texlive/2023/te
+xmf-dist/fonts/type1/public/nanumtype1/nanummjbc9.pfb><e:/texlive/2023/texmf-di
+st/fonts/type1/public/nanumtype1/nanummjbd5.pfb><e:/texlive/2023/texmf-dist/fon
+ts/type1/public/nanumtype1/nanummjbd6.pfb><e:/texlive/2023/texmf-dist/fonts/typ
+e1/public/nanumtype1/nanummjmac.pfb><e:/texlive/2023/texmf-dist/fonts/type1/pub
+lic/nanumtype1/nanummjmad.pfb><e:/texlive/2023/texmf-dist/fonts/type1/public/na
+numtype1/nanummjmae.pfb><e:/texlive/2023/texmf-dist/fonts/type1/public/nanumtyp
+e1/nanummjmb0.pfb><e:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nan
+ummjmb1.pfb><e:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb
+2.pfb><e:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb3.pfb>
+<e:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb4.pfb><e:/te
+xlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb5.pfb><e:/texlive/
+2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb6.pfb><e:/texlive/2023/t
+exmf-dist/fonts/type1/public/nanumtype1/nanummjmb7.pfb><e:/texlive/2023/texmf-d
+ist/fonts/type1/public/nanumtype1/nanummjmb8.pfb><e:/texlive/2023/texmf-dist/fo
+nts/type1/public/nanumtype1/nanummjmb9.pfb><e:/texlive/2023/texmf-dist/fonts/ty
+pe1/public/nanumtype1/nanummjmba.pfb><e:/texlive/2023/texmf-dist/fonts/type1/pu
+blic/nanumtype1/nanummjmbb.pfb><e:/texlive/2023/texmf-dist/fonts/type1/public/n
+anumtype1/nanummjmbc.pfb><e:/texlive/2023/texmf-dist/fonts/type1/public/nanumty
+pe1/nanummjmbd.pfb><e:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/na
+nummjmbe.pfb><e:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjm
+c0.pfb><e:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc1.pfb
+><e:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc2.pfb><e:/t
+exlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc3.pfb><e:/texlive
+/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc5.pfb><e:/texlive/2023/
+texmf-dist/fonts/type1/public/nanumtype1/nanummjmc6.pfb><e:/texlive/2023/texmf-
+dist/fonts/type1/public/nanumtype1/nanummjmc7.pfb><e:/texlive/2023/texmf-dist/f
+onts/type1/public/nanumtype1/nanummjmc8.pfb><e:/texlive/2023/texmf-dist/fonts/t
+ype1/public/nanumtype1/nanummjmc9.pfb><e:/texlive/2023/texmf-dist/fonts/type1/p
+ublic/nanumtype1/nanummjmcc.pfb><e:/texlive/2023/texmf-dist/fonts/type1/public/
+nanumtype1/nanummjmcd.pfb><e:/texlive/2023/texmf-dist/fonts/type1/public/nanumt
+ype1/nanummjmce.pfb><e:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/n
+anummjmcf.pfb><e:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummj
+md0.pfb><e:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd1.pf
+b><e:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd4.pfb><e:/
+texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd5.pfb><e:/texliv
+e/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd6.pfb><e:/texlive/2023
+/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd7.pfb>
+Output written on REPORT_1.pdf (2 pages, 2174840 bytes).
 PDF statistics:
- 277 PDF objects out of 1000 (max. 8388607)
- 165 compressed objects within 2 object streams
+ 317 PDF objects out of 1000 (max. 8388607)
+ 189 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
