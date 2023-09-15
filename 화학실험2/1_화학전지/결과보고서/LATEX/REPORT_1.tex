@@ -1,0 +1,134 @@
+% ****** Start of file apssamp.tex ******
+%
+%   This file is part of the APS files in the REVTeX 4.2 distribution.
+%   Version 4.2a of REVTeX, December 2014
+%
+%   Copyright (c) 2014 The American Physical Society.
+%
+%   See the REVTeX 4 README file for restrictions and more information.
+%
+% TeX'ing this file requires that you have AMS-LaTeX 2.0 installed
+% as well as the rest of the prerequisites for REVTeX 4.2
+%
+% See the REVTeX 4 README file
+% It also requires running BibTeX. The commands are as follows:
+%
+%  1)  latex apssamp.tex
+%  2)  bibtex apssamp
+%  3)  latex apssamp.tex
+%  4)  latex apssamp.tex
+%
+\documentclass[%
+ reprint,
+%superscriptaddress,
+%groupedaddress,
+%unsortedaddress,
+%runinaddress,
+%frontmatterverbose, 
+%preprint,
+%preprintnumbers,
+%nofootinbib,
+%nobibnotes,
+%bibnotes,
+ amsmath,amssymb,
+ aps,
+%pra,
+%prb,
+%rmp,
+%prstab,
+%prstper,
+%floatfix,
+]{revtex4-2}
+\usepackage{kotex}
+\usepackage{graphicx}% Include figure files
+\usepackage{dcolumn}% Align table columns on decimal point
+\usepackage{bm}% bold math
+%\usepackage{hyperref}% add hypertext capabilities
+%\usepackage[mathlines]{lineno}% Enable numbering of text and display math
+%\linenumbers\relax % Commence numbering lines
+
+%\usepackage[showframe,%Uncomment any one of the following lines to test 
+%%scale=0.7, marginratio={1:1, 2:3}, ignoreall,% default settings
+%%text={7in,10in},centering,
+%%margin=1.5in,
+%%total={6.5in,8.75in}, top=1.2in, left=0.9in, includefoot,
+%%height=10in,a5paper,hmargin={3cm,0.8in},
+%]{geometry}
+
+\def\rcurs{{\mbox{$\resizebox{.16in}{.08in}{\includegraphics{ScriptR}}$}}}
+\def\brcurs{{\mbox{$\resizebox{.16in}{.08in}{\includegraphics{BoldR}}$}}}
+\def\hrcurs{{\mbox{$\hat \brcurs$}}}
+
+\begin{document}
+
+
+\title{화학전지 실험 결과보고서}
+
+\author{서울대학교 전기정보공학부 2018-12432 박정현}
+ \email{alexist@snu.ac.kr}
+\date{\today}% It is always \today, today,
+             %  but any date may be explicitly specified
+
+\begin{abstract}
+본 실험에서는 열방출된 전자빔의 자기장 내에서의 움직임을 측정하여 전자의 전하, 질량비를 측정한다. PASCO SE-9638을 이용해 전자빔을 형성한 뒤 균일한 자기장 내에서 전자를 원운동 시켰으며 실험의 정확도를 증가시키기 위해 전자 반지름을 앞, 뒤 모두에서 측정하였다. $10\%$내외에서 이론값과 일치하였으며 높은 재현도를 보였다. 실험의 주요 오차 원인은 정확하지 않은 반지름 측정으로 결론지었으며 이를 해결하기 위해 전자빔을 납작한 형태의 장비에서 원운동 시켜야함을 제시하였다.
+\end{abstract}
+
+%\keywords{Suggested keywords}%Use showkeys class option if keyword
+                              %display desired
+\maketitle
+
+%\tableofcontents
+
+\section{\label{sec:level1}Data}
+\subsection{\label{sec:level2}전기전도성}
+각각의 상황에서 측정된 전기전도성은 Tab.\ref{tab:elecond}와 같다. 이 때 전기전도성은 연결된 LED가 켜지는지의 여부에 따라 결정하였다.
+\begin{table}[]
+\begin{tabular}{c|c|c} \hline \hline
+ 물질의 종류 & 증류수 \\ \hline
+전기전도성 & 흐르지 않음\\ \hline \hline
+ 물질의 종류 & 소금($NaCl(s)$) & 소금($NaCl(aq)$) \\ \hline
+전기전도성 & 흐르지 않음 & 매우 잘 흐름 \\ \hline \hline
+ 물질의 종류 & 설탕($C_{12}H_{22}O_{11}(s)$) & 설탕($C_{12}H_{22}O_{11}(aq)$)\\ \hline
+전기전도성 & 흐르지 않음 & 매우 미미하게 흐름 \\ \hline \hline 
+\end{tabular}
+\caption{\label{tab:elecond}측정된 전기전도도}
+\end{table}
+
+\subsection{\label{sec:level2}전기화학적 서열}
+수용액의 종류와 금속의 종류에 따른 화학 반응 여부는 아래 Tab.\ref{tab:chemreaction}와 같다. 이 때, O는 화학반응이 일어난 경우, X는 반응이 일어나지 않은 경우를 뜻한다. 실제 반응 결과는 아래 사진과 같다.
+\begin{table}[]
+\begin{tabular}{c|c|c|c} \hline \hline
+ & $Cu(NO_{3})_{2}$ & $Pb(NO_{3})_{2}$ & $Zn(NO_{3})_{2}$ \\ \hline
+$Cu$ & - & X & X\\ \hline
+$Pb$ & O & - & X\\ \hline
+$Zn$ & O & O & - \\  \hline \hline 
+\end{tabular}
+\caption{\label{tab:chemreaction}측정된 전기전도도}
+\end{table}
+
+\subsection{\label{sec:level2}화학전지 실험}
+다니엘 전지에서 각 전지의 종류에 따른 측정된 전압은 아래와 같다.
+\begin{table}[]
+\begin{tabular}{c|c|c|c} \hline \hline
+ Cathode & Anode & Measured Voltage[V] & Ideal Votalge[V] \\ \hline
+$1.0M Cu$ & $1.0M Zn$ & 1.104 & 1.100 \\ \hline
+$1.0M Cu$ & $1.0M Pb$ & 0.614 & 0.637 \\  \hline
+$1.0M Zn$ & $1.0M Pb$ & 0.468 & 0.463 \\ \hline
+$0.1M Cu$ & $0.1M Zn$ & 1.095 & 1.100 \\ \hline
+$0.01M Cu$ & $0.1M Zn$ & 1.070 & 1.070 \\ \hline
+$0.001M Cu$ & $0.1M Zn$ & 1.029 $\rightarrow$ 0.995 & 1.041 \\ \hline
+$0.1M Cu$ & $0.01M Cu$ & 0.013 & 0.030\\ \hline
+$0.01M Cu$ & $0.001M Cu$ & 0.013 & 0.030 \\ \hline
+$0.1M Cu$ & $0.001M Cu$ & 0.045 & 0.059 \\ \hline \hline 
+\end{tabular}
+\caption{\label{tab:chemreaction}측정된 전기전도도}
+\end{table}
+구리의 비저항은 $\rho = 1.68 \times 10^{-8} \Omega m$로 알려져 있다.[1] 실험에서 사용된 구리판의 두께를 $1mm$로 가정했을 때
+
+
+\section{\label{sec:level1}Reference}
+[1] 할리데이
+
+\end{document}
+%
+% ****** End of file apssamp.tex ******
