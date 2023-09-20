@@ -1,0 +1,18 @@
+r = [0.15:0.001:1];
+E_A = -1.436./r;
+E_R = (7.32E-6)./(r.^8);
+E_N = -1.436./r + (7.32E-6)./(r.^8);
+
+plot(r,E_N,'LineWidth',1.2)
+hold on
+plot(r,E_A,'LineWidth',1.2)
+plot(r,E_R,'LineWidth',1.2)
+hold off
+legend('E_{N}','E_{A}','E_{R}')
+xlabel('r [nm]')
+ylabel('E [eV]')
+
+r0 = (8.*(7.32E-6)./1.436)^(1./(7))
+E0 = -(1-1./8).*1.436.*(1.436./(8.*(7.32E-6)))^(1./(7))
+text(r0,E0,'X')
+text(r0.*1.1,E0,'\leftarrow minimum')

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.4.9)  17 SEP 2023 21:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.4.9)  18 SEP 2023 14:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -435,18 +435,18 @@ Package pdftex.def Info: saly.png  used on input line 131.
 [1{c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 
 LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 142.
+ on input line 139.
 
 LaTeX Font Info:    Font shape `LUC/nanummj/m/it' in size <10> not available
 (Font)              Font shape `LUC/nanummj/m/sl' tried instead on input line 1
-47.
+43.
 
-Underfull \hbox (badness 10000) in paragraph at lines 147--148
+Underfull \hbox (badness 10000) in paragraph at lines 143--144
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 149--150
+Underfull \hbox (badness 10000) in paragraph at lines 145--146
 
  []
 
@@ -459,11 +459,11 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  5404 strings out of 476017
  78374 string characters out of 5793767
- 1878660 words of memory out of 5000000
+ 1877660 words of memory out of 5000000
  25727 multiletter control sequences out of 15000+600000
  551179 words of font info for 167 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 71i,10n,76p,755b,334s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 71i,10n,76p,767b,334s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb><c:/texl
 ive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2023/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2023/texmf-dis
@@ -528,7 +528,7 @@ anumtype1/nanummjmd5.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/nanumty
 pe1/nanummjmd6.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/na
 nummjmd6.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjm
 d7.pfb>
-Output written on prelab_2.pdf (2 pages, 2588279 bytes).
+Output written on prelab_2.pdf (2 pages, 2587922 bytes).
 PDF statistics:
  361 PDF objects out of 1000 (max. 8388607)
  214 compressed objects within 3 object streams
