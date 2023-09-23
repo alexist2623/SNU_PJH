@@ -1,5 +1,5 @@
-y = [0.013; 0.013; 0.045]
-x = [ 0.05916.*log10(0.1./0.01); 0.05916.*log10(0.1./0.01); 0.05916.*log10(0.1./0.001)]
+y = [0.16; 0.76; 0.72]
+x = [ 0.1; 0.5; 0.5 ]
 
 fitresult = fit(x,y,'poly1');
 y_fit = fitresult.p1 * x + fitresult.p2;
@@ -34,15 +34,13 @@ set(h1,'facealpha',0.2,'edgecolor','none');
 
 hold off
 
-title('Cu Zn Reaction')
-xlabel('-0.05916 log Q')
-ylabel('E^{cell} [V]')
+title('NaOH KHP reaction')
+xlabel('KHP [mL]')
+ylabel('NaOH [mL]')
 legend('Data', 'Fitting Curve', '95% Confidence Line', 'Location','NorthEast')
 xlim([min(x_fit), max(x_fit)])
-txt = {['E^{cell} = (' num2str(fitresult.p1) '\pm' num2str( Sd_p1 ) ') * 0.05916 log Q + (' num2str(fitresult.p2) '\pm' num2str( Sd_p2 ) ')'],...
+txt = {['V_{NaOH} = (' num2str(fitresult.p1) '\pm' num2str( Sd_p1 ) ') * V_{KHP} + (' num2str(fitresult.p2) '\pm' num2str( Sd_p2 ) ')'],...
     ['R^2 = ' num2str(Rsq)]};
-text(x_fit(1,1).*1.13,y_fit_draw(1,1).*1.1,txt)
-n = 1./fitresult.p1
-nerr = Sd_p1./(fitresult.p1.*fitresult.p1)
-E = fitresult.p2
-Eerr = Sd_p2
+text(x_fit(1,1).*1.13,y_fit_draw(1,1).*(-0.9),txt)
+n = 6./fitresult.p1
+nerr = 6.*Sd_p1./(fitresult.p1.*fitresult.p1)
