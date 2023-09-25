@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.8.25)  24 SEP 2023 22:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.8.25)  25 SEP 2023 14:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -397,26 +397,52 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 74.
 (e:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
+<Que.png, id=1, 570.63188pt x 361.35pt>
+File: Que.png Graphic file (type png)
+<use Que.png>
+Package pdftex.def Info: Que.png  used on input line 82.
+(pdftex.def)             Requested size: 147.6015pt x 93.46356pt.
+<d_orbital.png, id=2, 457.71pt x 412.54124pt>
+File: d_orbital.png Graphic file (type png)
+<use d_orbital.png>
+Package pdftex.def Info: d_orbital.png  used on input line 88.
+(pdftex.def)             Requested size: 147.6015pt x 133.03566pt.
+<energy_splitting.png, id=3, 321.45094pt x 250.68657pt>
+File: energy_splitting.png Graphic file (type png)
+<use energy_splitting.png>
+Package pdftex.def Info: energy_splitting.png  used on input line 92.
+(pdftex.def)             Requested size: 147.6015pt x 115.11066pt.
+<NH3_bond.png, id=4, 548.0475pt x 250.68657pt>
+File: NH3_bond.png Graphic file (type png)
+<use NH3_bond.png>
+Package pdftex.def Info: NH3_bond.png  used on input line 98.
+(pdftex.def)             Requested size: 147.6015pt x 67.51413pt.
+<OH_bond.png, id=5, 632.3625pt x 250.68657pt>
+File: OH_bond.png Graphic file (type png)
+<use OH_bond.png>
+Package pdftex.def Info: OH_bond.png  used on input line 102.
+(pdftex.def)             Requested size: 147.6015pt x 58.51352pt.
+ [1{e:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./Que.png> <
+./d_orbital.png> <./energy_splitting.png> <./NH3_bond.png> <./OH_bond.png>]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 92.
+               Default added (so using `tbp') on input line 114.
 
 
-Overfull \hbox (15.5237pt too wide) in paragraph at lines 93--101
+Overfull \hbox (15.5237pt too wide) in paragraph at lines 115--123
  []$[]$ 
  []
 
 LaTeX Font Info:    Font shape `LUC/nanummj/m/it' in size <10> not available
 (Font)              Font shape `LUC/nanummj/m/sl' tried instead on input line 1
-05.
+27.
 
-Underfull \hbox (badness 10000) in paragraph at lines 105--106
+Underfull \hbox (badness 10000) in paragraph at lines 127--128
 
  []
 
 No file prelab_3.bbl.
-[1{e:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-(./prelab_3.aux)
+[2] (./prelab_3.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-11>
@@ -427,13 +453,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5371 strings out of 475188
- 76344 string characters out of 5767814
- 1945248 words of memory out of 5000000
- 26526 multiletter control sequences out of 15000+600000
- 599912 words of font info for 181 fonts, out of 8000000 for 9000
+ 5418 strings out of 475188
+ 77234 string characters out of 5767814
+ 1940248 words of memory out of 5000000
+ 26574 multiletter control sequences out of 15000+600000
+ 600786 words of font info for 184 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 71i,10n,79p,1565b,353s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 71i,10n,79p,1565b,361s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <e:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb><e:/texl
 ive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><e:/texlive/2023/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><e:/texlive/2023/texmf-dist
@@ -479,31 +505,31 @@ e:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc0.pfb><e:/tex
 live/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc1.pfb><e:/texlive/2
 023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc2.pfb><e:/texlive/2023/te
 xmf-dist/fonts/type1/public/nanumtype1/nanummjmc2.pfb><e:/texlive/2023/texmf-di
-st/fonts/type1/public/nanumtype1/nanummjmc3.pfb><e:/texlive/2023/texmf-dist/fon
-ts/type1/public/nanumtype1/nanummjmc5.pfb><e:/texlive/2023/texmf-dist/fonts/typ
-e1/public/nanumtype1/nanummjmc6.pfb><e:/texlive/2023/texmf-dist/fonts/type1/pub
+st/fonts/type1/public/nanumtype1/nanummjmc5.pfb><e:/texlive/2023/texmf-dist/fon
+ts/type1/public/nanumtype1/nanummjmc6.pfb><e:/texlive/2023/texmf-dist/fonts/typ
+e1/public/nanumtype1/nanummjmc7.pfb><e:/texlive/2023/texmf-dist/fonts/type1/pub
 lic/nanumtype1/nanummjmc7.pfb><e:/texlive/2023/texmf-dist/fonts/type1/public/na
-numtype1/nanummjmc7.pfb><e:/texlive/2023/texmf-dist/fonts/type1/public/nanumtyp
-e1/nanummjmc8.pfb><e:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nan
-ummjmc9.pfb><e:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc
-a.pfb><e:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmcb.pfb>
-<e:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmcc.pfb><e:/te
-xlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmcd.pfb><e:/texlive/
-2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmce.pfb><e:/texlive/2023/t
-exmf-dist/fonts/type1/public/nanumtype1/nanummjmcf.pfb><e:/texlive/2023/texmf-d
-ist/fonts/type1/public/nanumtype1/nanummjmd0.pfb><e:/texlive/2023/texmf-dist/fo
-nts/type1/public/nanumtype1/nanummjmd1.pfb><e:/texlive/2023/texmf-dist/fonts/ty
-pe1/public/nanumtype1/nanummjmd2.pfb><e:/texlive/2023/texmf-dist/fonts/type1/pu
-blic/nanumtype1/nanummjmd3.pfb><e:/texlive/2023/texmf-dist/fonts/type1/public/n
-anumtype1/nanummjmd4.pfb><e:/texlive/2023/texmf-dist/fonts/type1/public/nanumty
+numtype1/nanummjmc8.pfb><e:/texlive/2023/texmf-dist/fonts/type1/public/nanumtyp
+e1/nanummjmc9.pfb><e:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nan
+ummjmca.pfb><e:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc
+b.pfb><e:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmcc.pfb>
+<e:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmcd.pfb><e:/te
+xlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmce.pfb><e:/texlive/
+2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmcf.pfb><e:/texlive/2023/t
+exmf-dist/fonts/type1/public/nanumtype1/nanummjmd0.pfb><e:/texlive/2023/texmf-d
+ist/fonts/type1/public/nanumtype1/nanummjmd1.pfb><e:/texlive/2023/texmf-dist/fo
+nts/type1/public/nanumtype1/nanummjmd2.pfb><e:/texlive/2023/texmf-dist/fonts/ty
+pe1/public/nanumtype1/nanummjmd3.pfb><e:/texlive/2023/texmf-dist/fonts/type1/pu
+blic/nanumtype1/nanummjmd4.pfb><e:/texlive/2023/texmf-dist/fonts/type1/public/n
+anumtype1/nanummjmd5.pfb><e:/texlive/2023/texmf-dist/fonts/type1/public/nanumty
 pe1/nanummjmd5.pfb><e:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/na
-nummjmd5.pfb><e:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjm
-d6.pfb><e:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd6.pfb
-><e:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd7.pfb>
-Output written on prelab_3.pdf (1 page, 2668084 bytes).
+nummjmd6.pfb><e:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjm
+d6.pfb><e:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd7.pfb
+>
+Output written on prelab_3.pdf (2 pages, 2884047 bytes).
 PDF statistics:
- 370 PDF objects out of 1000 (max. 8388607)
- 220 compressed objects within 3 object streams
+ 373 PDF objects out of 1000 (max. 8388607)
+ 219 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
