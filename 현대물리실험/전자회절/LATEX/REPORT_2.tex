@@ -1,0 +1,123 @@
+% ****** Start of file apssamp.tex ******
+%
+%   This file is part of the APS files in the REVTeX 4.2 distribution.
+%   Version 4.2a of REVTeX, December 2014
+%
+%   Copyright (c) 2014 The American Physical Society.
+%
+%   See the REVTeX 4 README file for restrictions and more information.
+%
+% TeX'ing this file requires that you have AMS-LaTeX 2.0 installed
+% as well as the rest of the prerequisites for REVTeX 4.2
+%
+% See the REVTeX 4 README file
+% It also requires running BibTeX. The commands are as follows:
+%
+%  1)  latex apssamp.tex
+%  2)  bibtex apssamp
+%  3)  latex apssamp.tex
+%  4)  latex apssamp.tex
+%
+\documentclass[%
+ reprint,
+%superscriptaddress,
+%groupedaddress,
+%unsortedaddress,
+%runinaddress,
+%frontmatterverbose, 
+%preprint,
+%preprintnumbers,
+%nofootinbib,
+%nobibnotes,
+%bibnotes,
+ amsmath,amssymb,
+ aps,
+%pra,
+%prb,
+%rmp,
+%prstab,
+%prstper,
+%floatfix,
+]{revtex4-2}
+\usepackage{kotex}
+\usepackage{graphicx}% Include figure files
+\usepackage{dcolumn}% Align table columns on decimal point
+\usepackage{bm}% bold math
+%\usepackage{hyperref}% add hypertext capabilities
+%\usepackage[mathlines]{lineno}% Enable numbering of text and display math
+%\linenumbers\relax % Commence numbering lines
+
+%\usepackage[showframe,%Uncomment any one of the following lines to test 
+%%scale=0.7, marginratio={1:1, 2:3}, ignoreall,% default settings
+%%text={7in,10in},centering,
+%%margin=1.5in,
+%%total={6.5in,8.75in}, top=1.2in, left=0.9in, includefoot,
+%%height=10in,a5paper,hmargin={3cm,0.8in},
+%]{geometry}
+
+\def\rcurs{{\mbox{$\resizebox{.16in}{.08in}{\includegraphics{ScriptR}}$}}}
+\def\brcurs{{\mbox{$\resizebox{.16in}{.08in}{\includegraphics{BoldR}}$}}}
+\def\hrcurs{{\mbox{$\hat \brcurs$}}}
+
+\begin{document}
+
+
+\title{전자 회절 실험 보고서}
+
+\author{서울대학교 전기정보공학부 2018-12432 박정현}
+ \email{alexist@snu.ac.kr}
+\date{\today}% It is always \today, today,
+             %  but any date may be explicitly specified
+
+\begin{abstract}
+본 실험
+\end{abstract}
+
+%\keywords{Suggested keywords}%Use showkeys class option if keyword
+                              %display desired
+\maketitle
+
+%\tableofcontents
+
+\section{\label{sec:level1}Introudction}
+\subsection{\label{sec:level2}Diffraction from Crystal}
+주어진 결정 구조의 전자밀도 $n(\vec{r})$이 아래의 관계식을 만족한다고 가정하자. 이 때 $\vec{G}$는 reciprocal vector, $\vec{T}$는 translation vecotr로 각각 아래의 식을 만족한다.
+\begin{align}
+	n(\vec{r}+\vec{T}) &= \sum n_{G}\exp(i\vec{G}\cdot \vec{r})\exp(i\vec{G}\cdot\vec{T})
+\end{align}
+\begin{align}
+	\vec{G} &= v_{1}\vec{b}_{1} + v_{2}\vec{b}_{2} + v_{3}\vec{b}_{3}\\
+	\vec{T} &=  u_{1}\vec{a}_{1} + u_{2}\vec{a}_{2} + u_{3}\vec{a}_{3}\\
+	\vec{b}_{1} &= 2\pi\frac{\vec{a}_{2}\times\vec{a}_{3}}{\vec{a}_{1}\cdot\vec{a}_{2}\times\vec{a}_{3}}\\
+	\vec{b}_{2} &= 2\pi\frac{\vec{a}_{1}\times\vec{a}_{3}}{\vec{a}_{2}\cdot\vec{a}_{1}\times\vec{a}_{3}}\\
+	\vec{b}_{3} &= 2\pi\frac{\vec{a}_{1}\times\vec{a}_{2}}{\vec{a}_{3}\cdot\vec{a}_{1}\times\vec{a}_{2}}
+\end{align}
+
+입사파가 $\exp(i\vec{k}\cdot\vec{r})$, 투과파가 $\exp(i\vec{k}'\cdot\vec{r})$이라고 하는 경우 scattering된 wave의 amplitude는 아래와 같다. 이때 exponential function에 대한 공간에 대한 적분은 delta function이므로 $\Delta\vec{k} = \vec{G}$인 경우에 최대의 scattering amplitude가 나타난다. 따라서 아래의 식이 성립한다.
+
+\begin{align}
+	F &= \sum \int dV n_{G}\exp[i(\vec{G}-\Delta\vec{k})\cdot \vec{r}]\\
+	2\vec{k}\cdot{G} &= G^{2}
+\end{align}
+
+위의 식을 정리하면 아래의 조건을 만조할 때 최대의 scattering amplitude가 나타남을 알 수 있다.[1] 완벽한 crystal에 wave를 입사시켰을 경우 특정한 점에서만 scattering wave를 관측할 수 있을 것이다. 하지만 poly crystal의 경우 면에 수직한 방향으로 wave를 입사시키는 경우 수직한 방향에 대해서 대칭적이므로 cone형태의 scattering wave를 관측할 수 있을 것이다.
+\begin{align}
+	2d(hkl) \sin \theta &= \lambda
+\end{align}
+
+\subsection{\label{sec:level2}Crystal Structure of Graphite}
+Graphite의 결정 구조는 아래와 같다.[2] 이 때 A의 탄소 원자들 사이의 결합은 강한 $\sigma$ 결합이고, 층과 층 사이의 결합은 약한 $\pi$결합이 주를 이룬다. 주어진 실험에서 사용하는 graphite는 polycrystal이므로 amplify된 scattering wave amplitude는 주로 A의 구조에서 일어난 scattering에 의한 것이다. A의 구조에서 가장 큰 간격을 가지는 cell의 구조는 빨간선의 형태로 나타날 것이다. 이 때 거리는 $d_{10} = 213pm$에 해당하며 그다음의 경우는 파란 선들에 해당하고 거리는 $d_{11} = 123pm$의 거리를 가진다.
+
+\begin{figure}[htbp]
+	\includegraphics[width = 0.95\linewidth]{Graphite.png}% Here is how to import EPS art
+	\caption{\label{fig:Graphite}Graphite의 구조}
+\end{figure}
+
+\section{\label{sec:level1}Reference}
+[1] Kittel
+
+[2] Revealing the hidden atom in graphite by low-temperature atomic force microscopy
+
+\end{document}
+%
+% ****** End of file apssamp.tex ******
