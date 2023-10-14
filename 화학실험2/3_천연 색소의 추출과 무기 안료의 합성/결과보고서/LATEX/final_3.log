@@ -1,0 +1,784 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.4.9)  2 OCT 2023 19:25
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**final_3.tex
+(./final_3.tex
+LaTeX2e <2022-11-01> patch level 1
+L3 programming layer <2023-03-30>
+(c:/texlive/2023/texmf-dist/tex/latex/revtex/revtex4-2.cls
+Document Class: revtex4-2 2020/10/03 4.2e (https://journals.aps.org/revtex/ for
+ documentation)
+ Copyright (c) 2019 American Physical Society.
+ mailto:revtex@aps.org
+ Licensed under the LPPL:
+http://www.ctan.org/tex-archive/macros/latex/base/lppl.txt
+ Arthur Ogawa <arthur_ogawa at sbcglobal dot net>
+ Based on work by David Carlisle <david at dcarlisle.demon.co.uk>
+ Version (4.2d,4.2e): Modified by Mark Doyle and Phelype Oleinik
+ .
+ltxutil[2020/10/03 4.2e utilities package (portions licensed from W. E. Baxter 
+web at superscript.com)]
+LaTeX Info: Redefining \@centercr on input line 356.
+Class revtex4-2 Info: Repairing hyperref-unfriendly LaTeX definition of \mpfoot
+note on input line 481.
+Class revtex4-2 Info: Repairing broken LateX \@sect on input line 803.
+\intertabularlinepenalty=\count185
+\@tbpen=\count186
+\@arstrutbox@hline=\box51
+Class revtex4-2 Info: Repairing broken LaTeX \@xbitor on input line 1834.
+Class revtex4-2 Info: Making \typeout \long on input line 2099.
+ltxfront[2020/10/03 4.2e frontmatter package (AO,DPC,MD)]
+\c@affil=\count187
+\c@collab=\count188
+\absbox=\box52
+ltxgrid[2020/10/03 4.2e page grid package (portions licensed from W. E. Baxter 
+web at superscript.com)]
+\c@linecount=\count189
+\output@latex=\toks16
+\box@size@1=\box53
+\box@size@2=\box54
+\@protection@box=\box55
+\@topmark@saved=\toks17
+\footins@saved=\box56
+\footins@recovered=\box57
+\column@recovered=\box58
+\pagesofar=\box59
+\footsofar=\box60
+\pagegrid@col=\count190
+Class revtex4-2 Info: Overriding \@vspace, \@vspacer, \@no@pgbk, \@newline, and
+ \\  on input line 5665.
+\c@part=\count191
+\c@section=\count192
+\c@subsection=\count193
+\c@subsubsection=\count194
+\c@paragraph=\count195
+\c@subparagraph=\count196
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\c@figure=\count197
+\fbox@1=\box61
+\c@table=\count198
+\fbox@2=\box62
+\c@video=\count199
+\fbox@4=\box63
+\@bibdataout=\write3
+\widetext@top=\box64
+\widetext@bot=\box65
+Class revtex4-2 Info: Selecting society aps on input line 7658.
+(c:/texlive/2023/texmf-dist/tex/latex/revtex/aps4-2.rtx
+File: aps4-2 2020/10/03 4.2e (https://journals.aps.org/revtex/ for documentatio
+n)
+Class revtex4-2 Info: RevTeX society APS selected on input line 40.
+)
+
+Class revtex4-2 Warning: No journal specified, using default pra.
+
+Class revtex4-2 Info: APS journal PRA selected on input line 7661.
+(c:/texlive/2023/texmf-dist/tex/latex/revtex/aps10pt4-2.rtx
+File: aps10pt4-2 2020/10/03 4.2e (https://journals.aps.org/revtex/ for document
+ation)
+Class revtex4-2 Info: RevTeX pointsize 10pt selected on input line 39.
+)
+(c:/texlive/2023/texmf-dist/tex/latex/textcase/textcase.sty
+Package: textcase 2022/07/10 v1.03 Text only upper/lower case changing (DPC)
+Package textcase Info: Defining Legacy names on input line 20.
+)
+(c:/texlive/2023/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(c:/texlive/2023/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks18
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(c:/texlive/2023/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2022/04/08 v2.17n AMS math features
+\@mathmargin=\skip50
+
+For additional information on amsmath, use the `?' option.
+(c:/texlive/2023/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+
+(c:/texlive/2023/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks19
+\ex@=\dimen140
+)
+LaTeX Info: Redefining \text on input line 28.
+)
+(c:/texlive/2023/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen141
+)
+(c:/texlive/2023/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count266
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count267
+\leftroot@=\count268
+LaTeX Info: Redefining \overline on input line 399.
+LaTeX Info: Redefining \colon on input line 410.
+\classnum@=\count269
+\DOTSCASE@=\count270
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box66
+\strutbox@=\box67
+LaTeX Info: Redefining \big on input line 722.
+LaTeX Info: Redefining \Big on input line 723.
+LaTeX Info: Redefining \bigg on input line 724.
+LaTeX Info: Redefining \Bigg on input line 725.
+\big@size=\dimen142
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count271
+LaTeX Info: Redefining \bmod on input line 905.
+LaTeX Info: Redefining \pmod on input line 910.
+LaTeX Info: Redefining \smash on input line 940.
+LaTeX Info: Redefining \relbar on input line 970.
+LaTeX Info: Redefining \Relbar on input line 971.
+\c@MaxMatrixCols=\count272
+\dotsspace@=\muskip16
+\c@parentequation=\count273
+\dspbrk@lvl=\count274
+\tag@help=\toks20
+\row@=\count275
+\column@=\count276
+\maxfields@=\count277
+\andhelp@=\toks21
+\eqnshift@=\dimen143
+\alignsep@=\dimen144
+\tagshift@=\dimen145
+\tagwidth@=\dimen146
+\totwidth@=\dimen147
+\lineht@=\dimen148
+\@envbody=\toks22
+\multlinegap=\skip51
+\multlinetaggap=\skip52
+\mathdisplay@stack=\toks23
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+)
+(c:/texlive/2023/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+(c:/texlive/2023/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip53
+\bibsep=\skip54
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count278
+)
+Class revtex4-2 Info: Repairing natbib's \BibitemShut on input line 7665.
+
+(c:/texlive/2023/texmf-dist/tex/latex/revtex/revsymb4-2.sty
+Package: revsymb4-2 2020/10/03 4.2e (https://journals.aps.org/revtex/ for docum
+entation)
+LaTeX Info: Redefining \frak on input line 104.
+LaTeX Info: Redefining \Bbb on input line 120.
+LaTeX Info: Redefining \REV@mathfrak on input line 128.
+))
+(c:/texlive/2023/texmf-dist/tex/latex/cjk-ko/kotex.sty
+Package: kotex 2015/04/19 v1.6 Korean TeX (ko.TeX)
+
+(c:/texlive/2023/texmf-dist/tex/latex/kotex-utf/kotex.cfg)
+(c:/texlive/2023/texmf-dist/tex/latex/kotex-utf/kotexutf.sty
+Package: kotexutf 2022/06/22 v3.0.0 typesetting UTF-8 Korean documents
+
+(c:/texlive/2023/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks24
+\inpenc@posthook=\toks25
+)
+(c:/texlive/2023/texmf-dist/tex/plain/kotex-plain/kotexutf-core.tex
+\unih@ngulpoint=\count279
+\dhucs@emph@raise=\dimen149
+)
+Now handling font encoding LUC ...
+... processing UTF-8 mapping file for font encoding LUC
+
+(c:/texlive/2023/texmf-dist/tex/latex/kotex-utf/lucenc.dfu
+File: lucenc.dfu 2007/09/05 UTF-8 support for dhucs
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+3001 (decimal 12289)
+   defining Unicode char U+3002 (decimal 12290)
+   defining Unicode char U+3008 (decimal 12296)
+   defining Unicode char U+3009 (decimal 12297)
+   defining Unicode char U+300A (decimal 12298)
+   defining Unicode char U+300B (decimal 12299)
+   defining Unicode char U+300C (decimal 12300)
+   defining Unicode char U+300D (decimal 12301)
+   defining Unicode char U+300E (decimal 12302)
+   defining Unicode char U+300F (decimal 12303)
+   defining Unicode char U+3010 (decimal 12304)
+   defining Unicode char U+3011 (decimal 12305)
+   defining Unicode char U+3014 (decimal 12308)
+   defining Unicode char U+3015 (decimal 12309)
+   defining Unicode char U+3016 (decimal 12310)
+   defining Unicode char U+3017 (decimal 12311)
+   defining Unicode char U+3018 (decimal 12312)
+   defining Unicode char U+3019 (decimal 12313)
+   defining Unicode char U+301A (decimal 12314)
+   defining Unicode char U+301B (decimal 12315)
+   defining Unicode char U+FF01 (decimal 65281)
+   defining Unicode char U+FF08 (decimal 65288)
+   defining Unicode char U+FF09 (decimal 65289)
+   defining Unicode char U+FF0C (decimal 65292)
+   defining Unicode char U+FF0E (decimal 65294)
+   defining Unicode char U+FF1A (decimal 65306)
+   defining Unicode char U+FF1B (decimal 65307)
+   defining Unicode char U+FF1C (decimal 65308)
+   defining Unicode char U+FF1D (decimal 65309)
+   defining Unicode char U+FF1E (decimal 65310)
+   defining Unicode char U+FF1F (decimal 65311)
+   defining Unicode char U+FF3B (decimal 65339)
+   defining Unicode char U+FF3D (decimal 65341)
+   defining Unicode char U+FF5B (decimal 65371)
+   defining Unicode char U+FF5D (decimal 65373)
+   defining Unicode char U+FF61 (decimal 65377)
+   defining Unicode char U+FF62 (decimal 65378)
+   defining Unicode char U+FF63 (decimal 65379)
+   defining Unicode char U+FF64 (decimal 65380)
+   defining Unicode char U+FF65 (decimal 65381)
+)
+\@josa=\count280
+\josatoks=\toks26
+
+(c:/texlive/2023/texmf-dist/tex/latex/cjk-ko/kolabels-utf.sty
+Package: kolabels-utf 2015/03/20 v1.5 UTF-8 Hangul item labels
+)))
+(c:/texlive/2023/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(c:/texlive/2023/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks27
+)
+(c:/texlive/2023/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+
+(c:/texlive/2023/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+)
+(c:/texlive/2023/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+
+(c:/texlive/2023/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen150
+\Gin@req@width=\dimen151
+)
+(c:/texlive/2023/texmf-dist/tex/latex/tools/dcolumn.sty
+Package: dcolumn 2014/10/28 v1.06 decimal alignment package (DPC)
+
+(c:/texlive/2023/texmf-dist/tex/latex/tools/array.sty
+Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
+\col@sep=\dimen152
+\ar@mcellbox=\box68
+\extrarowheight=\dimen153
+\NC@list=\toks28
+\extratabsurround=\skip55
+\backup@length=\skip56
+\ar@cellbox=\box69
+))
+(c:/texlive/2023/texmf-dist/tex/latex/tools/bm.sty
+Package: bm 2022/01/05 v1.2f Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup6
+\symboldletters=\mathgroup7
+\symboldsymbols=\mathgroup8
+Package bm Info: No bold for \OMX/cmex/m/n, using \pmb.
+Package bm Info: No bold for \U/msa/m/n, using \pmb.
+Package bm Info: No bold for \U/msb/m/n, using \pmb.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 149.
+LaTeX Info: Redefining \bm on input line 219.
+)
+Class revtex4-2 Info: Unrecognized array package. Please update this document c
+lass! (Proceeding with fingers crossed.) on input line 58.
+Class revtex4-2 Info: cite was not loaded (OK!) on input line 58.
+Class revtex4-2 Info: mcite was not loaded (OK!) on input line 58.
+Class revtex4-2 Info: multicol was not loaded (OK!) on input line 58.
+
+(c:/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2023-03-30 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count281
+\l__pdf_internal_box=\box70
+)
+(./final_3.aux
+
+LaTeX Warning: Label `sec:level2' multiply defined.
+
+
+LaTeX Warning: Label `sec:level1' multiply defined.
+
+
+LaTeX Warning: Label `sec:level2' multiply defined.
+
+
+LaTeX Warning: Label `sec:level2' multiply defined.
+
+
+LaTeX Warning: Label `sec:level1' multiply defined.
+
+
+LaTeX Warning: Label `sec:level1' multiply defined.
+
+
+LaTeX Warning: Label `sec:level1' multiply defined.
+
+
+LaTeX Warning: Label `sec:level1' multiply defined.
+
+)
+\openout1 = `final_3.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for LUC/nanummj/m/n on input line 58.
+LaTeX Font Info:    Trying to load font information for LUC+nanummj on input li
+ne 58.
+ (c:/texlive/2023/texmf-dist/tex/latex/nanumtype1/lucnanummj.fd
+File: lucnanummj.fd 2013/02/12 v0.1 Nanum Myeongjo font definitions
+)
+LaTeX Font Info:    ... okay on input line 58.
+
+(c:/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count282
+\scratchdimen=\dimen154
+\scratchbox=\box71
+\nofMPsegments=\count283
+\nofMParguments=\count284
+\everyMPshowfont=\toks29
+\MPscratchCnt=\count285
+\MPscratchDim=\dimen155
+\MPnumerator=\count286
+\makeMPintoPDFobject=\count287
+\everyMPtoPDFconversion=\toks30
+) (c:/texlive/2023/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(c:/texlive/2023/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+\openout3 = `final_3Notes.bib'.
+
+
+
+Class revtex4-2 Warning: Assuming \noaffiliation for authors.
+
+LaTeX Font Info:    Trying to load font information for U+msa on input line 74.
+
+(c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 74.
+
+
+(c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Underfull \hbox (badness 1325) in paragraph at lines 80--81
+\LUC/nanummj/m/n/10/bd Ñ\LUC/nanummj/m/n/10/c7 ê\LUC/nanummj/m/n/10/b9 | \LUC/n
+anummj/m/n/10/d5 h\LUC/nanummj/m/n/10/c7  \LUC/nanummj/m/n/10/d5 X\LUC/nanummj/
+m/n/10/ac ‡ \LUC/nanummj/m/n/10/c7 à\LUC/nanummj/m/n/10/b2 ‰\OT1/cmr/m/n/10 . \
+LUC/nanummj/m/n/10/ac ^^A^^A\LUC/nanummj/m/n/10/c7 X \LUC/nanummj/m/n/10/bd Ñ\L
+UC/nanummj/m/n/10/c7 ê\LUC/nanummj/m/n/10/b2 î \LUC/nanummj/m/n/10/ad l\LUC/nan
+ummj/m/n/10/c8 p\LUC/nanummj/m/n/10/b2 î \LUC/nanummj/m/n/10/c5 D\LUC/nanummj/m
+/n/10/b7 ò\LUC/nanummj/m/n/10/c6 @
+ []
+
+
+Underfull \hbox (badness 1122) in paragraph at lines 80--81
+\LUC/nanummj/m/n/10/ac ^^Y\LUC/nanummj/m/n/10/b2 ‰\OT1/cmr/m/n/10 .[4][5][6] \L
+UC/nanummj/m/n/10/be ^^L\LUC/nanummj/m/n/10/b7 |\LUC/nanummj/m/n/10/c9 »\LUC/na
+nummj/m/n/10/b8 ^^H\LUC/nanummj/m/n/10/c7 x\OT1/cmr/m/n/10 , \LUC/nanummj/m/n/1
+0/d0 l\LUC/nanummj/m/n/10/b8 \\LUC/nanummj/m/n/10/c2 ‡ \LUC/nanummj/m/n/10/ba ®
+\LUC/nanummj/m/n/10/b4 P \LUC/nanummj/m/n/10/d5 X\LUC/nanummj/m/n/10/c7 t\LUC/n
+anummj/m/n/10/b4 ‹\LUC/nanummj/m/n/10/b8 ]\LUC/nanummj/m/n/10/c2 ‹\LUC/nanummj/
+m/n/10/ae 0\LUC/nanummj/m/n/10/b9 |
+ []
+
+
+Underfull \hbox (badness 3396) in paragraph at lines 80--81
+\LUC/nanummj/m/n/10/b4 ^^\\LUC/nanummj/m/n/10/b2 ‰\OT1/cmr/m/n/10 . \LUC/nanumm
+j/m/n/10/bc ^^X\LUC/nanummj/m/n/10/ba t\LUC/nanummj/m/n/10/c5 – \LUC/nanummj/m/
+n/10/c2 ‹\LUC/nanummj/m/n/10/cf T\LUC/nanummj/m/n/10/b2 Ã\LUC/nanummj/m/n/10/c7
+ X \LUC/nanummj/m/n/10/ac Ω\LUC/nanummj/m/n/10/c6 ∞ \LUC/nanummj/m/n/10/d5 X\LU
+C/nanummj/m/n/10/c7 t\LUC/nanummj/m/n/10/b4 ‹\LUC/nanummj/m/n/10/b8 ]\LUC/nanum
+mj/m/n/10/c2 ‹\LUC/nanummj/m/n/10/ae 0\LUC/nanummj/m/n/10/b9 | \LUC/nanummj/m/n
+/10/ac ^^@\LUC/nanummj/m/n/10/c9 ¿\LUC/nanummj/m/n/10/ac ‡
+ []
+
+
+Underfull \hbox (badness 1325) in paragraph at lines 80--81
+\LUC/nanummj/m/n/10/bd Ñ\LUC/nanummj/m/n/10/c7 êX \LUC/nanummj/m/n/10/b3 ^^@\LU
+C/nanummj/m/n/10/bd ÄÑ\LUC/nanummj/m/n/10/c7 t \LUC/nanummj/m/n/10/bb 4\LUC/nan
+ummj/m/n/10/ad ˘\LUC/nanummj/m/n/10/c1 1\LUC/nanummj/m/n/10/c7 t \LUC/nanummj/m
+/n/10/b4 ^^X\LUC/nanummj/m/n/10/c5 ¥ \LUC/nanummj/m/n/10/c1 å\LUC/nanummj/m/n/1
+0/c2 ^^X\LUC/nanummj/m/n/10/c1 1\LUC/nanummj/m/n/10/c7 t \LUC/nanummj/m/n/10/b4
+ ^^\\LUC/nanummj/m/n/10/b2 ‰\OT1/cmr/m/n/10 . \LUC/nanummj/m/n/10/c5 L\LUC/nanu
+mmj/m/n/10/cf T
+ []
+
+
+Underfull \hbox (badness 1325) in paragraph at lines 80--81
+\LUC/nanummj/m/n/10/c6 ,\LUC/nanummj/m/n/10/c7 X \LUC/nanummj/m/n/10/ac Ω\LUC/n
+anummj/m/n/10/c6 ∞ \LUC/nanummj/m/n/10/ce \\LUC/nanummj/m/n/10/c2 ^^X\LUC/nanum
+mj/m/n/10/c1 1\OT1/cmr/m/n/10 , \LUC/nanummj/m/n/10/c1 å\LUC/nanummj/m/n/10/c2 
+^^X\LUC/nanummj/m/n/10/c1 1 \LUC/nanummj/m/n/10/c7 ë\LUC/nanummj/m/n/10/c6 ©\LU
+C/nanummj/m/n/10/ae 0\LUC/nanummj/m/n/10/ac ^^@ \LUC/nanummj/m/n/10/ba ®\LUC/na
+nummj/m/n/10/b4 P \LUC/nanummj/m/n/10/c8 t\LUC/nanummj/m/n/10/c7 ¨\LUC/nanummj/
+m/n/10/d5 X\LUC/nanummj/m/n/10/bb ¿\LUC/nanummj/m/n/10/b8 \
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 80--81
+
+ []
+
+<Brazilein.png, id=1, 817.55438pt x 245.41687pt>
+File: Brazilein.png Graphic file (type png)
+<use Brazilein.png>
+Package pdftex.def Info: Brazilein.png  used on input line 83.
+(pdftex.def)             Requested size: 233.69925pt x 70.15048pt.
+<Corcin.png, id=2, 957.5775pt x 673.51625pt>
+File: Corcin.png Graphic file (type png)
+<use Corcin.png>
+Package pdftex.def Info: Corcin.png  used on input line 87.
+(pdftex.def)             Requested size: 233.69925pt x 164.3706pt.
+<Shikonin.png, id=3, 467.24562pt x 315.1775pt>
+File: Shikonin.png Graphic file (type png)
+<use Shikonin.png>
+Package pdftex.def Info: Shikonin.png  used on input line 91.
+(pdftex.def)             Requested size: 172.19925pt x 116.15697pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
+
+ []
+
+<d_orbital.png, id=4, 457.71pt x 412.54124pt>
+File: d_orbital.png Graphic file (type png)
+<use d_orbital.png>
+Package pdftex.def Info: d_orbital.png  used on input line 100.
+(pdftex.def)             Requested size: 221.3985pt x 199.5472pt.
+<energy_splitting.png, id=5, 321.45094pt x 250.68657pt>
+File: energy_splitting.png Graphic file (type png)
+<use energy_splitting.png>
+Package pdftex.def Info: energy_splitting.png  used on input line 104.
+(pdftex.def)             Requested size: 221.3985pt x 172.66406pt.
+
+Underfull \hbox (badness 1748) in paragraph at lines 115--116
+[]\LUC/nanummj/m/n/10/ba t\LUC/nanummj/m/n/10/c1 ,\LUC/nanummj/m/n/10/c7  X \LU
+C/nanummj/m/n/10/c5 ¸\LUC/nanummj/m/n/10/c0 …\LUC/nanummj/m/n/10/c7 @ \LUC/nanu
+mmj/m/n/10/c6 ∞\LUC/nanummj/m/n/10/b9 ¨ \LUC/nanummj/m/n/10/c7 |\LUC/nanummj/m/
+n/10/c0 ¡\LUC/nanummj/m/n/10/c7 X \LUC/nanummj/m/n/10/b2 ‰\LUC/nanummj/m/n/10/c
+5 ë\LUC/nanummj/m/n/10/d5 \ \LUC/nanummj/m/n/10/c6 7\LUC/nanummj/m/n/10/c7 t\LU
+C/nanummj/m/n/10/b0 ò \LUC/nanummj/m/n/10/c9 ¡\LUC/nanummj/m/n/10/bb <
+ []
+
+
+Underfull \hbox (badness 1325) in paragraph at lines 115--116
+\LUC/nanummj/m/n/10/c8 ^^\\LUC/nanummj/m/n/10/d4 à\LUC/nanummj/m/n/10/c5 – \LUC
+/nanummj/m/n/10/c0 ¨\LUC/nanummj/m/n/10/c6 ©\LUC/nanummj/m/n/10/b4 ^^X\LUC/nanu
+mmj/m/n/10/ba p\OT1/cmr/m/n/10 , \LUC/nanummj/m/n/10/ad ¯ \LUC/nanummj/m/n/10/c
+0 …¡\LUC/nanummj/m/n/10/c7 X \LUC/nanummj/m/n/10/b2 ‰\LUC/nanummj/m/n/10/c5 ë\L
+UC/nanummj/m/n/10/c1 1\LUC/nanummj/m/n/10/ac ¸ \LUC/nanummj/m/n/10/c9 ¿\LUC/nan
+ummj/m/n/10/c1 ç1\LUC/nanummj/m/n/10/c7 @ \LUC/nanummj/m/n/10/b9 Œ\LUC/nanummj/
+m/n/10/c7 @
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 115--116
+
+ []
+
+[1{c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./Brazilein.p
+ng> <./Corcin.png> <./Shikonin.png>]
+
+LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
+ on input line 116.
+
+<NH3_bond.png, id=68, 548.0475pt x 250.68657pt>
+File: NH3_bond.png Graphic file (type png)
+<use NH3_bond.png>
+Package pdftex.def Info: NH3_bond.png  used on input line 122.
+(pdftex.def)             Requested size: 221.3985pt x 101.27121pt.
+<OH_bond.png, id=69, 632.3625pt x 250.68657pt>
+File: OH_bond.png Graphic file (type png)
+<use OH_bond.png>
+Package pdftex.def Info: OH_bond.png  used on input line 126.
+(pdftex.def)             Requested size: 221.3985pt x 87.76837pt.
+
+Underfull \hbox (badness 2302) in paragraph at lines 131--132
+[]$\OT1/cmr/m/n/10 500\OML/cmm/m/it/10 mL$\LUC/nanummj/m/n/10/be D\LUC/nanummj/
+m/n/10/ce ‰ \OT1/cmr/m/n/10 1\LUC/nanummj/m/n/10/ac ^^\\OT1/cmr/m/n/10 , $100\O
+ML/cmm/m/it/10 mL$\LUC/nanummj/m/n/10/be D\LUC/nanummj/m/n/10/ce ‰ \OT1/cmr/m/n
+/10 3\LUC/nanummj/m/n/10/ac ^^\\OT1/cmr/m/n/10 , $50\OML/cmm/m/it/10 mL$\LUC/na
+nummj/m/n/10/be D\LUC/nanummj/m/n/10/ce ‰ \OT1/cmr/m/n/10 5\LUC/nanummj/m/n/10/
+ac ^^\\OT1/cmr/m/n/10 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 131--132
+
+ []
+
+[2 <./d_orbital.png> <./energy_splitting.png> <./NH3_bond.png> <./OH_bond.png>]
+<Before.png, id=76, 4015.0pt x 1644.1425pt>
+File: Before.png Graphic file (type png)
+<use Before.png>
+Package pdftex.def Info: Before.png  used on input line 138.
+(pdftex.def)             Requested size: 233.69925pt x 95.68396pt.
+<After.png, id=77, 4015.0pt x 1644.1425pt>
+File: After.png Graphic file (type png)
+<use After.png>
+Package pdftex.def Info: After.png  used on input line 142.
+(pdftex.def)             Requested size: 233.69925pt x 95.68396pt.
+
+Underfull \hbox (badness 1442) in paragraph at lines 146--147
+\LUC/nanummj/m/n/10/c5 ∆\LUC/nanummj/m/n/10/c7 t\LUC/nanummj/m/n/10/b3 ƒ \LUC/n
+anummj/m/n/10/cd ©\LUC/nanummj/m/n/10/bd Ñ\LUC/nanummj/m/n/10/d7 à \LUC/nanummj
+/m/n/10/c1 @\LUC/nanummj/m/n/10/b8 \\LUC/nanummj/m/n/10/c6 ∞\LUC/nanummj/m/n/1
+0/c2 §\OT1/cmr/m/n/10 , \LUC/nanummj/m/n/10/d6 9\LUC/nanummj/m/n/10/c7 @ \OT1/c
+mr/m/n/10 polyamide\LUC/nanummj/m/n/10/c6 @ \LUC/nanummj/m/n/10/ac ^^U\LUC/nanu
+mmj/m/n/10/d5 X\LUC/nanummj/m/n/10/ac å
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 146--147
+
+ []
+
+
+Underfull \hbox (badness 1769) in paragraph at lines 148--149
+\OT1/cmr/m/n/10 pH\LUC/nanummj/m/n/10/c5 –\LUC/nanummj/m/n/10/c1 ^^\\LUC/nanumm
+j/m/n/10/b2 î \LUC/nanummj/m/n/10/ac ^^U\LUC/nanummj/m/n/10/d5 \ \LUC/nanummj/m
+/n/10/ad ˘\LUC/nanummj/m/n/10/c1 1\LUC/nanummj/m/n/10/c7 D \LUC/nanummj/m/n/10/
+b7 d\LUC/nanummj/m/n/10/b2 ‰\OT1/cmr/m/n/10 . \LUC/nanummj/m/n/10/d5 X\LUC/nanu
+mmj/m/n/10/c9 ¿\LUC/nanummj/m/n/10/b9 Ã \OT1/cmr/m/n/10 pH\LUC/nanummj/m/n/10/a
+c ^^@ \LUC/nanummj/m/n/10/c9 ù\LUC/nanummj/m/n/10/ac ^^@\LUC/nanummj/m/n/10/d5 
+h\LUC/nanummj/m/n/10/c5 –
+ []
+
+
+Underfull \hbox (badness 1852) in paragraph at lines 148--149
+\LUC/nanummj/m/n/10/ac ı\LUC/nanummj/m/n/10/ba Ö \LUC/nanummj/m/n/10/ae 8\LUC/n
+anummj/m/n/10/c7 t \LUC/nanummj/m/n/10/b6 ^^P\LUC/nanummj/m/n/10/d5 \ \LUC/nanu
+mmj/m/n/10/bc ¿\LUC/nanummj/m/n/10/d6 T\LUC/nanummj/m/n/10/d5 X\LUC/nanummj/m/n
+/10/bb ¿\LUC/nanummj/m/n/10/b8 \ \LUC/nanummj/m/n/10/c5 D\LUC/nanummj/m/n/10/c1
+ 8\LUC/nanummj/m/n/10/d2 ∏\LUC/nanummj/m/n/10/c0 ∞\LUC/nanummj/m/n/10/ac ¸ \LUC
+/nanummj/m/n/10/bc ^^X\LUC/nanummj/m/n/10/c7 Q\LUC/nanummj/m/n/10/d5 ` \LUC/nan
+ummj/m/n/10/ac Ω\LUC/nanummj/m/n/10/c6 ∞
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--149
+
+ []
+
+
+Underfull \hbox (badness 4181) in paragraph at lines 150--151
+[]\LUC/nanummj/m/n/10/c7 ê\LUC/nanummj/m/n/10/cd ^^H\LUC/nanummj/m/n/10/c7 X \L
+UC/nanummj/m/n/10/c2 ‹\LUC/nanummj/m/n/10/cf T\LUC/nanummj/m/n/10/b2 Ã\LUC/nanu
+mmj/m/n/10/c7 X \LUC/nanummj/m/n/10/ac Ω\LUC/nanummj/m/n/10/c6 ∞ \LUC/nanummj/m
+/n/10/d5 X\LUC/nanummj/m/n/10/c7 t\LUC/nanummj/m/n/10/b4 ‹\LUC/nanummj/m/n/10/b
+8 ]\LUC/nanummj/m/n/10/c2 ‹\LUC/nanummj/m/n/10/ae 0\LUC/nanummj/m/n/10/ac ^^@ \
+LUC/nanummj/m/n/10/b3 ^^@\LUC/nanummj/m/n/10/ce m\LUC/nanummj/m/n/10/c8 ^^A\LUC
+/nanummj/m/n/10/c7 <\LUC/nanummj/m/n/10/b8 \
+ []
+
+
+Underfull \hbox (badness 1325) in paragraph at lines 150--151
+\LUC/nanummj/m/n/10/ad l\LUC/nanummj/m/n/10/c1 1\LUC/nanummj/m/n/10/b4 ^^X\LUC/
+nanummj/m/n/10/c5 ¥ \LUC/nanummj/m/n/10/ba t\LUC/nanummj/m/n/10/c1 ,\LUC/nanumm
+j/m/n/10/c7  \LUC/nanummj/m/n/10/c6 @ \LUC/nanummj/m/n/10/c7 ò \LUC/nanummj/m/n
+/10/ac ∞\LUC/nanummj/m/n/10/d5 iX\LUC/nanummj/m/n/10/c9 ¿ \LUC/nanummj/m/n/10/c
+5 J\LUC/nanummj/m/n/10/b2 î‰\OT1/cmr/m/n/10 . \LUC/nanummj/m/n/10/b5 0\LUC/nanu
+mmj/m/n/10/b7 |\LUC/nanummj/m/n/10/c1 ^^\ \LUC/nanummj/m/n/10/b2 ‰\LUC/nanummj/
+m/n/10/b9 x
+ []
+
+
+Underfull \hbox (badness 1325) in paragraph at lines 150--151
+\LUC/nanummj/m/n/10/c5 ¸\LUC/nanummj/m/n/10/c0 …\LUC/nanummj/m/n/10/b4 ^^\ \LUC
+/nanummj/m/n/10/ba t\LUC/nanummj/m/n/10/c1 ,\LUC/nanummj/m/n/10/c7  \LUC/nanumm
+j/m/n/10/b4 ‰\LUC/nanummj/m/n/10/c5 – \LUC/nanummj/m/n/10/be D\LUC/nanummj/m/n/
+10/d5 t \LUC/nanummj/m/n/10/c0 …\LUC/nanummj/m/n/10/c7 t \LUC/nanummj/m/n/10/c5
+ \LUC/nanummj/m/n/10/d5 X\LUC/nanummj/m/n/10/b2 ‰\OT1/cmr/m/n/10 . \LUC/nanumm
+j/m/n/10/d5 X\LUC/nanummj/m/n/10/c9 ¿\LUC/nanummj/m/n/10/b9 Ã \LUC/nanummj/m/n/
+10/c8 ¸\LUC/nanummj/m/n/10/bc ¿\LUC/nanummj/m/n/10/c7 X
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 150--151
+
+ []
+
+LaTeX Font Info:    Font shape `LUC/nanummj/m/it' in size <10> not available
+(Font)              Font shape `LUC/nanummj/m/sl' tried instead on input line 1
+58.
+
+Underfull \hbox (badness 1184) in paragraph at lines 164--165
+\OT1/cmr/m/n/10 N., & Ragha-van, G. S. V. (2020, July 24). Color
+ []
+
+
+Underfull \hbox (badness 1297) in paragraph at lines 164--165
+\OT1/cmr/m/n/10 and molec-u-lar struc-ture al-ter-ations of brazilein ex-
+ []
+
+
+Underfull \hbox (badness 5022) in paragraph at lines 166--167
+[]\OT1/cmr/m/n/10 [5] Na-tional Cen-ter for Biotech-nol-ogy In-for-ma-
+ []
+
+
+Underfull \hbox (badness 2970) in paragraph at lines 166--167
+\OT1/cmr/m/n/10 5281233, Crocin. Re-trieved Oc-to-ber 2, 2023 from
+ []
+
+
+Underfull \hbox (badness 2285) in paragraph at lines 168--169
+\OT1/cmr/m/n/10 R., Areche, F. O., AlOu-dat, M., Shaikh, A. M.,
+ []
+
+
+Underfull \hbox (badness 5548) in paragraph at lines 168--169
+\OT1/cmr/m/n/10 Kov^^Sacs, B., & Mo-hamed Ahmed, A. E. (2022,
+ []
+
+
+Underfull \hbox (badness 1968) in paragraph at lines 168--169
+\OT1/cmr/m/n/10 July 1). Re-view of Shikonin and Deriva-tives: Iso-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 168--169
+\OT1/cmr/m/n/10 la-tion, Chem-istry, Biosyn-the-sis, Phar-ma-col-ogy
+ []
+
+
+Underfull \hbox (badness 2521) in paragraph at lines 168--169
+\OT1/cmr/m/n/10 and Tox-i-col-ogy. \OT1/cmr/m/it/10 Fron-tiers in Phar-ma-col-o
+gy, 13\OT1/cmr/m/n/10 , 2.
+ []
+
+[3 <./Before.png> <./After.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 170--171
+\OT1/cmr/m/n/10 https://pubchem.ncbi.nlm.nih.gov/compound/Sodium-
+ []
+
+No file final_3.bbl.
+[4] (./final_3.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 5465 strings out of 476017
+ 79458 string characters out of 5793767
+ 1871660 words of memory out of 5000000
+ 25783 multiletter control sequences out of 15000+600000
+ 550748 words of font info for 165 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 71i,8n,76p,1061b,356s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb><c:/texl
+ive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2023/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2023/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2023/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmr8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmr9.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+<c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texliv
+e/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2023/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2023/texmf-dist/f
+onts/type1/public/nanumtype1/nanummjbac.pfb><c:/texlive/2023/texmf-dist/fonts/t
+ype1/public/nanumtype1/nanummjbae.pfb><c:/texlive/2023/texmf-dist/fonts/type1/p
+ublic/nanumtype1/nanummjbb8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/
+nanumtype1/nanummjbbb.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/nanumt
+ype1/nanummjbbc.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/n
+anummjbc0.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummj
+bc1.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjbc2.pf
+b><c:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjbc5.pfb><c:/
+texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjbc7.pfb><c:/texliv
+e/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjbcc.pfb><c:/texlive/2023
+/texmf-dist/fonts/type1/public/nanumtype1/nanummjbcd.pfb><c:/texlive/2023/texmf
+-dist/fonts/type1/public/nanumtype1/nanummjbd5.pfb><c:/texlive/2023/texmf-dist/
+fonts/type1/public/nanumtype1/nanummjmac.pfb><c:/texlive/2023/texmf-dist/fonts/
+type1/public/nanumtype1/nanummjmad.pfb><c:/texlive/2023/texmf-dist/fonts/type1/
+public/nanumtype1/nanummjmae.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public
+/nanumtype1/nanummjmb0.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/nanum
+type1/nanummjmb1.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/
+nanummjmb2.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanumm
+jmb3.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb4.p
+fb><c:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb5.pfb><c:
+/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb6.pfb><c:/texli
+ve/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb7.pfb><c:/texlive/202
+3/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb8.pfb><c:/texlive/2023/texm
+f-dist/fonts/type1/public/nanumtype1/nanummjmb9.pfb><c:/texlive/2023/texmf-dist
+/fonts/type1/public/nanumtype1/nanummjmba.pfb><c:/texlive/2023/texmf-dist/fonts
+/type1/public/nanumtype1/nanummjmbb.pfb><c:/texlive/2023/texmf-dist/fonts/type1
+/public/nanumtype1/nanummjmbc.pfb><c:/texlive/2023/texmf-dist/fonts/type1/publi
+c/nanumtype1/nanummjmbc.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/nanu
+mtype1/nanummjmbd.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1
+/nanummjmbe.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanum
+mjmc0.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc1.
+pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc2.pfb><c
+:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc2.pfb><c:/texl
+ive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc4.pfb><c:/texlive/20
+23/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc5.pfb><c:/texlive/2023/tex
+mf-dist/fonts/type1/public/nanumtype1/nanummjmc6.pfb><c:/texlive/2023/texmf-dis
+t/fonts/type1/public/nanumtype1/nanummjmc7.pfb><c:/texlive/2023/texmf-dist/font
+s/type1/public/nanumtype1/nanummjmc7.pfb><c:/texlive/2023/texmf-dist/fonts/type
+1/public/nanumtype1/nanummjmc8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/publ
+ic/nanumtype1/nanummjmc9.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/nan
+umtype1/nanummjmcc.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype
+1/nanummjmcd.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanu
+mmjmce.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmcf
+.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd0.pfb><
+c:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd1.pfb><c:/tex
+live/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd2.pfb><c:/texlive/2
+023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd3.pfb><c:/texlive/2023/te
+xmf-dist/fonts/type1/public/nanumtype1/nanummjmd4.pfb><c:/texlive/2023/texmf-di
+st/fonts/type1/public/nanumtype1/nanummjmd5.pfb><c:/texlive/2023/texmf-dist/fon
+ts/type1/public/nanumtype1/nanummjmd5.pfb><c:/texlive/2023/texmf-dist/fonts/typ
+e1/public/nanumtype1/nanummjmd6.pfb><c:/texlive/2023/texmf-dist/fonts/type1/pub
+lic/nanumtype1/nanummjmd6.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/na
+numtype1/nanummjmd7.pfb>
+Output written on final_3.pdf (4 pages, 7734071 bytes).
+PDF statistics:
+ 368 PDF objects out of 1000 (max. 8388607)
+ 214 compressed objects within 3 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
+
