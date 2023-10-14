@@ -1,0 +1,104 @@
+\documentclass[a4paper]{oblivoir}
+
+\title{쟤료공학개론 과제3}
+\author{2018-12432, Electrical and Computer Engineering department, ParkJeonghyun}
+\date{10/3/2023}
+
+\newcommand{\be}{\begin{equation}}
+\newcommand{\ee}{\end{equation}}
+
+\usepackage{fapapersize}
+\usepackage{amsmath}
+\usepackage{MnSymbol}
+\usepackage{wasysym}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subfig}
+\usepackage{hyperref}
+\usepackage{cite}
+\usepackage{dtk-logos}
+\usepackage{physics}
+\usepackage{tikz}
+\usetikzlibrary{decorations.markings, positioning}
+\usepackage{dtk-logos}
+\usepackage{fancyvrb}
+\usepackage{array} 
+\usepackage{chemformula}
+
+\usefapapersize{ 210mm, 297mm, 15mm, 15mm, 15mm, 15mm}
+\DeclareGraphicsExtensions{.pdf, .png, .jpg}
+
+\renewcommand{\figurename}{Figure}
+
+\begin{document}
+
+\maketitle
+\section{Problem 1}
+\subsection{a}
+Vacancy의 수는 아래와 같다.
+\begin{align}
+	N_{v} &= N\exp(-\frac{Q_{v}}{kT})
+\end{align}
+따라서 fraction은 아래와 같다.
+\begin{align}
+	N_{v}/N &= \exp(-\frac{0.90 \times 1.602 \times 10^{-19}}{1.38\times 10^{-23}\times 1357})\\
+	&= 4.5\times 10^{-4}
+\end{align}
+
+\subsection{b}
+\begin{align}
+	N_{v}/N &= \exp(-\frac{0.90 \times 1.602 \times 10^{-19}}{1.38\times 10^{-23}\times 298})\\
+	&= 5.9\times 10^{-16}
+\end{align}
+
+\subsection{c}
+\begin{align}
+	\frac{N_{v}/N(1357K)}{N_{v}/N(298K)} &= \frac{\exp(-\frac{0.90 \times 1.602 \times 10^{-19}}{1.38\times 10^{-23}\times 1357})}{\exp(-\frac{0.90 \times 1.602 \times 10^{-19}}{1.38\times 10^{-23}\times 298})}\\
+	&= 7.6\times 10^{11}
+\end{align}
+
+
+\section{Problem 2}
+\subsection{a}
+Hume – Rothery rule은 1. 원자들의 반지름 크기 차이가 $15\%$ 이하이고, 2. 동일한 결정구조를 가지고, 3. 비슷한 전기음성도를 가지고, 4. 동일한 valency electron을 가져야한다. 이중에 이를 모두 만족하는 원소는 \ch{Pt}뿐이다.
+
+\subsection{b}
+\ch{Ag}는 원자반지름 크기가 약 $16\%$차이가 나며 valency 숫자가 다르다. 그리고 \ch{Al}은 원자반지름 크기가 약  $14.8\%$이고 valency 숫자가 다른다. \ch{Co}, \ch{Cr}, \ch{Fe}, \ch{Zn} 는 다른 결정 구조를 가진다. 따라서 \ch{Ag}, \ch{Al}, \ch{Co}, \ch{Cr}, \ch{Fe}, \ch{Zn}는 incomplete solubility를 가진다.
+
+\subsection{c}
+\ch{C}, \ch{H}, \ch{O}는 \ch{Ni}보다 크기가 충분히 작으므로 interstitial solid solution이 된다.
+
+\section{Problem 3}
+\subsection{a}
+Vacancy diffusion은 원래의 lattice position에 존재하던 원자가 근처의 vacant lattice로 이동하는 diffusion이다. 반면에 interstitial diffusion은 격자들 사이의 비어있는 insterstitial position으로 결정을 구성하는 원자보다 작은 분자들이 이동하는 현상이다.
+
+\subsection{b} 
+Interstitial diffusion의 경우 결정을 구성하는 원자보다 작은 입자가 이동하는 것이므로 통상적으로 intersitial diffusion이 vacancy diffusion보다 빠르다. 더불어서 vacancy의 숫자보다 interstitial의 숫자가 더 많으므로 (vacancy ~ $\exp(-Q_{v}/kT)$) interstitial diffusion이 발생할 확률이 더 높아 속도가 vacancy diffusion보다 빠르다.
+
+\section{Problem 4}
+\subsection{a}
+Diffusion constant는 아래의 식을 따른다.
+\begin{align}
+	D &= D_{0}\exp(-\frac{Q_{d}}{RT})\\
+	\ln D &= \ln D_{0} -\frac{Q_{d}}{RT}
+\end{align}
+따라서 아래의 식이 성립한다.
+\begin{align}
+	\ln (5.5\times 10^{-14})  - \ln (3.9\times 10^{-13})&=  -\frac{Q_{d}}{R}\left( \frac{1}{600+273.15}  - \frac{1}{700+273.15} \right)\\
+	Q_{d} &= -\frac{\ln (5.5\times 10^{-14})  - \ln (3.9\times 10^{-13})}{\left( \frac{1}{600+273.15}  - \frac{1}{700+273.15} \right)}\times 8.3145 [J/mol]\\
+	&= 1.38\times 10^{5} [J/mol]
+\end{align}
+\begin{align}
+	D_{0} &= D\times \exp(\frac{Q_{d}}{RT})\\
+	&= 5.5\times 10^{-14} \times \exp(\frac{1.38\times 10^{5}}{8.3145\times (273.15+600)}) [m^{2}/s]\\
+	&= 9.9 \times 10^{-6} [m^{2}/s]
+\end{align}
+
+\subsection{b}
+\begin{align}
+	D &= D_{0}\exp(-\frac{Q_{d}}{RT})\\
+	&= 9.9 \times 10^{-6}\times \exp(-\frac{1.38\times 10^{5}}{8.3145 \times (273.15+850)}) [m^{2}/s]\\
+	&= 3.8\times 10^{-12} [m^{2}/s]
+\end{align}
+
+\end{document}
