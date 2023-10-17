@@ -47,7 +47,7 @@ set(h1,'facealpha',0.2,'edgecolor','none');
 
 hold off
 
-title('1/v vs 1/[S]')
+title('1/v vs 1/[S] with 0.5%')
 xlabel('1/[H_{2}O(l)] [1/M]')
 ylabel('1/v [s/M]')
 legend('Data', 'Fitting Curve', '95% Confidence Line', 'Location','NorthEast')
@@ -56,4 +56,4 @@ txt = {['y = (' sprintf('%.2e',fitresult.p1) '\pm' sprintf('%.2e', Sd_p1 ) ') * 
     ['R^2 = ' num2str(Rsq)]};
 text(x_fit(1,1).*3,y_fit_draw(1,1).*(0),txt)
 fitresult.p1./fitresult.p2
-Sd_p1
+1./fitresult.p2

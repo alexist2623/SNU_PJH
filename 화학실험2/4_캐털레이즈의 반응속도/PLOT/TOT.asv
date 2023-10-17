@@ -1,6 +1,6 @@
-y = readvars('DATA.xlsx','Range','B28:B32');
-x = readvars('DATA.xlsx','Range','A28:A32');
-yposerr = readvars('DATA.xlsx','Range','C28:C32');
+y = readvars('DATA.xlsx','Range','B27:B32');
+x = readvars('DATA.xlsx','Range','A27:A32');
+yposerr = readvars('DATA.xlsx','Range','C27:C32');
 ynegerr = yposerr;
 
 V_liq = 0.032;
@@ -47,13 +47,12 @@ set(h1,'facealpha',0.2,'edgecolor','none');
 
 hold off
 
-title('1/v vs 1/[S]')
+title('1/v vs 1/[S] with 0.5%')
 xlabel('1/[H_{2}O(l)] [1/M]')
 ylabel('1/v [s/M]')
 legend('Data', 'Fitting Curve', '95% Confidence Line', 'Location','NorthEast')
 xlim([min(x_fit), max(x_fit)])
 txt = {['y = (' sprintf('%.2e',fitresult.p1) '\pm' sprintf('%.2e', Sd_p1 ) ') * x + (' sprintf('%.2e',fitresult.p2) '\pm' sprintf('%.2e', Sd_p2 ) ')'],...
     ['R^2 = ' num2str(Rsq)]};
-text(x_fit(1,1).*2,y_fit_draw(1,1).*(-1),txt)
+text(x_fit(1,1).*3,y_fit_draw(1,1).*(0),txt)
 fitresult.p1./fitresult.p2
-Sd_p1

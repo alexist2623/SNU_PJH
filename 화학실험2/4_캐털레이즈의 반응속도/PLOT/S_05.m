@@ -1,5 +1,5 @@
-y = readvars('DATA.xlsx','Range','B2:B4');
-x = readvars('DATA.xlsx','Range','A2:A4');
+y = readvars('DATA.xlsx','Range','B2:B10');
+x = readvars('DATA.xlsx','Range','A2:A10');
 % PV = nRT
 % n = PV/RT
 % V ~= 100mL = 0.1L = 0.0001 m^3

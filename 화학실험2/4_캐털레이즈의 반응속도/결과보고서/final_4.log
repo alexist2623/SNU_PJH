@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.4.9)  14 OCT 2023 22:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.4.9)  15 OCT 2023 15:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -744,6 +744,9 @@ LaTeX Warning: Label `sec:level2' multiply defined.
 
 LaTeX Warning: Label `sec:level1' multiply defined.
 
+
+LaTeX Warning: Label `sec:level1' multiply defined.
+
 )
 \openout1 = `final_4.aux'.
 
@@ -866,96 +869,140 @@ File: MOL_60.png Graphic file (type png)
 Package pdftex.def Info: MOL_60.png  used on input line 186.
 (pdftex.def)             Requested size: 203.99689pt x 152.99312pt.
  [1{c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<TOT.png, id=79, 632.3625pt x 474.27188pt>
-File: TOT.png Graphic file (type png)
-<use TOT.png>
-Package pdftex.def Info: TOT.png  used on input line 200.
-(pdftex.def)             Requested size: 246.0pt x 184.49489pt.
+<TOT_w_05.png, id=77, 632.3625pt x 474.27188pt>
+File: TOT_w_05.png Graphic file (type png)
+<use TOT_w_05.png>
+Package pdftex.def Info: TOT_w_05.png  used on input line 201.
+(pdftex.def)             Requested size: 203.99689pt x 152.99312pt.
+<TOT_wo_05.png, id=78, 632.3625pt x 474.27188pt>
+File: TOT_wo_05.png Graphic file (type png)
+<use TOT_wo_05.png>
+Package pdftex.def Info: TOT_wo_05.png  used on input line 205.
+(pdftex.def)             Requested size: 203.99689pt x 152.99312pt.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 211.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 220.
+
+<HEAT_60.png, id=79, 632.3625pt x 474.27188pt>
+File: HEAT_60.png Graphic file (type png)
+<use HEAT_60.png>
+Package pdftex.def Info: HEAT_60.png  used on input line 229.
+(pdftex.def)             Requested size: 221.3985pt x 166.0483pt.
+[2 <./First.png> <./Second.png> <./Third.png> <./Fourth.png> <./denaturation.pn
+g>]
 LaTeX Font Info:    Font shape `LUC/nanummj/m/it' in size <10> not available
 (Font)              Font shape `LUC/nanummj/m/sl' tried instead on input line 2
-08.
+39.
+ [3 <./MOL_05.png (PNG copy)> <./MOL_10.png (PNG copy)> <./MOL_20.png (PNG copy
+)> <./MOL_30.png (PNG copy)> <./MOL_40.png (PNG copy)> <./MOL_60.png (PNG copy)
+>]
+Underfull \hbox (badness 7925) in paragraph at lines 245--246
+[]\OT1/cmr/m/n/10 [4]Jones, P., & Sug-gett, A. (1968, De-cem-ber
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 245--246
+\OT1/cmr/m/n/10 1). The cata-lase{hydrogen per-ox-ide sys-tem. A
+ []
+
+
+Underfull \hbox (badness 6658) in paragraph at lines 245--246
+\OT1/cmr/m/n/10 the-o-ret-i-cal ap-praisal of the mech-a-nism of cata-
+ []
+
+
+Underfull \hbox (badness 3590) in paragraph at lines 245--246
+\OT1/cmr/m/n/10 lase ac-tion. \OT1/cmr/m/it/10 Bio-chem-i-cal Jour-nal\OT1/cmr/
+m/n/10 , 110(4), 621{629.
+ []
 
 No file final_4.bbl.
-[2 <./First.png> <./Second.png> <./Third.png> <./Fourth.png> <./denaturation.pn
-g>] [3 <./MOL_05.png (PNG copy)> <./MOL_10.png (PNG copy)> <./MOL_20.png (PNG c
-opy)> <./MOL_30.png (PNG copy)> <./MOL_40.png (PNG copy)> <./MOL_60.png (PNG co
-py)>] [4 <./TOT.png (PNG copy)>] (./final_4.aux)
+[4 <./TOT_w_05.png (PNG copy)> <./TOT_wo_05.png (PNG copy)> <./HEAT_60.png (PNG
+ copy)>] (./final_4.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 19194 strings out of 476017
- 384695 string characters out of 5793767
- 1888660 words of memory out of 5000000
- 39258 multiletter control sequences out of 15000+600000
- 545833 words of font info for 148 fonts, out of 8000000 for 9000
+ 19241 strings out of 476017
+ 385392 string characters out of 5793767
+ 1889660 words of memory out of 5000000
+ 39298 multiletter control sequences out of 15000+600000
+ 549706 words of font info for 162 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,18n,103p,779b,578s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,18n,103p,1146b,733s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb><c:/texl
 ive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2023/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2023/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2023/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmr5.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmr7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb>
-<c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive
-/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2023/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2023/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmti10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/na
-numtype1/nanummjbac.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/nanumtyp
-e1/nanummjbb3.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nan
-ummjbb8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjbb
-c.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjbbe.pfb>
-<c:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjbc1.pfb><c:/te
-xlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjbc2.pfb><c:/texlive/
-2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjbc6.pfb><c:/texlive/2023/t
-exmf-dist/fonts/type1/public/nanumtype1/nanummjbc7.pfb><c:/texlive/2023/texmf-d
-ist/fonts/type1/public/nanumtype1/nanummjbce.pfb><c:/texlive/2023/texmf-dist/fo
-nts/type1/public/nanumtype1/nanummjbd1.pfb><c:/texlive/2023/texmf-dist/fonts/ty
-pe1/public/nanumtype1/nanummjmac.pfb><c:/texlive/2023/texmf-dist/fonts/type1/pu
-blic/nanumtype1/nanummjmad.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/n
-anumtype1/nanummjmae.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/nanumty
-pe1/nanummjmaf.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/na
-nummjmb0.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjm
-b1.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb2.pfb
-><c:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb3.pfb><c:/t
-exlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb4.pfb><c:/texlive
-/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb5.pfb><c:/texlive/2023/
-texmf-dist/fonts/type1/public/nanumtype1/nanummjmb6.pfb><c:/texlive/2023/texmf-
-dist/fonts/type1/public/nanumtype1/nanummjmb7.pfb><c:/texlive/2023/texmf-dist/f
-onts/type1/public/nanumtype1/nanummjmb8.pfb><c:/texlive/2023/texmf-dist/fonts/t
-ype1/public/nanumtype1/nanummjmb9.pfb><c:/texlive/2023/texmf-dist/fonts/type1/p
-ublic/nanumtype1/nanummjmba.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/
-nanumtype1/nanummjmbb.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/nanumt
-ype1/nanummjmbc.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/n
-anummjmbc.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummj
-mbd.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbe.pf
-b><c:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc0.pfb><c:/
-texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc1.pfb><c:/texliv
-e/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc2.pfb><c:/texlive/2023
-/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc2.pfb><c:/texlive/2023/texmf
--dist/fonts/type1/public/nanumtype1/nanummjmc5.pfb><c:/texlive/2023/texmf-dist/
-fonts/type1/public/nanumtype1/nanummjmc6.pfb><c:/texlive/2023/texmf-dist/fonts/
-type1/public/nanumtype1/nanummjmc7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/
-public/nanumtype1/nanummjmc7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public
-/nanumtype1/nanummjmc8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/nanum
-type1/nanummjmc9.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/
-nanummjmcc.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanumm
-jmcd.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmce.p
-fb><c:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd0.pfb><c:
-/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd1.pfb><c:/texli
-ve/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd3.pfb><c:/texlive/202
-3/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd4.pfb><c:/texlive/2023/texm
-f-dist/fonts/type1/public/nanumtype1/nanummjmd5.pfb><c:/texlive/2023/texmf-dist
-/fonts/type1/public/nanumtype1/nanummjmd5.pfb><c:/texlive/2023/texmf-dist/fonts
-/type1/public/nanumtype1/nanummjmd6.pfb><c:/texlive/2023/texmf-dist/fonts/type1
-/public/nanumtype1/nanummjmd6.pfb>
-Output written on final_4.pdf (4 pages, 3194048 bytes).
+t/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2023/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmmi9.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmr10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pf
+b><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texli
+ve/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2023/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2023/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2023/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmsy10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmsy6.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+sy7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb><c
+:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive
+/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjbac.pfb><c:/texlive/2023/
+texmf-dist/fonts/type1/public/nanumtype1/nanummjbb3.pfb><c:/texlive/2023/texmf-
+dist/fonts/type1/public/nanumtype1/nanummjbb8.pfb><c:/texlive/2023/texmf-dist/f
+onts/type1/public/nanumtype1/nanummjbbc.pfb><c:/texlive/2023/texmf-dist/fonts/t
+ype1/public/nanumtype1/nanummjbc1.pfb><c:/texlive/2023/texmf-dist/fonts/type1/p
+ublic/nanumtype1/nanummjbc2.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/
+nanumtype1/nanummjbc7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/nanumt
+ype1/nanummjbce.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/n
+anummjbd1.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummj
+mac.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmad.pf
+b><c:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmae.pfb><c:/
+texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmaf.pfb><c:/texliv
+e/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb0.pfb><c:/texlive/2023
+/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb1.pfb><c:/texlive/2023/texmf
+-dist/fonts/type1/public/nanumtype1/nanummjmb2.pfb><c:/texlive/2023/texmf-dist/
+fonts/type1/public/nanumtype1/nanummjmb3.pfb><c:/texlive/2023/texmf-dist/fonts/
+type1/public/nanumtype1/nanummjmb4.pfb><c:/texlive/2023/texmf-dist/fonts/type1/
+public/nanumtype1/nanummjmb5.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public
+/nanumtype1/nanummjmb6.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/nanum
+type1/nanummjmb7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/
+nanummjmb8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanumm
+jmb9.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmba.p
+fb><c:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbb.pfb><c:
+/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbc.pfb><c:/texli
+ve/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbc.pfb><c:/texlive/202
+3/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbd.pfb><c:/texlive/2023/texm
+f-dist/fonts/type1/public/nanumtype1/nanummjmbe.pfb><c:/texlive/2023/texmf-dist
+/fonts/type1/public/nanumtype1/nanummjmc0.pfb><c:/texlive/2023/texmf-dist/fonts
+/type1/public/nanumtype1/nanummjmc1.pfb><c:/texlive/2023/texmf-dist/fonts/type1
+/public/nanumtype1/nanummjmc2.pfb><c:/texlive/2023/texmf-dist/fonts/type1/publi
+c/nanumtype1/nanummjmc2.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/nanu
+mtype1/nanummjmc5.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1
+/nanummjmc6.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanum
+mjmc7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc7.
+pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc8.pfb><c
+:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc9.pfb><c:/texl
+ive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmcc.pfb><c:/texlive/20
+23/texmf-dist/fonts/type1/public/nanumtype1/nanummjmcd.pfb><c:/texlive/2023/tex
+mf-dist/fonts/type1/public/nanumtype1/nanummjmce.pfb><c:/texlive/2023/texmf-dis
+t/fonts/type1/public/nanumtype1/nanummjmcf.pfb><c:/texlive/2023/texmf-dist/font
+s/type1/public/nanumtype1/nanummjmd0.pfb><c:/texlive/2023/texmf-dist/fonts/type
+1/public/nanumtype1/nanummjmd1.pfb><c:/texlive/2023/texmf-dist/fonts/type1/publ
+ic/nanumtype1/nanummjmd2.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/nan
+umtype1/nanummjmd3.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype
+1/nanummjmd4.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanu
+mmjmd5.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd5
+.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd6.pfb><
+c:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd6.pfb>
+Output written on final_4.pdf (4 pages, 3442928 bytes).
 PDF statistics:
- 359 PDF objects out of 1000 (max. 8388607)
- 208 compressed objects within 3 object streams
+ 381 PDF objects out of 1000 (max. 8388607)
+ 220 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 73 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 83 words of extra memory for PDF output out of 10000 (max. 10000000)
 

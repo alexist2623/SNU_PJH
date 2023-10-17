@@ -1,0 +1,118 @@
+% ****** Start of file apssamp.tex ******
+%
+%   This file is part of the APS files in the REVTeX 4.2 distribution.
+%   Version 4.2a of REVTeX, December 2014
+%
+%   Copyright (c) 2014 The American Physical Society.
+%
+%   See the REVTeX 4 README file for restrictions and more information.
+%
+% TeX'ing this file requires that you have AMS-LaTeX 2.0 installed
+% as well as the rest of the prerequisites for REVTeX 4.2
+%
+% See the REVTeX 4 README file
+% It also requires running BibTeX. The commands are as follows:
+%
+%  1)  latex apssamp.tex
+%  2)  bibtex apssamp
+%  3)  latex apssamp.tex
+%  4)  latex apssamp.tex
+%
+\documentclass[%
+ reprint,
+%superscriptaddress,
+%groupedaddress,
+%unsortedaddress,
+%runinaddress,
+%frontmatterverbose, 
+%preprint,
+%preprintnumbers,
+%nofootinbib,
+%nobibnotes,
+%bibnotes,
+ amsmath,amssymb,
+ aps,
+%pra,
+%prb,
+%rmp,
+%prstab,
+%prstper,
+%floatfix,
+]{revtex4-2}
+\usepackage{kotex}
+\usepackage{graphicx}% Include figure files
+\usepackage{dcolumn}% Align table columns on decimal point
+\usepackage{bm}% bold math
+\usepackage{chemformula}
+%\usepackage{hyperref}% add hypertext capabilities
+%\usepackage[mathlines]{lineno}% Enable numbering of text and display math
+%\linenumbers\relax % Commence numbering lines
+
+%\usepackage[showframe,%Uncomment any one of the following lines to test 
+%%scale=0.7, marginratio={1:1, 2:3}, ignoreall,% default settings
+%%text={7in,10in},centering,
+%%margin=1.5in,
+%%total={6.5in,8.75in}, top=1.2in, left=0.9in, includefoot,
+%%height=10in,a5paper,hmargin={3cm,0.8in},
+%]{geometry}
+
+\begin{document}
+
+
+\title{MALDI-TOF 펩타이드 질량분석 예비보고서}
+
+\author{서울대학교 전기정보공학부 2018-12432 박정현}
+ \email{alexist@snu.ac.kr}
+\date{실험일자: 10/17/2023}% It is always \today, today,
+             %  but any date may be explicitly specified
+
+\begin{abstract}
+본 실험에서는 주어진 미지의 단백질을 트립신으로 분해한 후 MALDI-TOF MS를 통해 각 펩타이들의 분자량을 확인한 뒤 lysozome, bovine serum ,albumin(BSA), ovalbumin 중 어떤 단백질에 해당하는 확인한다. 이를 통해 protein에 대한 이해도를 높이고 MALDI-TOF MS의 원리와 수행 방식에 대한 이해도를 높인다.
+\end{abstract}
+
+%\keywords{Suggested keywords}%Use showkeys class option if keyword
+                              %display desired
+\maketitle
+
+%\tableofcontents
+
+\section{\label{sec:level1}Introudction}
+\subsection{\label{sec:level2}실험 배경 및 이론}
+고분자의 단백질 구조를 알아내는 것은 유전체학, 화학, 생명과학 등 여러분야에서 중요한 일이다. 이러한 고분자 단백질의 구조를 파악하는 과정을 동정(identify)라고 하며 이러한 동정과정에는 여러가지가 존재한다. 본 실험에서는 단백질을 트립신을 이용해 분해한 뒤 MALDI-TOF MS 방법을 통해 질량분석을 하여 MALDI-TOF MS의 원리와 이를 수행하는 과정에 대한 이해도를 높인다.
+
+단백질은 총 4가지의 level을 가진다. 아미노산이 펩타이드 결합을 하게 되면서 사슬을 이루게 되는데 이러한 사슬을 primary structure라고 한다. 이러한 아미노산 사슬 펩타이드가 아미노산 사이에서 수소결합하여 구부러지는 등 구조가 변화하면 이러한 구조를 secondary structure라고 한다. 이러한 secondary structure에는 나선형의 $\alpha-helix$, 그리고 평면형의 $\beta-sheet$가 존재한다. 이러한 secondary structure가 반데르발스 상호작용, 혹은 이온 상호작용으로 3차원 구조를 이루게 되는 경우 이러한 구조를 tertiary structure라고 한다. 이러한 tertiary structure가 하나의 사슬이 아닌 여러개의 사슬이 존재하는 경우 quarternary structure라고 한다.[3]
+
+3차원 구조를 이루고 있는 단백질은 상온에서 안정한 상태이므로 트립신(trypsin)과 같은 효소와 상호작용하기 어렵다. 이러한 구조가 풀어져 느슨해진 사슬이 되는 과정을 변성(denaturation)이라고 하며 아래와 같은 깁스에너지를 통해 이해할 수 있다. 상온에서는 사슬간의 상호작용으로 인해 낮은 엔탈피 값을 가지고 이로 인해 엔트로피에 의한 영향은 적다. 하지만 고온이 됨에 따라 엔트로피값이 큰 구조가 더 낮은 깁스에너지를 가진다. 느슨한 protein구조는 경우의수가 더 많으므로 더 높은 엔트로피를 가지므로 고온에서는 얽혀 있던 protein구조가 느슨해지게 된다. 이렇게 느슨해진 구조는 트립신이 상호작용할 부분이 많아져 가수분해가 더 활발하게 일어난다.
+\begin{align}
+	\Delta G &= \Delta H - T \Delta S
+\end{align}
+
+트립신은 N말단에서 시작했을 때 아르지닌(arginine, R), 그리고 라이신(lysine, K)아미노산 잔기 다음의 펩타이드 결합을 분해한다. [1] 이렇게 분해된 펩타이드들은 각기 다른 분자량을 가지고 이러한 분자량은 기존의 데이터 베이스에서 비교분석할 수 있으므로 각 펩타이드의 분자량만을 측정하면 단백질의 구조를 파악할 수 있다. 단 트립신이 이를 분해하지 못하는 경우가 존재하는데 이러한 경우를 miscleavage라고 한다.
+
+분자의 분자량을 측정하는 방법에는 여러 방법이 존재한다. Electrospray ionization (ESI-MS)는 얇게 뿌려진 물질에 강한 전기장을 주어 이온화시키고 전기장을 통해 이를 가속시켜 분자량을 측정한다. Fast-atom bombardment(FAB-MS)의 경우 고온의 비활성기체를 충돌시켜 분자를 이온화시키고 전기장을 통해 이를 가속시켜 도착시간을 측정해 분자량을 측정한다. Laser ionization (LIMS)의 경우 분자가 아닌 레이저를 이용해 표면의 분자를 이온화하고 전기장을 통해 이를 가속시켜 도착시간을 측정해 분자량을 측정한다. 본실험에서 사용하는 방식인 Matrix-assisted desorption ionization (MALDI)의 경우 LIMS와 마찬가지로 laser를 이용하여 분자를 이온화시키고 전기장을 통해 이를 가속시킨다. 단, MALDI의 경우 matrix라는 물질을 추가적으로 과량으로 투입해 펩타이드와 함께 결정을 만들게 된다. 이때 matrix는 벤젠 구조를 가져 빛을 잘흡수하므로 펩타이드를 수소이온이 결합된 이온으로 잘 형성해주게 된다.[1][3] 이 때 레이저를 입사하기 시작한 시간, 전기장의 세기를 아므로 레이저를 통해 흡수한 에너지를 $\varepsilon$라고 했을 때 아래의 식이 만족한다.
+\begin{align}
+	\varepsilon = \frac{1}{2}Mv^{2}
+\end{align}
+만약 전기장 $E$의 세기가 충분히 큰 경우  $\varepsilon$는 무시 가능하므로 분자가 이온 검출기에 도착하는 시간은 아래와 같다.
+
+\begin{align}
+	\frac{1}{2}\frac{eE}{M}\Delta t^{2} &= l\\
+	\Delta t &= \sqrt{\frac{2lM}{eE}}
+\end{align}
+위의 식을 통해 이온검출기에 도착한 시간을 측정하면 분자량을 역으로 추산할 수 있다.
+
+\section{\label{sec:level1}Experimental}
+트립신, CHCA matrix, lysozome, BSA, ovalbumin을 준비한다. 이후에 마이크로 피펫을 이용해 $1mg/ml$ 단백질 용액 $50\mu L$를 변성을 시켜 가수분해가 잘 되도록 하기 위해 $90^{o}C$의 가열 블록에서 가열한다. 약 10분가량 가열한 후 $0.1mg/10mM$ 트립신 $50\mu L$를 가해 $37^{o}C$의 가열 블록에서 10분간 반응시켜 가수분해 시킨다. 가수분해된 펩타이드 용액을 $10mg/0.1\%$ 매트립스 용액 $10\mu L$를 가하고 섞은 뒤 $1\mu L$를 시료판에 로딩한다. 질량분석기를 이용해 스펙트럼을 얻은 뒤 펩타이드 질량 자문법을 이용해 어떤 단백질인지 분석한다.
+
+\section{\label{sec:level1}Reference}
+[1] 김. (2010, August 1). 캐털레이스의 반응속도. In \textit{일반화학실험} (1th ed., p. 192).
+
+[2] Oxtoby, D., Gillis, H., \& Campion, A. (2007, April 2). Rates of Chemical and Physical Processes. In \textit{Principles of Modern Chemistry} (6th ed., pp. 137). Cengage Learning.
+
+[3] Garrett, R. H., \& Grisham, C. M. (2002, January 1). Proteins: Their Biological Functions and Primary Structure. In \textit{Principles of Biochemistry} (p. 120). Cengage Learning.
+
+
+
+\end{document}
+%
+% ****** End of file apssamp.tex ******
