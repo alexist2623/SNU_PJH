@@ -1,4 +1,4 @@
-y = readvars('Hydrogen.xlsx','Range','B1:B787');
+y = readvars('Hydrogen.xlsx','Range','H1:H787');
 x = readvars('Hydrogen.xlsx','Range','A1:A787');
 x = 3.*(1e8)./x;
 y = y - mean(y(453:787));
@@ -37,7 +37,7 @@ plot(x_3,y_3,'r--','LineWidth',1)
 plot(x_4,y_4,'r--','LineWidth',1)
 xlim([min(x) max(x)])
 ylim([min(y) max(y_1).*1.02])
-xlabel('frequency[Hz]')
+xlabel('frequency[kHz]')
 ylabel('normalized power[W/W]')
 legend('data','656nm fit','486nm fit', '434nm fit', '410nm fit')
 hold off
@@ -55,5 +55,11 @@ LW1.*f1.a1
 LW2.*f2.a1
 LW3.*f3.a1
 LW4.*f4.a1
+
+A1 = f1.a1
+A2 = f2.a1
+A3 = f3.a1
+A4 = f4.a1
+
 % 1st 5957Hz 0.94
 % 2st 3801Hz 0.0228293
