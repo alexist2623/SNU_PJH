@@ -63,7 +63,7 @@
 
 \author{서울대학교 전기정보공학부 2018-12432 박정현}
  \email{alexist@snu.ac.kr}
-\date{실험일자: 10/17/2023}% It is always \today, today,
+\date{실험일자: 10/24/2023}% It is always \today, today,
              %  but any date may be explicitly specified
 
 \begin{abstract}
@@ -89,7 +89,7 @@
 
 트립신은 N말단에서 시작했을 때 아르지닌(arginine, R), 그리고 라이신(lysine, K)아미노산 잔기 다음의 펩타이드 결합을 분해한다. [1] 이렇게 분해된 펩타이드들은 각기 다른 분자량을 가지고 이러한 분자량은 기존의 데이터 베이스에서 비교분석할 수 있으므로 각 펩타이드의 분자량만을 측정하면 단백질의 구조를 파악할 수 있다. 단 트립신이 이를 분해하지 못하는 경우가 존재하는데 이러한 경우를 miscleavage라고 한다.
 
-분자의 분자량을 측정하는 방법에는 여러 방법이 존재한다. Electrospray ionization (ESI-MS)는 얇게 뿌려진 물질에 강한 전기장을 주어 이온화시키고 전기장을 통해 이를 가속시켜 분자량을 측정한다. Fast-atom bombardment(FAB-MS)의 경우 고온의 비활성기체를 충돌시켜 분자를 이온화시키고 전기장을 통해 이를 가속시켜 도착시간을 측정해 분자량을 측정한다. Laser ionization (LIMS)의 경우 분자가 아닌 레이저를 이용해 표면의 분자를 이온화하고 전기장을 통해 이를 가속시켜 도착시간을 측정해 분자량을 측정한다. 본실험에서 사용하는 방식인 Matrix-assisted desorption ionization (MALDI)의 경우 LIMS와 마찬가지로 laser를 이용하여 분자를 이온화시키고 전기장을 통해 이를 가속시킨다. 단, MALDI의 경우 matrix라는 물질을 추가적으로 과량으로 투입해 펩타이드와 함께 결정을 만들게 된다. 이때 matrix는 벤젠 구조를 가져 빛을 잘흡수하므로 펩타이드를 수소이온이 결합된 이온으로 잘 형성해주게 된다.[1][3] 이 때 레이저를 입사하기 시작한 시간, 전기장의 세기를 아므로 레이저를 통해 흡수한 에너지를 $\varepsilon$라고 했을 때 아래의 식이 만족한다.
+분자의 분자량을 측정하는 방법에는 여러 방법이 존재한다. Electrospray ionization (ESI-MS)는 얇게 뿌려진 물질에 강한 전기장을 주어 이온화시키고 전기장을 통해 이를 가속시켜 분자량을 측정한다. Fast-atom bombardment(FAB-MS)의 경우 고온의 비활성기체를 충돌시켜 분자를 이온화시키고 전기장을 통해 이를 가속시켜 도착시간을 측정해 분자량을 측정한다. Laser ionization (LIMS)의 경우 분자가 아닌 레이저를 이용해 표면의 분자를 이온화하고 전기장을 통해 이를 가속시켜 도착시간을 측정해 분자량을 측정한다. 본실험에서 사용하는 방식인 Matrix-assisted desorption ionization (MALDI)의 경우 LIMS와 마찬가지로 laser를 이용하여 분자를 이온화시키고 전기장을 통해 이를 가속시킨다. 단, MALDI의 경우 matrix라는 물질을 추가적으로 과량으로 투입해 펩타이드와 함께 결정을 만들게 된다. 이때 matrix는 벤젠 구조를 가져 빛을 잘흡수하므로 펩타이드를 수소이온이 결합된 이온으로 잘 형성해주게 된다.[1][2] 이 때 레이저를 입사하기 시작한 시간, 전기장의 세기를 아므로 레이저를 통해 흡수한 에너지를 $\varepsilon$라고 했을 때 아래의 식이 만족한다.
 \begin{align}
 	\varepsilon = \frac{1}{2}Mv^{2}
 \end{align}
@@ -102,14 +102,12 @@
 위의 식을 통해 이온검출기에 도착한 시간을 측정하면 분자량을 역으로 추산할 수 있다.
 
 \section{\label{sec:level1}Experimental}
-트립신, CHCA matrix, lysozome, BSA, ovalbumin을 준비한다. 이후에 마이크로 피펫을 이용해 $1mg/ml$ 단백질 용액 $50\mu L$를 변성을 시켜 가수분해가 잘 되도록 하기 위해 $90^{o}C$의 가열 블록에서 가열한다. 약 10분가량 가열한 후 $0.1mg/10mM$ 트립신 $50\mu L$를 가해 $37^{o}C$의 가열 블록에서 10분간 반응시켜 가수분해 시킨다. 가수분해된 펩타이드 용액을 $10mg/0.1\%$ 매트립스 용액 $10\mu L$를 가하고 섞은 뒤 $1\mu L$를 시료판에 로딩한다. 질량분석기를 이용해 스펙트럼을 얻은 뒤 펩타이드 질량 자문법을 이용해 어떤 단백질인지 분석한다.
+트립신, CHCA matrix, lysozome, BSA, ovalbumin을 준비한다. 이후에 마이크로 피펫을 이용해 $1mg/ml$ 단백질 용액 $50\mu L$를 변성을 시켜 가수분해가 잘 되도록 하기 위해 $90^{o}C$의 가열 블록에서 가열한다. 단, 가열블록이 뜨거울 수 있으니 중의한다. 약 10분가량 가열한 후 $0.1mg/10mM$ 트립신 $50\mu L$를 가해 $37^{o}C$의 가열 블록에서 10분간 반응시켜 가수분해 시킨다. 가수분해된 펩타이드 용액을 $10mg/0.1\%$ 매트립스 용액 $10\mu L$를 가하고 섞은 뒤 $1\mu L$를 시료판에 로딩한다. 질량분석기를 이용해 스펙트럼을 얻은 뒤 펩타이드 질량 자문법을 이용해 어떤 단백질인지 분석한다.
 
 \section{\label{sec:level1}Reference}
-[1] 김. (2010, August 1). 캐털레이스의 반응속도. In \textit{일반화학실험} (1th ed., p. 192).
+[1] 김. (2010, August 1). MALDI-TOF 펩타이드 질량분석. In \textit{일반화학실험} (1th ed., p. 192).
 
-[2] Oxtoby, D., Gillis, H., \& Campion, A. (2007, April 2). Rates of Chemical and Physical Processes. In \textit{Principles of Modern Chemistry} (6th ed., pp. 137). Cengage Learning.
-
-[3] Garrett, R. H., \& Grisham, C. M. (2002, January 1). Proteins: Their Biological Functions and Primary Structure. In \textit{Principles of Biochemistry} (p. 120). Cengage Learning.
+[2] Garrett, R. H., \& Grisham, C. M. (2002, January 1). Proteins: Their Biological Functions and Primary Structure. In \textit{Principles of Biochemistry} (p. 137). Cengage Learning.
 
 
 

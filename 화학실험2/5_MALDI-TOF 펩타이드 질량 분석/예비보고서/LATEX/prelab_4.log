@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.4.9)  15 OCT 2023 21:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.4.9)  22 OCT 2023 17:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -698,6 +698,9 @@ Class revtex4-2 Info: multicol was not loaded (OK!) on input line 59.
 
 LaTeX Warning: Label `sec:level1' multiply defined.
 
+
+LaTeX Warning: Label `sec:level1' multiply defined.
+
 )
 \openout1 = `prelab_4.aux'.
 
@@ -852,7 +855,7 @@ e1/nanummjmd5.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nan
 ummjmd6.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd
 6.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd7.pfb>
 
-Output written on prelab_4.pdf (2 pages, 2800030 bytes).
+Output written on prelab_4.pdf (2 pages, 2798137 bytes).
 PDF statistics:
  371 PDF objects out of 1000 (max. 8388607)
  222 compressed objects within 3 object streams
