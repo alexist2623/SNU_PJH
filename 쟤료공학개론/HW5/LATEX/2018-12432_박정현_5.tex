@@ -1,0 +1,95 @@
+\documentclass[a4paper]{oblivoir}
+
+\title{쟤료공학개론 과제5}
+\author{2018-12432, Electrical and Computer Engineering department, ParkJeonghyun}
+\date{10/23/2023}
+
+\newcommand{\be}{\begin{equation}}
+\newcommand{\ee}{\end{equation}}
+
+\usepackage{fapapersize}
+\usepackage{amsmath}
+\usepackage{MnSymbol}
+\usepackage{wasysym}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subfig}
+\usepackage{hyperref}
+\usepackage{cite}
+\usepackage{dtk-logos}
+\usepackage{physics}
+\usepackage{tikz}
+\usetikzlibrary{decorations.markings, positioning}
+\usepackage{dtk-logos}
+\usepackage{fancyvrb}
+\usepackage{array} 
+\usepackage{chemformula}
+
+\usefapapersize{ 210mm, 297mm, 15mm, 15mm, 15mm, 15mm}
+\DeclareGraphicsExtensions{.pdf, .png, .jpg}
+
+\renewcommand{\figurename}{Figure}
+
+\begin{document}
+
+\maketitle
+\section{Problem 1}
+\subsection{a}
+FCC의 unit cell 크기는 $a = \frac{4R}{\sqrt{2}}$이므로 Cu의 burger vector크기는 아래와 같다.
+\begin{align}
+	\abs{\vec{b}} &= \sqrt{2}R\sqrt{2}\\
+	&= 2R\\
+	&= 2\times 0.1278 nm\\
+	&= 0.2556nm
+\end{align}
+
+BCC의 unit cell 크기는 $a = \frac{4R}{\sqrt{3}}$이므로 Fe의 burger vector크기는 아래와 같다.
+\begin{align}
+	\abs{\vec{b}} &= \frac{4R}{2\sqrt{3}}\sqrt{3}\\
+	&= 2R\\
+	&= 2\times 0.1241 nm\\
+	&= 0.2482nm
+\end{align}
+
+\section{Problem 2}
+\begin{align}
+	\cos\phi &= \frac{(1,1,2)\cdot(1,1,1)}{\sqrt{(1+1+4)(1+1+1)}}\\
+	&= \frac{4}{\sqrt{18}}\\
+	&= \frac{4}{3\sqrt{2}}
+\end{align}
+
+\begin{align}
+	\cos\lambda &= \frac{(1,1,2)\cdot(0,1,-1)}{\sqrt{(1+1+4)(0+1+1)}}\\
+	&= \frac{-1}{\sqrt{12}}\\
+	&= \frac{-1}{2\sqrt{3}}
+\end{align}
+
+\begin{align}
+	\tau_{R} &= \sigma \cos \phi \cos \lambda\\
+	&= 5.12\times\frac{-1}{2\sqrt{3}}\times \frac{4}{3\sqrt{2}} MPa\\
+	&= -1.39 MPa
+\end{align}
+
+\section{Problem 3}
+\begin{align}
+	d_{1}^{2}-d_{0}^{2} &= Kt_{1}
+\end{align}
+따라서
+\begin{align}
+	d_{f}^{2} &= \frac{d_{1}^{2}-d_{0}^{2}}{t_{1}}t_{2}+d_{0}^{2}\\
+	d_{f} &= \sqrt{\frac{d_{1}^{2}-d_{0}^{2}}{t_{1}}t_{2}+d_{0}^{2}}\\
+	&= \sqrt{\frac{7.2^{2}-2.1^{2}}{3}\times 1.7+2.1^{2}}\times 10^{-2} mm\\
+	&= 5.59 \times 10^{-2}mm
+\end{align}
+
+\section{Problem 4}
+Grain size reduction의 경우 grain boundary에서는 입자가 움직이기 어렵다. 따라서 grain의 크기가 감소하면 입자가 움직이기 어려워 금속이 변형되기 어려워진다. Solid solutoin의 경우 lattice사이의 빈공간을 다른 입자가 채워 stress가 발생하게 되고 원자들이 이동하기 어려워진다. 따라서 변형하기가 어려워져 금속이 강화된다. Precipitation Strengthening의 경우 기본 금속에 다른 금속을 추가하여 금속이 이동하는 것을 어렵게 만든다. 이로 인해 shear stress로 이동하기 어려워 지고 금속이 강화된다. Cold work의 경우 dislocation을 entanfle 시켜 dislocation 들이 이동하기 어렵게 만든다. 금속의 변형은 dislocation의 움직임에 해당하므로 금속은 강화된다.
+
+\section{Problem 4}
+Grain boundary에서의 stress는 아래와 같다.
+\begin{align}
+	\sigma_{yield} &= \sigma_{0} + k_{y}d^{-1/2}
+\end{align}
+따라서 d가 커짐에 따라 stree가 감소해 에너지도 감소하므로 grain boundary에서의 에너지 감소가 grain growth을 발생시킨다고 할 수 있다. Recrystalization의 경우 dislocation과 같은 것들에 의한 strain stess 를 감소시켜 더 낮은 dislocation density를 가지게 되어 더 낮은 에너지를 향하게 된다. 따라서 dislocation 밀도 감소로 인한 에너지 감소가 recystalization을 일으킨다고 할 수 있다.
+
+\end{document}
