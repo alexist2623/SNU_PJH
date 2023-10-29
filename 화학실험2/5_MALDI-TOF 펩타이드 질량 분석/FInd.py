@@ -72,7 +72,7 @@ pep_hemoglobin.sort(key=lambda x: sum(masses[c] for c in x))
 for pep_comp in pep_hemoglobin:
     mass = sum(masses[comp] for comp in pep_comp)
     mass_hemoglobin.append(mass)
-    print(f'{pep_comp} : {mass:.2f}\\\\')
+    print(f'{pep_comp} & {mass:.2f}\\\\')
 
 #Lyso    
 print('###############################\nLSYO\n###############################')
@@ -94,7 +94,7 @@ pep_lysozyme.sort(key=lambda x: sum(masses[c] for c in x))
 for pep_comp in pep_lysozyme:
     mass = sum(masses[comp] for comp in pep_comp)
     mass_lysozyme.append(mass)
-    print(f'{pep_comp} | {mass:.2f}\\\\')
+    print(f'{pep_comp} & {mass:.2f}\\\\')
     
 #BSA   
 print('###############################\nBSA\n###############################')
@@ -116,7 +116,7 @@ pep_bsa.sort(key=lambda x: sum(masses[c] for c in x))
 for pep_comp in pep_bsa:
     mass = sum(masses[comp] for comp in pep_comp)
     mass_bsa.append(mass)
-    print(f'{pep_comp} | {mass:.2f}\\\\')
+    print(f'{pep_comp} & {mass:.2f}\\\\')
     
 #BUMIN 
 print('###############################\nBUMIN\n###############################')
@@ -138,11 +138,11 @@ pep_ovalbumin.sort(key=lambda x: sum(masses[c] for c in x))
 for pep_comp in pep_ovalbumin:
     mass = sum(masses[comp] for comp in pep_comp)
     mass_ovalbumin.append(mass)
-    print(f'{pep_comp} | {mass:.2f}\\\\')
+    print(f'{pep_comp} & {mass:.2f}\\\\')
     
 print()
 
-print('m/z | hemoglobin | lysozyme | BSA | ovalbumin \\\\')
+print('m/z & hemoglobin & lysozyme & BSA & ovalbumin \\\\')
 cov_hemoglobin = 0
 cov_lysozyme = 0
 cov_bsa = 0
@@ -153,7 +153,7 @@ base = 2.5
 exp_val = [x - 1 for x in exp_val]
 
 for exp_comp in exp_val: 
-    print(f'{exp_comp:.2f} | ', end = '')
+    print(f'{exp_comp:.2f} & ', end = '')
     min_pep = ''
     min_val = float('inf')
     for mass in mass_hemoglobin:
@@ -161,7 +161,7 @@ for exp_comp in exp_val:
             min_val = ( exp_comp - mass ) ** 2
             min_pep = 'HEMO'
             percent = (exp_comp - mass)/exp_comp * 100
-    print(f'{percent:.2f}\\% |', end = '')
+    print(f'{percent:.2f}\\% &', end = '')
     if abs(percent) < base:
         cov_hemoglobin += 1
     
@@ -171,7 +171,7 @@ for exp_comp in exp_val:
             min_val = ( exp_comp - mass ) ** 2
             min_pep = 'LYSO'
             percent = (exp_comp - mass)/exp_comp * 100
-    print(f'{percent:.2f}\\% |', end = '')
+    print(f'{percent:.2f}\\% &', end = '')
     if abs(percent) < base:
         cov_lysozyme += 1
     
@@ -181,7 +181,7 @@ for exp_comp in exp_val:
             min_val = ( exp_comp - mass ) ** 2
             min_pep = 'BSA'
             percent = (exp_comp - mass)/exp_comp * 100
-    print(f'{percent:.2f}\\% |', end = '')
+    print(f'{percent:.2f}\\% &', end = '')
     if abs(percent) < base:
         cov_bsa += 1
      
@@ -196,8 +196,8 @@ for exp_comp in exp_val:
         cov_ovalbumin += 1
     
         
-print(f'coverage | {cov_hemoglobin/len(exp_val) * 100:.2f}\\% | { cov_lysozyme/len(exp_val) * 100:.2f}\\% | {  cov_bsa/len(exp_val) * 100:.2f}\\% | {cov_ovalbumin/len(exp_val) * 100:.2f}\\% ')
+print(f'coverage & {cov_hemoglobin/len(exp_val) * 100:.2f}\\% & { cov_lysozyme/len(exp_val) * 100:.2f}\\% & {  cov_bsa/len(exp_val) * 100:.2f}\\% & {cov_ovalbumin/len(exp_val) * 100:.2f}\\% ')
             
-    # print(str(exp_comp) + ' | ' + min_pep)
+    # print(str(exp_comp) + ' & ' + min_pep)
     
     #OUR is HEMO? Since there is no 1280 peak in LYSO...
