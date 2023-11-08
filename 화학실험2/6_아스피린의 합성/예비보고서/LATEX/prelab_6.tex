@@ -1,0 +1,156 @@
+% ****** Start of file apssamp.tex ******
+%
+%   This file is part of the APS files in the REVTeX 4.2 distribution.
+%   Version 4.2a of REVTeX, December 2014
+%
+%   Copyright (c) 2014 The American Physical Society.
+%
+%   See the REVTeX 4 README file for restrictions and more information.
+%
+% TeX'ing this file requires that you have AMS-LaTeX 2.0 installed
+% as well as the rest of the prerequisites for REVTeX 4.2
+%
+% See the REVTeX 4 README file
+% It also requires running BibTeX. The commands are as follows:
+%
+%  1)  latex apssamp.tex
+%  2)  bibtex apssamp
+%  3)  latex apssamp.tex
+%  4)  latex apssamp.tex
+%
+\documentclass[%
+ reprint,
+%superscriptaddress,
+%groupedaddress,
+%unsortedaddress,
+%runinaddress,
+%frontmatterverbose, 
+%preprint,
+%preprintnumbers,
+%nofootinbib,
+%nobibnotes,
+%bibnotes,
+ amsmath,amssymb,
+ aps,
+%pra,
+%prb,
+%rmp,
+%prstab,
+%prstper,
+%floatfix,
+]{revtex4-2}
+\usepackage{kotex}
+\usepackage{graphicx}% Include figure files
+\usepackage{dcolumn}% Align table columns on decimal point
+\usepackage{bm}% bold math
+\usepackage{chemformula}
+\usepackage{chemfig}
+%\usepackage{hyperref}% add hypertext capabilities
+%\usepackage[mathlines]{lineno}% Enable numbering of text and display math
+%\linenumbers\relax % Commence numbering lines
+
+%\usepackage[showframe,%Uncomment any one of the following lines to test 
+%%scale=0.7, marginratio={1:1, 2:3}, ignoreall,% default settings
+%%text={7in,10in},centering,
+%%margin=1.5in,
+%%total={6.5in,8.75in}, top=1.2in, left=0.9in, includefoot,
+%%height=10in,a5paper,hmargin={3cm,0.8in},
+%]{geometry}
+
+\begin{document}
+
+
+\title{아스피린의 합성 예비보고서}
+
+\author{서울대학교 전기정보공학부 2018-12432 박정현}
+ \email{alexist@snu.ac.kr}
+\date{실험일자: 10/31/2023}% It is always \today, today,
+             %  but any date may be explicitly specified
+
+\begin{abstract}
+본 실험에서는 아스피린과 무수아세트산을 반응하여 아스피린을 합성하고 재결정 정제화를 통해 불순물을 제거하여 의약품의 제조과정, 에스터화 반응, 그리고 정제화에 대한 이해도를 높인다.
+\end{abstract}
+
+%\keywords{Suggested keywords}%Use showkeys class option if keyword
+                              %display desired
+\maketitle
+
+%\tableofcontents
+
+\section{\label{sec:level1}Introudction}
+\subsection{\label{sec:level2}실험 배경 및 목적}
+ 아스피린은 합성 의약품 중 가장 성공적인 약물이다. 값싼 살리실산의 알코올기를 에스터화 반응시키면 아스피린을 합성할 수 있다. 하지만 이렇게 만들어진 아스피린은 불순물을 포함하므로 재결정을 통해 정제한 후 사용해야 한다. 본 실험에서는 아스피린을 합성한 후 순도와 수득률을 계산하여 화학반응을 통해 만들어지는 의약품에 대한 이해도를 높인다.[1]
+
+\subsection{\label{sec:level2}살리실산과 무수아세트산 반응}
+아세트산 $\ch{CH_{3}(COOH)}$과 살리실산($\ch{C_{6}H_{4}(OH)COOH}$)이 반응하면 가수분해되어 \ch{H2O}가 생성되므로 수득률을 높이기 위해 무수아세트산을 사용한다. 무수 아세트산과 산이 반응하면 아래와 같다.
+
+\begin{align}
+	&\schemestart
+		\chemfig[atom style={scale=0.6}]{HA} + \chemfig[atom style={scale=0.6}]{-[:30](=[:90]O)-[:330]O-[:30](=[:90]O)-[:330]}\arrow \chemfig[atom style={scale=0.6}]{A^{-}} + \chemfig[atom style={scale=0.6}]{-[:30](=[:90]OH+)-[:330]O-[:30](=[:90]O)-[:330]}
+	\schemestop
+\end{align}
+
+산에 의해 +를 띠는 무수아세트산 이온이 살리실산과 반응하면 아래와 같아진다.
+\begin{align}
+	\begin{aligned}
+	\schemestart
+		\chemfig[atom style={scale=0.6}]{*6(=-(-COOH)=(-OH)-=-)} + \chemfig[atom style={scale=0.6}]{-[:30](=[:90]OH+)-[:330]O-[:30](=[:90]O)-[:330]}
+	\schemestop
+	\\
+	\schemestart
+		\arrow\chemfig[atom style={scale=0.6}]{*6(=-(-COOH)=(-O^{+}(-[:270]H)(-[:30](-[:90]OH)(-[:270])-[:330]O-[:30](=[:90]O)-[:330]))-=-)}
+	\schemestop
+	\end{aligned}
+\end{align}
+
+살리실산과 무수아세트산 화합물이 에스터화 하는 과정은 아래와 같다.
+\begin{align}
+	\begin{aligned}
+	\schemestart
+		\chemfig[atom style={scale=0.6}]{*6(=-(-COOH)=(-O^{+}(-[:270]H)(-[:30](-[:90]OH)(-[:270])-[:330]O-[:30](=[:90]O)-[:330]))-=-)} + \chemfig[atom style={scale=0.6}]{A^{-}}
+		\arrow
+	\schemestop
+	\\
+	\schemestart
+		\chemfig[atom style={scale=0.6}]{*6(=-(-COOH)=(-O(-[:30](-[:90]OH)(-[:270])-[:330]O-[:30](=[:90]O)-[:330]))-=-)} + \chemfig[atom style={scale=0.6}]{HA}
+		\arrow
+	\schemestop
+	\\
+	\schemestart
+		\chemfig[atom style={scale=0.6}]{*6(=-(-COOH)=(-O(-[:30](-[:90]OH)(-[:270])-[:330]HO^{+}-[:30](=[:90]O)-[:330]))-=-)} + \chemfig[atom style={scale=0.6}]{A^{-}}
+		\arrow
+	\schemestop
+	\\
+	\schemestart
+		\chemfig[atom style={scale=0.6}]{*6(=-(-COOH)=(-O(-[:0](=[:60]O^{+}H)(-[:300])))-=-)} + \chemfig[atom style={scale=0.6}]{HO-[:30](=[:90]O)-[:330]} +  \chemfig[atom style={scale=0.6}]{A^{-}}
+		\arrow
+	\schemestop
+	\\
+	\schemestart
+		\chemfig[atom style={scale=0.6}]{*6(=-(-COOH)=(-O(-[:0](=[:60]O)(-[:300])))-=-)} + \chemfig[atom style={scale=0.6}]{HO-[:30](=[:90]O)-[:330]} +  \chemfig[atom style={scale=0.6}]{HA}
+	\schemestop
+	\end{aligned}
+\end{align}
+
+따라서 산을 인가하면 무수아세트산 이온의 농도를 높여 더 빠른 에스터 반응을 일으킬 수 있다. 즉, 산은 에스터화 반응의 촉매로서 작용한다.[2]
+
+\subsection{\label{sec:level2}재결정 정제화}
+더 순수한 아스피린을 얻기 위해 재결정 정제화를 이용할 수 있다. 재결정 정제화는 온도에 따른 용해도가 달라짐을 이용한다. 고온에서 정제할 물질을 완전히 녹인 뒤 온도가 낮아짐에 따라 순수한 결정이 생기는 현상을 이용한다. 이 때 solvent의 극성에 따라 녹는 물질과 녹지 않는 물질이 생길 수 있다. 따라서 두 개 이상의 mixed solvent를 사용할 수 있으며 대표적으로 어느 정도 극성 분자들을 녹일 수 있는 diethyl ether, 그리고 극성 분자를 녹일 수 있는 petroleum ether를 섞어서 solvent로 이용할 수 있다. 두개의 solvent모두 끓는점이 $30~40^{o}C$로 유사하므로 아스피린을 정제하는데 적절하다.[3]
+
+\section{\label{sec:level1}Experimental}
+\subsection{\label{sec:level2}실험 과정}
+물중탕에 필요한 장비, 클램프, 눈금 실린더, 저울, 인산 (85\%), 삼각 플라스크, 에터, 유리막대, 비커, 얼음, 살리실산, 가열기, 아세트산, 에틸 에터, 스탠드, 감압 거름 장치, 녹는점 측정 장비, 온도계, 거름종이를 준비한다. 미리 물중탕을 위해 가열한 후 삼각플라스크에  살리실산 2.5g과 아세트산 무수물 3mL를 넣는다. 이후에 물중탕하면서 인산을 투입하고 $75^{o}C$에서 15분 가열한다. 이후에 증류수 2mL를 투입하면서 남아있는 물질을 분해시킨다. 증기가 나타나지 않을때 증류수 20mL를 넣고 $10~20^{o}C$까지 냉각한다. 그리고 침전이 발생하지 않을 때는 플라스크를 얼음으로 냉각시킨 후 유리막대로 플라스크 안쪽을 긁어준다. 오븐에서 건조된 거름종이이에 침전을 감압여과기로 거르고  5mL의 냉각수로 씻어준다. 아스피린을 $120^{o}C$ 5분간 건조시킨 뒤 무게를 측정한다. 1g을 15mL 다이에틸 에터와 함께 삼각플라스크에 담고 $50^{o}C$에서 물중탕한다. 녹지 않는 물질은 다이에틸 에터를 더 투입하여 녹인다. 에터 15mL를 가한 뒤 얼음물에 담군다. 이 때 용액을 섞지 않도록 주의한다. 하얀 바늘 형태의 결정을 거르고 에터로 씻고 건조한다. 이후에 수득률을 계산한 뒤 결정의 녹는 점을 측정한다. 
+
+\subsection{\label{sec:level2}유의 사항}
+실험 도중 휘발성이 강한 유기용매를 사용하고 냄새가 강하므로 항상 후드를 가까이 하고 실험을 수행하고 플라스크 표면이 뜨거우니 가열된 플라스크를 잡을 때는 목장갑을 꼭 착용해야함에 유의한다. 또한 삼각 플라스크를 이용할 때 내용물을 흘르지 않도록 주의하고 보안경 및 실험복을 착의해야함에 주의한다. 또한 거름 종이의 질량, 그리고 실험 도중 측정해야 하는 질량을 측정해야 함에 유의한다. 그리고 공용 용액은 오염시키지 않도록 한다.
+
+\section{\label{sec:level1}Reference}
+[1] 김. (2010, August 1). 아스피린의 합성. In \textit{일반화학실험} (1th ed., p.p. 203-204).
+
+[2] Smith, J. (2010, January 8). Carboxylic Acids and Their Derivatives—Nucleophilic Acyl Substitution. In \textit{Organic Chemistry} (3rd ed., pp. 838–852). McGraw-Hill Education.
+
+[3] Armarego, W., \& Chai, C. (2009, July 23). COMMON PHYSICAL TECHNIQUES USED IN PURIFICATION. In \textit{Purification of Laboratory Chemicals} (5th ed., pp. 14–37). Butterworth-Heinemann.
+
+\end{document}
+%
+% ****** End of file apssamp.tex ******

@@ -1,0 +1,150 @@
+% ****** Start of file apssamp.tex ******
+%
+%   This file is part of the APS files in the REVTeX 4.2 distribution.
+%   Version 4.2a of REVTeX, December 2014
+%
+%   Copyright (c) 2014 The American Physical Society.
+%
+%   See the REVTeX 4 README file for restrictions and more information.
+%
+% TeX'ing this file requires that you have AMS-LaTeX 2.0 installed
+% as well as the rest of the prerequisites for REVTeX 4.2
+%
+% See the REVTeX 4 README file
+% It also requires running BibTeX. The commands are as follows:
+%
+%  1)  latex apssamp.tex
+%  2)  bibtex apssamp
+%  3)  latex apssamp.tex
+%  4)  latex apssamp.tex
+%
+\documentclass[%
+ reprint,
+%superscriptaddress,
+%groupedaddress,
+%unsortedaddress,
+%runinaddress,
+%frontmatterverbose, 
+%preprint,
+%preprintnumbers,
+%nofootinbib,
+%nobibnotes,
+%bibnotes,
+ amsmath,amssymb,
+ aps,
+%pra,
+%prb,
+%rmp,
+%prstab,
+%prstper,
+%floatfix,
+]{revtex4-2}
+\usepackage{kotex}
+\usepackage{graphicx}% Include figure files
+\usepackage{dcolumn}% Align table columns on decimal point
+\usepackage{bm}% bold math
+\usepackage{chemformula}
+\usepackage{chemfig}
+%\usepackage{hyperref}% add hypertext capabilities
+%\usepackage[mathlines]{lineno}% Enable numbering of text and display math
+%\linenumbers\relax % Commence numbering lines
+
+%\usepackage[showframe,%Uncomment any one of the following lines to test 
+%%scale=0.7, marginratio={1:1, 2:3}, ignoreall,% default settings
+%%text={7in,10in},centering,
+%%margin=1.5in,
+%%total={6.5in,8.75in}, top=1.2in, left=0.9in, includefoot,
+%%height=10in,a5paper,hmargin={3cm,0.8in},
+%]{geometry}
+
+\begin{document}
+
+
+\title{아스피린의 합성 결과보고서}
+
+\author{서울대학교 전기정보공학부 2018-12432 박정현}
+ \email{alexist@snu.ac.kr}
+\date{실험일자: 10/31/2023}% It is always \today, today,
+             %  but any date may be explicitly specified
+
+\begin{abstract}
+본 실험에서는 살리실산고 무수아세트산을 이용해 아스피린을 합성한 후 에터 용액을 이용해 재결정 정제화하여 불순물을 제거하였다. 이를 통해 의약품 합성 정에 대한 이해도, 그리고 에스터화 반응과 정제화에 대한 이해도를 높였다. 최종 수득률은 약 7\%로 낮은 값이 측정되었다. 이를 해결하기 위해 각 실험 과정에서 개선되어야 할 점들을 제시하였다.
+\end{abstract}
+
+%\keywords{Suggested keywords}%Use showkeys class option if keyword
+                              %display desired
+\maketitle
+
+%\tableofcontents
+
+\section{\label{sec:level1}Assignment}
+\subsection{\label{sec:level2}1}
+\subsubsection{\label{sec:level3}재결정 정제화란}
+재결정 정제화는 물질의 용해도가 온도에 따라 변화하고 각각의 물질마다 이러한 특징이 다름을 이용한다. 정제할 물질 고온에서 완전히 녹은 후 온도가 낮아짐에 핵을 주변으로 상변화하면서 순수한 결정이 생기는데 재결정 정제화는 이러한 현상을 이용한다. 이 때 정제할 물질을 녹이는 solvent는 물질의 극성에 특정 물질은 녹고, 특정 물질은 녹지 않을 수 있다. 이것을 방지하기 위해 두 개 이상의 solvent를 사용할 수 있다. 대표적인 예로는 이번 실험에서 사용한 것과 같이 어느 정도 극성 분자는 녹이는 diethyl ether, 그리고 무극성 분자만을 완전히 녹이는 petroleum ether를 섞은 mixed solvent를 재결정 정제화에 이용할 수 있다. 특히 혼합된 solvent 각각 끓는점이 $30~40^{o}C$로 비슷하여 mixed solvent로 이용하는데 적절하다.[3]
+
+\subsubsection{\label{sec:level3}물질의 정제화}
+ 첫번째 방법으로는 크로마토그래피가 있다. 매질에서의 물질의 이동속도는 용매와 용질사이의 상호작용의 정도가 클수록 느려지고, 상호작용이 작으면 더 빠르게 이동한다. 이러한 상호작용은 아래와 같이 고정상에 용해된 경우, 액체에 용해된 경우의 농도의 비를 partition ratio K로 나타나게 되고 이것 또한 물질의 종류마다 다른 값을 가지므로 이를 이용해 물질을 분리할 수 있다. [1] 아스피린의 경우 카복시기를 가진다. 따라서 HPLC를 이용해 물질을 분리하는 경우 C18카트리지를 통해 무극성 불순물들은 대부분 걸러지고 빠른 속도로 카트리지로부터 배출될 것이다. 
+
+ 두번째 방법은 동일한 원리를 이용하는 Thin layer chromatography (TLC)를 이용할 수도 있는데 이것은 물질을 실리카젤과 같은 특정 용매에 점을 찍고 이동하는 속도가 다름을 이용한다.[4] 실리카젤에서 물질을 분리한 이후 각각의 녹는점을 측정해 아스피린의 녹는점을 가지는 물질을 확인한 후 반복하여 TLC를 통해 아스피린을 분리하면 최종적으로 순수한 아스피린을 얻을 수 있을 것이다.
+
+ 세번째 방법 extraction으로 물질의 용매에 따른 용해도 차이 자체를 이용하는 것이다. 물질의 극성에 따라 물질의 용해도 차이가 나게 되고 이것은 물질의 특성으로 예를 들어 \ch{CCl4}와 물 사이에서 아래와 같은 식을 만족한다. \ch{CCl4}는 물과 섞이지 않으므로 깔때기에 \ch{CCl4}와 물, 그리고 분리하려는 아스피린을 물질을 나둔뒤 오랜시간이 지나면 물과 \ch{CCl4}층으로 나누어질것이다. 아스피린은 극성을 띠므로 물에 더 잘녹을 것이므로 물만을 추출한 후  \ch{CCl4}에 남아 있는 아스피린을 동일한 방법으로 extraction하면 무극성 불순물은 대부분 걸러질것이다.[5]
+\begin{align}
+	\frac{[aspirin]_{\ch{CCl4}}}{[aspirin]_{aq}} &= K
+\end{align}
+
+\subsection{\label{sec:level2}1}
+\subsubsection{\label{sec:level3}녹는점}
+ 녹는점은 물질의 특성에 해당한다. 따라서 오차범위 내에서 물질의 녹는점이 아스피린과 동일하고 다른 녹는점이 동일한 물질이 존재하지 않는 경우 해당 물질은 아스피린이라고 결론지을 수 있다.
+
+\subsubsection{\label{sec:level3}물질의 분별}
+ 첫번째 방법으로는 NMR을 이용하는 것이다. 대부분의 유기분자들은 수소원자를 포함하고 있다. 수소원자의 핵은 스핀을 가지고 있어 실제로는 hyperfine state를 가지는데 자기장을 걸어주게 되면 perturbation이 발생하여 에너지가 분리되고 rabi oscillation이 발생하게 된다.[8] 수소원자의 공명진동수에 맞는 자기장을 걸어주게 되면 공명하면서 광자를 방출하고 이러한 광자를 주파수에 따라 검출하면 수소원자가 어떤 주파수에서 공명하는지 알수 있다. 이러한 주파수에 따른 공명주파수의 세기는 수소원자의 갯수, 수소원자가 결합하고 있는 탄소와 어떤 spin state에 있는지에 따라 미세하게 split되어 모양과 주파수, 세기 모두 달라지게 된다. 따라서 NMR에 의한 spectrum은 물질의 고유한 특성에 해당하므로 NMR spectrum을 확인하여 물질의 종류를 확인할 수 있다.[6] 하지만 방출되는 전자기파의 세기가 매우 작아 측정하기 어려우며 이로 인해 샘플의 양이 적은 경우 NMR을 통해 분석하는것이 어렵다.
+
+
+ 두번째 방법은 물질의 질량과 IR spectrum을 측정하는 것이다. 물질을 이온화 시키고 가속시키면 물질의 량에 따라 전기장에 의해 가속되는 정도가 다르므로 질량-전하비에 따른 스펙트럼을 얻을 수 있다. 이때 질량 전하비는 하나의 피크에서만 측정되지 않고 여러개의 피크에서 측정된다. 이것은 유기분자가 이온화됬을 때 안정하지 않아 \ch{C-C}결합이 깨지거나, 수소분자가 분리되는 fragmentation이 발생하여 나타나는 현상으로 여러개의 피크가 검출된다. 이를 통해 물질이 어떤 원자, 혹은 작용기가 존재하는지 대략적으로 파악하고 분자량을 정확히 측정할 수 있다. 만약 분자량에 따라 물질의 종류가 명확하거나 어떤 분자량의 불순물들이 섞여 있는지 파악하고 있는 경우 빠르고 정확하게 주어진 시료가 아스피린에 해당하는지 분별할 수 있다. 하지만 그렇지 않은 경우 분자가 정확히 어떤 결합을 하는지 알 수 없으므로 물질을 정확히 특정할 수 없다.[7]
+
+ 세번째 방법은 IR spectrum을 측정하여 물질을 분별하는 것이다. 물질을 구성하는 원자들이 이루는 결합에 따라 흡수, 방출하는 주파수가 다르다. 질량 $m$, 용수철 상수 $k$를 가지는 단진동 system을 생각하면 $\sqrt{\frac{k}{m}}$의 각진동수를 가지는데 각각의 결합, 예를 들어 \ch{O-H}인지, 혹은 단일, 이중, 삼중 결합인지, 어떤 원자들간의 결합인지에 따라 각각의 세기가 다르다. 따라서 이를통해 분자가 어떤 결합을 통해 구성되어 있는지 확인할 수 있다. 이를 모두 종합하면 물질이 어떤 물질인지 파악할 수 있다. Mass spectrum은 매우 해상도가 높으므로 분자가 어떤 분자량을 가지는지 정확히 파악할 수 있다. 또한 hyperfine state를 측정하는 NMR과 달리 더 낮은 주파수의 IR을 이용하기 때문에 샘플의 양이 적어도 측정이 가능하며 IR 스펙트럼의 frequency sensitivity가 낮아도 충분히 가능하다. 하지만 \ch{N-H}결합을 가지는 경우 분별이 불가능하고 물을 포함하는 경우 물의 IR 흡수율이 높아 IR spectroscopy를 이용할 수 없다.[7]
+
+ 네번째 방법은 HPLC와 같은 크로마토그래피를 이용하는 것이다. 특정 물질과 다른 물질의 상호작용 정도는 두 물질로 결정지어지는 특성이므로 동일한 조건에서 순수한 아스피린을 크로마토그래피로 이동시키고 분별하고자 하는 물질을 이동시켰을 때 동일한 속도로 이동하면 해당 물질은 아스피린이라고 결론지을 수 있다. 실험 조건이 매우 간단하고 빠른 속도로 해당물질이 아스피린인지 분별할 수 있다. 하지만 비슷한 속도로 이동하는 물질이 있는 경우 분별하기 어려워진다는 단점이 있다.
+
+
+\section{\label{sec:level1} Results \& Discussions}
+\subsection{\label{sec:level2}아스피린 생성 중 변화}
+아세트산과 살리실산이 반응하면 물이 나오게 된다. 이로 인해 물이 많아질 수 록 역반응이 강해지게 된다. 따라서 본 실험에서는 이러한 현상을 방지하기 위해 무수아세트산을 사용하였다. 가열 이전에 모든 물질을 섞었을 때 투명한 색깔이었으나 가열 7분후 점점 탁한 하얀색이 되었다. 이후에 섞어준 후 다시 투명해지는 것을 확인하였다. 이것은 아스피린이 생성된 후 아직 용해되지 않았으나 다시 섞어주어 완전히 용해한 것으로 결론지었다. 아스피린을 석출할 때 무수아세트산이 석출되는 것을 방지하기 위해 무수아세트산을 가수분하기 위한 목적으로 2mL의 증류수를 투입했다. 이 때는 큰 변화가 없었으나 20mL의 증류수를 투입했을 때는 온도가 낮아져 아스피린이 석출되기 시작하여 많이 탁해지는 것을 확인하였다. 가열 도중에 시큼한 냄새가 지속적으로 났는데 이것은 생성되는 아세트산 냄새로 결론지었다. 얼음물에 완전히 냉각한 후에는 용해도가 더 낮아져 물질이 하얀색으로 더 탁해지고 슬러쉬처럼 변한 것을 확인하였다.
+
+\subsection{\label{sec:level2}측정값}
+초기에 투입된 살리실산의 무게는 $2442\pm 1mg$이다. $70mm$의 filter paper로 감압 여과를 진행했으며 해당 무게는 $0.35\pm 0.01g$이었다. 이후에 $100mm$의 filter paper로 건조시켰으며 해당 무게는 $0.90\pm 0.01g$이다. 이후에 측정된 불순물을 포함한 아스피린의 무게는 $2.73 \pm  0.01 g$이다. 이후에 생성된 $1.000 \pm 0.001g$의 아스피린을 $0.32\pm 0.01g$의 70mm filter paper로 감압여과한 후 $1.77\pm 0.01g$의 100mm filter paper로 건조시켰다. 최종 측정된 아스피린의 무게는 $0.08\pm 0.01g$이었다. 최종적인 수득률은 아래와 같이 약 7\%로 계산되었다. 녹는점은 약 $137.5^{o}C$로 측정되었다.
+\begin{align}
+	Y &= \frac{\frac{2.73g \times 0.08 g}{1.000g} \times \frac{1}{180.15g/mol}}{\frac{2.442g}{138.12g/mol}}\\
+	&= 6.86\pm 1\%
+\end{align}
+
+\subsection{\label{sec:level2}각 실험 과정의 고찰}
+ 수득률은 약 $6.86\%$로 낮게 측정되었다. 아스피린은 살리실산과 무수아세트산의 반응에서 고온에서 물중탕하는 방식으로 합성하였다. 살리실산의 끓는 점은 약 $211^{o}C$로 물중탕 온도 $40^{o}C$보다는 매우 높은 온도이다. 하지만 삼각플라스크가 열려 있는 상태에서 열을 가해 살리실산의 기체화를 가속화하였을 것이다. 따라서 이 과정에서 살리실산이 상당량 유실되었을 것이다. 살리실산은 총 0.177mol이 이용되었다. 따라서 이론적으로 3.185g의 아스피린이 합성되는 것이 가능하며 1차 건조 후 2.442g의 물질이 산출되었다. 2차 건조 이후 상당량의 불순물이 제거되었음을 가정하면 2.442g의 물질 대부분이 불순물임을 알 수 있다. 이것은 가수분해 되지 않고 아스피린과 함께 석출된 무수아세트산으로 감압 여과 중 더 많은 증류수를 이용해 무수아세트산을 충분히 가수분해 시키면 1차 건조 이후에도 더 높은 순도의 아스피린을 석출 할 수 있을 것이다. 하지만 너무 많은 증류수를 이용하는 경우 오히려 아스피린이 가수분해될 수 도 있다. 따라서 적정량의 증류수 값을 찾아 제한된 값으로 불순물을 제거하는 것이 더 높은 수득률을 얻는데 유리할 것이다.
+
+2차 건조이후 약 8\%정도의 물질만이 아스피린으로 확인되었다. 1차 건조 이전의 실험 과정과 마찬가지로 에터 용액에서 가열하는 동중 아스피린 또한 상당량 유실되었을 것으로 결론지었다. 또한 purification에 사용된 물질의 양이 1g으로 제한되어 적은 양의 물질이 유실되어도 큰 오차로 나타날 것이다. 이를 방지하기 위해 최대한 적은 시간 동안 가열시키는 방법이 있을것이다. 또한 앞서 제시한 3가지의 purification방식으로 아스피린을 추출하면 더 높은 수득률을 얻을 수 있을 것이다.
+
+아스피린의 녹는점은 약 $137.5^{o}C$로 측정되어 문헌값 $135^{o}C$[9] 와 비교하여 약 $2.5^{o}C$ 높게 측정되었다. 불순물이 녹아있는 경우 어는점 내림 현상으로 인해 녹는점이 내려가야 했으나 오히려 녹는점이 크게 측정되었다. 따라서 최종적으로 측정된 아스피린의 경우 더 녹는점이 높은 다른 물질이 상당 부분을 차지하고 있으며 오히려 아스피린이 불순물로 작용하여 녹는점을 증가시켰을 것으로 추정된다. 따라서 재결정 정제화 과정에서 purification에 잘 이루어지지 않았다고 결론지었다. 재결정 정제화 과정에서 정제화 과정 또한 여러번 반복하여 수행하는 경우 더 높은 수득률을 얻을 수 있을 것이다. 
+
+
+\section{\label{sec:level1}Reference}
+[1] Oxtoby, D., Gillis, H., \& Campion, A. (2007, April 2). Chemical Equilibrium. In \textit{Principles of Modern Chemistry} (6th ed., pp. 603-605). Cengage Learning.
+
+[2] Atkins, P., Jones, L., \& Laverman, L. (2012, December 21). PHYSICAL EQUILIBRIA. In Chemical Principles (5th ed., pp. 367–368). W. H. Freeman.
+
+[3] Armarego, W., \& Chai, C. (2009, July 23). COMMON PHYSICAL TECHNIQUES USED IN PURIFICATION. In \textit{Purification of Laboratory Chemicals} (5th ed., pp. 14–37). Butterworth-Heinemann.
+
+[4] Armarego, W., \& Chai, C. (2009, July 23). COMMON PHYSICAL TECHNIQUES USED IN PURIFICATION. In \textit{Purification of Laboratory Chemicals} (5th ed., pp. 18–38). Butterworth-Heinemann.
+
+[5] Oxtoby, D., Gillis, H., \& Campion, A. (2007, April 2). Chemical Equilibrium. In \textit{Principles of Modern Chemistry} (6th ed., pp. 602). Cengage Learning.
+
+[6] Smith, J. (2010, January 8). An Introduction to NMR Spectroscopy. In \textit{Organic Chemistry} (3rd ed., pp. 495-517). McGraw-Hill Education.
+
+[7] Smith, J. (2010, January 8). Mass Spectrometry and Infrared Spectroscopy. In \textit{Organic Chemistry} (3rd ed., pp. 464-485). McGraw-Hill Education.
+
+[8] Beiser, A. (1981, January 1). Nuclear Structure. In Concepts of Modern Physics (pp. 394–396). McGraw-Hill Companies.
+
+[9] Haynes, W. M. (2016, April 19). PHYSICAL CONSTANTS OF ORGANIC COMPOUNDS. In CRC Handbook of chemistry and physics (89th ed., p. 127). CRC Press.
+
+\end{document}
+%
+% ****** End of file apssamp.tex ******
