@@ -1,0 +1,77 @@
+% ****** Start of file apssamp.tex ******
+%
+%   This file is part of the APS files in the REVTeX 4.2 distribution.
+%   Version 4.2a of REVTeX, December 2014
+%
+%   Copyright (c) 2014 The American Physical Society.
+%
+%   See the REVTeX 4 README file for restrictions and more information.
+%
+% TeX'ing this file requires that you have AMS-LaTeX 2.0 installed
+% as well as the rest of the prerequisites for REVTeX 4.2
+%
+% See the REVTeX 4 README file
+% It also requires running BibTeX. The commands are as follows:
+%
+%  1)  latex apssamp.tex
+%  2)  bibtex apssamp
+%  3)  latex apssamp.tex
+%  4)  latex apssamp.tex
+%
+\documentclass[%
+ reprint,
+%superscriptaddress,
+%groupedaddress,
+%unsortedaddress,
+%runinaddress,
+%frontmatterverbose, 
+%preprint,
+%preprintnumbers,
+%nofootinbib,
+%nobibnotes,
+%bibnotes,
+ amsmath,amssymb,
+ aps,
+%pra,
+%prb,
+%rmp,
+%prstab,
+%prstper,
+%floatfix,
+]{revtex4-2}
+\usepackage{kotex}
+\usepackage{graphicx}% Include figure files
+\usepackage{dcolumn}% Align table columns on decimal point
+\usepackage{bm}% bold math
+\usepackage{chemformula}
+\usepackage{chemfig}
+\usepackage{lewis}
+%\usepackage{hyperref}% add hypertext capabilities
+%\usepackage[mathlines]{lineno}% Enable numbering of text and display math
+%\linenumbers\relax % Commence numbering lines
+
+%\usepackage[showframe,%Uncomment any one of the following lines to test 
+%%scale=0.7, marginratio={1:1, 2:3}, ignoreall,% default settings
+%%text={7in,10in},centering,
+%%margin=1.5in,
+%%total={6.5in,8.75in}, top=1.2in, left=0.9in, includefoot,
+%%height=10in,a5paper,hmargin={3cm,0.8in},
+%]{geometry}
+
+\begin{document}
+
+
+\title{계산화학2 랩노트}
+
+\author{서울대학교 전기정보공학부 2018-12432 박정현}
+ \email{alexist@snu.ac.kr}
+\date{실험일자: 11/14/2023}% It is always \today, today,
+             %  but any date may be explicitly specified
+
+\maketitle
+
+\section{\label{sec:level1}실험 과정}
+EDISON에 접속한 뒤 C212512432를 입력하고 비밀번호는 아이디와 동일하게 입력한다. ORCA를 검색한 뒤 RUN을 눌러 ORCA를 실행한다. 그 뒤 Avogadro 프로그램을 실행한뒤 \ch{CH4}는 Element에서 Carbon을, \ch{NH3}, \ch{H2O}는 각각 질소, 산소를 선택한다. 그 뒤 화면의 아무 부분을 클릭하여 분자를 배치한다. 그 뒤 Extensions에서 Orca에서 Generate Orca Input file을 선택하여 input file을 만든다. 이 때 Calculation은 Geometry Optimization으로 바꾸고 아래의 ! 코드에 ! HF OPT 6-31g(d) LargePrint를 입력하여 하트리 폭 방식으로 가우시안 기저를 통해 문제를 풀도록 설정한다. 그 뒤 input file을 Orca에서 Menu를 눌러 입력한 뒤 Submit을 눌러 파일을 제출한다. 5분 가량 기다린 뒤 결과가 나타나면 Download에서 .out파일을 저장한다. 이후에 .out파일을 Avogadro를 통해 연 뒤 View, Properties에서 각각의 계산값을 확인한다.
+\end{document}
+%
+% ****** End of file apssamp.tex ******
