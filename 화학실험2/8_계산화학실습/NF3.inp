@@ -1,0 +1,12 @@
+# avogadro generated ORCA input file 
+# Basic Mode
+# 
+! HF OPT 6-31g(d) LargePrint 
+
+* xyz 0 1
+   N       -1.45872        0.98764        0.00000
+   F       -0.43872        0.98764        0.00000
+   F       -1.79871        0.69718       -0.91675
+   F       -1.79872        1.92680        0.20683
+*
+

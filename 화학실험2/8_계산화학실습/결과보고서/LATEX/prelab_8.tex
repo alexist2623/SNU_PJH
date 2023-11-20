@@ -1,0 +1,217 @@
+% ****** Start of file apssamp.tex ******
+%
+%   This file is part of the APS files in the REVTeX 4.2 distribution.
+%   Version 4.2a of REVTeX, December 2014
+%
+%   Copyright (c) 2014 The American Physical Society.
+%
+%   See the REVTeX 4 README file for restrictions and more information.
+%
+% TeX'ing this file requires that you have AMS-LaTeX 2.0 installed
+% as well as the rest of the prerequisites for REVTeX 4.2
+%
+% See the REVTeX 4 README file
+% It also requires running BibTeX. The commands are as follows:
+%
+%  1)  latex apssamp.tex
+%  2)  bibtex apssamp
+%  3)  latex apssamp.tex
+%  4)  latex apssamp.tex
+%
+\documentclass[%
+ reprint,
+%superscriptaddress,
+%groupedaddress,
+%unsortedaddress,
+%runinaddress,
+%frontmatterverbose, 
+%preprint,
+%preprintnumbers,
+%nofootinbib,
+%nobibnotes,
+%bibnotes,
+ amsmath,amssymb,
+ aps,
+%pra,
+%prb,
+%rmp,
+%prstab,
+%prstper,
+%floatfix,
+]{revtex4-2}
+\usepackage{kotex}
+\usepackage{graphicx}% Include figure files
+\usepackage{dcolumn}% Align table columns on decimal point
+\usepackage{bm}% bold math
+\usepackage{chemformula}
+\usepackage{chemfig}
+\usepackage{setspace,supertabular}
+\usepackage{longtable}
+\usepackage{multirow}	
+\usepackage{makecell}
+\usepackage{amsmath}
+\usepackage{braket}
+%\usepackage{hyperref}% add hypertext capabilities
+%\usepackage[mathlines]{lineno}% Enable numbering of text and display math
+%\linenumbers\relax % Commence numbering lines
+
+%\usepackage[showframe,%Uncomment any one of the following lines to test 
+%%scale=0.7, marginratio={1:1, 2:3}, ignoreall,% default settings
+%%text={7in,10in},centering,
+%%margin=1.5in,
+%%total={6.5in,8.75in}, top=1.2in, left=0.9in, includefoot,
+%%height=10in,a5paper,hmargin={3cm,0.8in},
+%]{geometry}
+
+\begin{document}
+
+
+\title{계산화학 실습2 결과보고서}
+
+\author{서울대학교 전기정보공학부 2018-12432 박정현}
+ \email{alexist@snu.ac.kr}
+\date{실험일자: 11/14/2023}% It is always \today, today,
+             %  but any date may be explicitly specified
+
+\begin{abstract}
+본 실험에서는 \ch{CH4}, \ch{NH3}, \ch{F2O}의 결합 길이, 각도, 에너지를 하트리 폭 방법을 통해 계산하고 알려진 값과 비교하였다. 계산 결과와 알려진 값 사이의 차이를 계산에 포함되지 않은 전자들간의 correlation에 의한 것으로 결론지었으며 이를 해결하기 위한 방법을 제시하였다.
+\end{abstract}
+
+%\keywords{Suggested keywords}%Use showkeys class option if keyword
+                              %display desired
+\maketitle
+.\newpage
+.\newpage
+
+%\tableofcontents
+
+\section{\label{sec:level1}Assignment}
+\subsection{\label{sec:level2}1}
+\ch{H2O} 구조를 계산할 때 크게 전자-전자 사이의 쿨롱 퍼텐셜, 전자-양성자 사이의 쿨롱 퍼텐셜, 그리고 전자의 스핀으로 인한 교환력을 고려한다. 이 때 born-oppenheimer approximation을 적용하여  핵과 핵의 상호작용은 무시하며 전자와 핵은 서로 무관하게 풀 수 있다고 가정한다. 수학적으로 Hatree-Fock Method에서 사용되는 Fock operator는 아래와 같이 나타난다.
+\begin{align}
+	f_{1} = h_{1} + \sum_{u}\{J_{u}-K_{u}\}
+\end{align}
+여기서 $J_{u}$은 coulomb repulsion으로 전자들간의 반발력을 의미하며 아래와 같이 나타난다. 아래의 식에서 알 수 있듯 $u$ 전자가 $i$ 전자에게 만드는 평균적인 반발력을 계산한다.
+\begin{align}
+	J_{u}\phi_{i}(x_{1}) = \frac{e^{2}}{4\pi\varepsilon_{0}}\left\{ \int \phi_{u}^{*}(x_{2})\frac{1}{r_{12}}\phi_{u}(x_{2})dx_{2} \right\}\phi_{i}(x_{1})
+\end{align}
+$K_{u}$는 exchange opeartor에 해당한다. 전자의 스핀이 서로 다른 경우 wave function이 overlap될 확률이 높아지고 classical하게 서로 끌어 당기는 힘, 교환력으로 작용한다. 반대로 같은 spin을 가지는 경우 overlap됬을 때 wave function이 0이되므로 서로 반발하는 힘으로 classical하게 해석할 수 있다.[1]
+\begin{align}
+	K_{u}\phi_{i}(x_{1}) = \frac{e^{2}}{4\pi\varepsilon_{0}}\left\{ \int \phi_{u}^{*}(x_{2})\frac{1}{r_{12}}\phi_{i}(x_{2})dx_{2} \right\}\phi_{u}(x_{1})
+\end{align}
+
+앞서 계산한 결과는 전자 들간의 반발력을 평균한 뒤 계산하므로 각 위치에서 서로 영향을 미치는 파동함수들 간의 상호작용을 무시한다. 예를 들어 한 전자의 파동함수가 어느 위치에 존재하는 경우 쿨롱 반발에 의해 다른 전자는 해당 위치에 존재하지 않으려고 하지만 위의 식에서는 이를 평균하여 전체에너지가 최소가 되는 경우만을 계산하므로 정확한 파동함수를 계산하지 않는다.
+
+위의 문제를 해결하기 위해 아직 전자가 없는 virtual orbital에 전자가 존재하는 경우의 wave function을 고려할 수 있다. 이러한 wave function은 singly excited determinant라고 한다. 두 개의 전자가 virtual orbital에 존재하는 경우 doubly excited determinant이라고 하며 이러한 모든 wave function들을 configuration state function (CSF)이라고 하며 이러한 모든 wave function의 superposition을 계산하는 경우 더 정확한 ground state의 wave function을 계산할 수 있다. 이러한 방식으로 전자들의 ground state를 configuration interaction(CI) method라고 한다. 하지만 이러한 방식의 계산을 하는 경우 비어 있는 모든 오비탈을 채우는 경우를 고려해야 하는데 combination함수는 지수적으로 증가하므로 계산해야 하는 wave function들이 지수적으로 늘어나 계산이 어려워 진다. [4]
+
+앞서 제시한 CI method의 경우 몇개의 slater matrix를 이용해 계산해야하는지 모호한 부분이 있다. 이를 해결하기 위해 전자-전자의 반발을 perturbation으로 두고 근사를 하는 방법이 있다. 하나의 전자가 아닌 여러 전자들 사이의 상호작용을 고려하므로 many-body perturbation theory (MBPT)이라고 하며 이러한 방식을 통해 1차, 2차 perturbation energy를 계산해 나가는 이론을 Møller–Plesset perturbation theory이라고 한다. 앞서 말한 전자들 간의 상호작용으로 인해 발생하는 perturbation은 아래의 식과 같다.
+
+\begin{align}
+	H^{(1)} &= H - \sum_{i}f_{i}
+\end{align}
+
+이 때 1차 보정항은 아래의 식을 통해 계산하며 $\Phi_{0}$는 맨 처음 제시되었단 HF방식으로 계산된 wave function이다. 이러한 보정항을 계속 추가할수록 계산의 정확도는 증가하게 된다.[5]
+
+\begin{align}
+	E^{(1)} &= \bra{\Phi_{0}}H^{(1)}\ket{\Phi_{0}}
+\end{align}
+
+앞서 제시된 방식들은 전자들의wave function을 직접 계산한다. 하지만 모두 계산 복잡도가 높으며 이를 해결하기 위해 제시된 방식이 density functional theory (DFT)이다. DFT의 경우 전자의 density, 즉 $\rho(r)$을 이용해 에너지를 계산하고 이를 최소화시키는 방식의 계산을 수행한다. 이 때 전자들의 density는 Kohn-Sham orbital $\psi_{i}$을 이용해 아래와 같이 계산한다.
+
+\begin{align}
+	\rho(r) &= \sum_{i} |\psi_{i}(r)|^{2}
+\end{align}
+
+이 때 아래의 에너지에 variatioanl 원리를 이용해 최소에너지를 갖는 density를 찾는 방법으로 ground state를 계산한다. 아래의 에너지에서 마지막은 exchange에 의해 발생하는 에너지 term이며 그외의 항들은 HF방식의 에너지 항들과 동일하다.
+\begin{align}
+	\begin{aligned}
+	E[\rho] &= -\frac{\hbar^{2}}{2m}\sum\int\psi_{i}^{*}\nabla^{2}\psi_{i}dr-j_{0}\sum\frac{1}{r_{l1}}\rho dr\\
+	 &+ \frac{1}{2}j_{0}\int\frac{\rho(r_{1})\rho(r_{2})}{r_{12}}dr_{1}dr_{2} + E_{XC}[\rho]
+	\end{aligned}
+\end{align}
+
+
+\subsection{\label{sec:level2}2}
+
+\ch{CF4}, \ch{NF3}, \ch{F2O}는 모두 4의 Steric Number 를 가진다. 따라서 VSEPR에 따라 비공유 전자쌍을 포함하여 정사면체 구조를 가질 것이다. 탄소, 질소, 산소 모두 $sp^{3}$혼성 궤도를 가져 valence bond theory에서도 따라 동일한 결과를 보인다. 하지만 플루오린의 원자크기가 수소보다 크므로 결합길이는 더커질 것이다. 또한 플루오린의 전기음성도가 더 크므로 수소가 주변원자인 경우와 극성이 바뀔 것이다. 질소와 플루오린의 전기음성도는 약 1.0, 그리고 산소와 플루오린의 전기음성도는 약 0.5차이가 난다. 따라서 전기음성도 차이 또한 주변원자가 수소인 경우보다 더 커지게 된다. 플루오린은 크기가 수소보다 크므로 전자들간의 반발력이 더 강하고 이로인해 각도 또한 수소가 중심원자인 경우보다 더 작아질 것이다. 특히 \ch{NF3}는 전기음성도 차이가 \ch{F2O}보다 커졌으므로 작아지는 각이 더 커질 것이다. 계산된 결합 에너지, 길이, 각도, 전하량, 그리고 쌍극자 모멘트는 Tabs.\ref{tab:result3}, \ref{tab:result4}와 같다. 앞서 예상한 결과와 일치함을 확인할 수 있다.
+
+\begin{table}[h]
+\caption{\label{tab:result3} 결합 에너지, 길이, 각도 계산 결과}
+\begin{tabular}{l|c|c|c} \hline \hline
+분자 & 에너지[kJ/mol] & 결합 길이[\r{A}]& 결합 각도[$^{o}$] \\ \hline
+\ch{CF4} &1823.942 & 1.30201 & 109.4711 \\ 
+\ch{F2O} & 1144.873 &1.34879 & 103.2028 \\ 
+\ch{NF3} & 1475.996 &1.32678  & 102.7461 \\ \hline\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\caption{\label{tab:result4} 전하량 및 쌍극자 모멘트 계산 결과}
+\begin{tabular}{l|c|c|c} \hline \hline
+분자 & 중심 원자 전하[e] & F 원자 전하[e]& 쌍극자 모멘트[D] \\ \hline
+\ch{CF4} & 0.561 & -0.140 & 0 \\ 
+\ch{F2O} & 0.021 & -0.010 & 1.473\\ 
+\ch{NF3} & 0.199 & -0.066 & 2.766 \\ \hline\hline
+\end{tabular}
+\end{table}
+
+
+\section{\label{sec:level1}Data \& Results}
+계산된 결합 에너지, 길이, 각도, 전하량, 그리고 쌍극자 모멘트는 Tabs.\ref{tab:result1}, \ref{tab:result2}와 같다.
+
+\begin{table}[h]
+\caption{\label{tab:result1} 결합 에너지, 길이, 각도 계산 결과}
+\begin{tabular}{l|c|c|c} \hline \hline
+분자 & 에너지[kJ/mol] & 결합 길이[\r{A}]& 결합 각도[$^{o}$] \\ \hline
+\ch{CH4} &168.288 & 1.08374 & 109.4712\\ 
+\ch{H2O} & 318.236 &0.947568 & 105.5849 \\ 
+\ch{NH3} & 235.230 &1.00256 & 107.2032 \\ \hline\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\caption{\label{tab:result2} 전하량 및 쌍극자 모멘트 계산 결과}
+\begin{tabular}{l|c|c|c} \hline \hline
+분자 & 중심 원자 전하[e] & 수소 원자 전하[e]& 쌍극자 모멘트[D] \\ \hline
+\ch{CH4} &-0.078 & 0.019 & 0 \\ 
+\ch{H2O} & -0.410 &0.205 & 2.478 \\ 
+\ch{NH3} & -0.344 &0.115 & 1.814 \\ \hline\hline
+\end{tabular}
+\end{table}
+
+일반적으로 알려져 있는 \ch{CH4}, \ch{NH3}, \ch{H2O}의 결합 길이와 에너지는 Tab.\ref{tab:bond}와 같다. \ch{CH4}, \ch{H2O}, \ch{NH3}는 각각 $109.5^{o}$,  $104.5^{o}$, $107.3^{o}$의 각을 이룬다. [2][3]
+
+\begin{table}[h]
+\caption{\label{tab:bond} 화학 결합 및 에너지}
+\begin{tabular}{l|c|c} \hline \hline
+결합 & 에너지[kJ/mol] & 결합 길이[\r{A}] \\ \hline
+\ch{C-H} &413 &1.10 \\ 
+\ch{O-H} &467 &0.96 \\ 
+\ch{N-H} &391 &1.01 \\ \hline\hline
+\end{tabular}
+\end{table}
+
+계산된 결합 길이들의 경우 3\% 이내의 오차 범위에서 실제 결합 길이와 일치한다. 결합 각도의 경우에도 \ch{CH4}의 경우 실험 결과와 알려져 있는 값과 일치했으며 \ch{H2O}의 경우 알려진 값과 계산 결과와 약 1\%의 오차를 가졌다. \ch{NH3}의 경우 0.1\%의 오차를 가져 실험 결과와 거의 일치하였다. 
+
+결합에너지의 경우 \ch{CH4}는 총 168.288kJ/mol을 가져 각 결합당 약 42kJ/mol의 결합 에너지를 가진다. 하지만 알려져 있는 결합 에너지와 약 10배가량 차이가 난다. \ch{H2O}도 마찬가지로 계산 결과는 결합당 108kJ/mol을 가지지만 알려져 있는 값과 약 3배 가량의 차이가 난다. \ch{NH3}의 경우 결합당 77kJ/mol의 결합 에너지를 가져 알려진 값과 4배의 차이가 난다. 
+
+
+\section{\label{sec:level1}Discussion \& Conclusion}
+결합 길이, 각도는 알려진 값들과 잘일치하였으나 에너지는 오차가 매우컸다. 이것은 HF method가 전자들의 correlation을 정확하게 고려하지 않고 average로 근사시켜 발생한 문제로 결론지었다. 즉, 근사된 해밀토니안으로 전자들간의 correlation이 포함되지 않은 최소의 에너지를 가지는 답을 찾을 수는 있지만, 근사된 해밀토니안이므로 정확한 에너지를 계산하지는 못하는 것이다. 예로 각 분자들의 원자들의 결합길이를 $0.1nm$로 근사하는 경우 전자-전자 사이의 상호작용은 $e^{2}/4\pi \epsilon_{0} r$ $\simeq 1400kJ/mol$이므로 무시할 수 없다.
+따라서 계산 결과는 모두 실제 값보다 underestimated 된 결과를 가진다. 만약 전자들의 correlation을 고려하는 경우 비공유 중심원자들의 비공유 전자쌍, 그리고 공유 전자쌍이 서로 떨어지려고 하는 경향이 포함되어 더 정확한 수치가 계산될 것이다. 앞서 HF을 통해 계산한 결과가 이미 어느정도 최적화된 구조를 충분히 계산했으므로 perturbation을 통해 전자들간의 상호작용을 계산하면 더 정확한 에너지를 계산할 수 있을 것이다. 즉, Møller–Plesset perturbation theory를 이용하면 계산하면 더 정확한 에너지를 계산할 수 있을것이다. 
+
+\section{\label{sec:level1}Reference}
+[1] Atkins, P. W., \& Friedman, R. S. (2011, January 1). THE CALCULATION OF ELECTRONIC STRUCTURE. In \textit{Molecular Quantum Mechanics} (4th ed., pp. 289-291). Oxford University Press.
+
+[2] Zumdahl, S. S., \& Zumdahl, S. A. (2006, January 9). Covalent Bond Energies and Chemical Reactions. In Chemistry (7th ed., p. 351). Cengage Learning.
+
+[3] Oxtoby, D., Gillis, H., \& Campion, A. (2007, April 2). Chemical Bonding: The Classical Description. In \textit{Principles of Modern Chemistry} (6th ed., p. 82). Cengage Learning.
+
+[4] Atkins, P. W., \& Friedman, R. S. (2011, January 1). THE CALCULATION OF ELECTRONIC STRUCTURE. In \textit{Molecular Quantum Mechanics} (4th ed., pp. 305-308). Oxford University Press.
+
+[5] Atkins, P. W., \& Friedman, R. S. (2011, January 1). THE CALCULATION OF ELECTRONIC STRUCTURE. In \textit{Molecular Quantum Mechanics} (4th ed., pp. 310-313). Oxford University Press.
+
+[6] Atkins, P. W., \& Friedman, R. S. (2011, January 1). THE CALCULATION OF ELECTRONIC STRUCTURE. In \textit{Molecular Quantum Mechanics} (4th ed., pp. 316-320). Oxford University Press.
+\end{document}
+%
+% ****** End of file apssamp.tex ******
