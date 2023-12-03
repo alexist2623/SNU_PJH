@@ -118,7 +118,51 @@ legend('data',strcat(num2str(round(WAVE1)),'nm fit'),strcat(num2str(round(WAVE2)
 
 hold off
 
+F = log([f1.b1 f2.b1 f3.b1 f4.b1 f5.b1 f6.b1 f7.b1])
+A = log([f1.a1 f2.a1 f3.a1 f4.a1 f5.a1 f6.a1 f7.a1])
 
+y = A'
+x = F'
+fitresult = fit(x,y,'poly1');
+y_fit = fitresult.p1 * x + fitresult.p2;
+x_fit = [min(x).*0.99:(max(x)-min(x))/160:max(x).*1.01]';
+confident = predint(fitresult,x_fit,0.95,'observation','on');
+ci = confint(fitresult,0.95)
+%confident = predint(fitresult,x,0.95,'functional','on');
+S_xx = sum((x - mean(x)).^2);
+S_yy = sum((y - mean(y)).^2);
+Sigma_sq = sum((y - y_fit).^2);
+Var_p2 = Sigma_sq./ length(x) + mean(x).*mean(x).*Sigma_sq./S_xx
+Var_p1 = Sigma_sq./S_xx
+Sd_p2 = sqrt(Var_p2)
+Sd_p1 = sqrt(Var_p1)
+Rsq = 1 - sum((y - y_fit).^2)/sum((y - mean(y)).^2)
 
-% 1st 5957Hz 0.94
-% 2st 3801Hz 0.0228293
+xposerr = x.*0.01;
+xnegerr = xposerr;
+yposerr = y.*0.1;
+ynegerr = yposerr;
+errorbar(x,y,ynegerr,yposerr,xnegerr,xposerr,'ks')
+hold on
+
+y_fit_draw = fitresult.p1 * x_fit + fitresult.p2;
+plot(x_fit,y_fit_draw,"b--",'LineWidth',1.2)
+plot(x_fit,confident,"r--",'LineWidth',0.8)
+
+x_ = [x_fit', fliplr(x_fit')];
+y_ = [confident(:,2)', fliplr(confident(:,1)')];
+h1 = fill(x_,y_,'r');
+set(h1,'facealpha',0.2,'edgecolor','none');
+
+hold off
+
+title('Mercury frequency vs peak amplitude')
+xlabel('log f ')
+ylabel('log A')
+legend('Data', 'Fitting Curve', '95% Confidence Line', 'Location','NorthEast')
+xlim([min(x_fit), max(x_fit)])
+txt = {['y = (' sprintf('%.2e',fitresult.p1) '\pm' sprintf('%.2e', Sd_p1 ) ') * x + (' sprintf('%.2e',fitresult.p2) '\pm' sprintf('%.2e', Sd_p2 ) ')'],...
+    ['R^2 = ' num2str(Rsq)]};
+text(x_fit(1,1).*1.005,y_fit_draw(1,1),txt)
+(fitresult.p1-1.097e7)./1.097e7
+Sd_p1
