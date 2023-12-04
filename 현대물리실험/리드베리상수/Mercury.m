@@ -119,7 +119,7 @@ legend('data',strcat(num2str(round(WAVE1)),'nm fit'),strcat(num2str(round(WAVE2)
 hold off
 
 F = log([f1.b1 f2.b1 f3.b1 f4.b1 f5.b1 f6.b1 f7.b1])
-A = log([f1.a1 f2.a1 f3.a1 f4.a1 f5.a1 f6.a1 f7.a1])
+A = log([f1.a1.*f1.c1 f2.a1.*f2.c1 f3.a1.*f3.c1 f4.a1.*f4.c1 f5.a1.*f5.c1 f6.a1.*f6.c1 f7.a1.*f7.c1])
 
 y = A'
 x = F'
@@ -156,7 +156,7 @@ set(h1,'facealpha',0.2,'edgecolor','none');
 
 hold off
 
-title('Mercury frequency vs peak amplitude')
+title('Mercury frequency vs peak amplitude * linewidth')
 xlabel('log f ')
 ylabel('log A')
 legend('Data', 'Fitting Curve', '95% Confidence Line', 'Location','NorthEast')
